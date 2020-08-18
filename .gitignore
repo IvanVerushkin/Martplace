@@ -3,4 +3,8 @@
 .LSOverride
 .vs
 
+<<<<<<< HEAD
 node_modules/
+=======
+node_modules/
+>>>>>>> 070dd58d1ebf89f84a4308aec1e18e7932d18138
