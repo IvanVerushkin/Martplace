@@ -1,0 +1,103 @@
+.card-product {    // - item - //
+   
+   &__inner {
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 33px;
+      border-radius: 4px 4px 0px 0px;
+      box-shadow: 0px 2px 4px 0px rgba(107,110,115,0.1);
+      background-color: #fff;
+   }
+   &__content {
+      padding: 34px 25px 27px 31px;
+   }
+   &__title {
+      margin-bottom: 24px;
+      font-size: 20px;
+      line-height: 7px;
+      font-weight: 500;
+      color: #000000;
+   }
+   &__subtitle {
+      align-items: center;
+      height: 30px;
+      margin-bottom: 25px;
+      margin-left: -2px;
+   }
+   &__account-link {
+      text-decoration: none;
+   }
+   &__account-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   &__account-name {
+      font-size: 15px;
+      color: #000000;
+   }
+   &__plugin {
+      padding-left: 20px;
+      align-items: center;
+      text-decoration: none;
+      color: #7347c1;
+   }
+   &__plugin-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 9px;
+   }
+   &__plugin-name {
+      font-size: 15px;
+   }
+   &__psd {
+      margin-left: 6px;
+      color: #7347c1;
+      text-decoration: none;
+   }
+   &__html {
+      margin-left: 6px;
+      color: #7347c1;
+      text-decoration: none;
+   }
+   &__ps-icon {
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 17px;
+   }
+   &-desc {
+      flex: 1 1 auto;
+   }
+   &__footer {
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 22px 14px 33px;
+      border-top: 1px solid #ececec;
+   } 
+   &__leftside {
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+   }
+   &__price {
+      padding: 0px 14px;
+      margin-right: 9px;
+      background-color: #e4f0fc;
+      border-radius: 15px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #0674ec;
+   }
+   &__rightside {
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+   }
+   &__buys {
+      font-size: 15px;
+      color: #0674ec;
+   }
+}

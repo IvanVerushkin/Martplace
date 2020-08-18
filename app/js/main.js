@@ -30,15 +30,20 @@ $(function(){
 
    var mixer = mixitup('.newproducts__items');
 
-   $('.feedback__slider').slick({
-      infinite: true,
-      dots: false,
-      arrows: true,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"></button>',
-      nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"></button>',
-      appendArrows: '.feedback__arrows',
+
+   let swiper = new Swiper('.swiper-container', {
+      wrapperClass: 'swiper-wrapper',
+      slideClass: 'feedback__item',
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  
    });
+
 
 });

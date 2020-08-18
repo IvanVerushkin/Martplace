@@ -1,5 +1,6 @@
 html{
    box-sizing: border-box;
+   height: 100%;
 }
 
 *,
@@ -21,6 +22,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
+   height: 100%;
    font-family: 'Quicksand', sans-serif;
    font-size: 16px;
    line-height: 30px;
@@ -28,16 +30,24 @@ body {
    color: #555555;
 }
 
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.content {
+   flex: 1 0 auto;
+}
+
+.footer {
+   flex: 0 0 auto;
+}
+
 .container {
    max-width: 1170px;
    margin: 0 auto;
    padding: 0 15px;
-}
-
-.container-fluid {
-   max-width: 100%;
-   margin: 0 auto;
-   padding: 0 30px;
 }
 
 .block-upper {
@@ -50,24 +60,24 @@ body {
    font-size: 30px;
    color: #000000;
    background-color: #ffffff;
+   box-shadow: 0px 2px 4px 0px rgba(107,110,115,0.1);
 }
 
 .hearts {
-   display: flex;
    border: none;
    outline: transparent;
    background-color: transparent;
    cursor: pointer;
+   margin-right: 5px;
    &::before {
       content: '\e813';
       font-family: Linearicons-Free;
-      margin-right: 7px;
+      margin-right: 10px;
       color: #7347c1;
    }
 }
 
 .carts {
-   display: flex;
    color: #0674ec;
    border: none;
    outline: transparent;
@@ -80,17 +90,14 @@ body {
    }
 }
 
-.info-images {
-   margin-bottom: 45px;
-   &::before {
-   font-family: Linearicons-Free;
-   font-size: 48px;
-   }
+.d-flex {
+   display: flex;
 }
 
 
 .card-product {    
-   
+   max-width: calc(100% / 3 - 30px);
+   margin-right: 30px;
    &__image {
       position: relative;
       display: flex;
@@ -98,8 +105,9 @@ body {
    &__img {
       display: block;
       height: 230px;
-      width: 360px;
+      width: 100%;
       border-radius: 4px 4px 0px 0px;
+      object-fit: cover;
    }
    &__background {
       position: absolute;
@@ -116,30 +124,23 @@ body {
          opacity: 1;
       }
    }
-   &__btn {
-      width: 130px;
-      height: 45px;
-      border-radius: 28px;
-      border: 1px solid #f3f3f8;
-      transition: all 0.4s; 
-      color: #f3f3f8;
-      background-color: transparent;
-      outline: transparent;
-      &:hover {
-         background-color: #fff;
-         font-weight: 500;
-         color: #0674ec;
-      }
-   }
 }
 
-
-.advantages-icons {
-   margin-top: 14px;
-   margin-bottom: 34px;
-   &::before {
-      font-family: Linearicons-Free;
-      font-size: 60px;
+.btn-inside {
+   width: 130px;
+   height: 45px;
+   border-radius: 28px;
+   padding-top: 6px;
+   border: 1px solid #f3f3f8;
+   transition: all 0.4s; 
+   color: #f3f3f8;
+   background-color: transparent;
+   outline: transparent;
+   text-decoration: none;
+   text-align: center;
+   &:hover {
+      background-color: #fff;
+      color: #0674ec;
    }
 }
 
@@ -172,5 +173,23 @@ body {
    }
    &:hover {
       box-shadow: 0 0 10px 8px #fff; 
+   }
+}
+
+.tag {
+   margin-right: 7px;
+   padding: 5px 14px;
+   font-size: 15px;
+   color: #868c96;
+   background-color: #f1f3f6;
+   border-radius: 14px;
+   outline: transparent;
+   border: none;
+   transition: all 0.3s;
+   text-decoration: none;
+   cursor: pointer;
+   &:hover {
+      color: #fff;
+      background-color: #0674ec;
    }
 }

@@ -1,0 +1,46 @@
+// -- FOLLOWERS -- //
+
+.followers {
+   background-color: #eff1f5;
+   &__inner {
+      display: block;
+      padding: 119px 0 88px;
+   }
+   &__control {
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__control-info {
+      margin: 0;
+   }
+   &__control-arrows .slick-arrow{
+      background-color: #0674ec;
+      &:hover {
+         background-color: #7347c1;
+      }
+   }
+   &__slider {
+      overflow: hidden;
+   }
+}
+
+.followers .card-product {  
+   &__inner {
+      display: inline-block;
+      flex-direction: column;
+      margin-bottom: 32px;
+      border-radius: 4px 4px 0px 0px;
+      box-shadow: 0px 2px 4px 0px rgba(107,110,115,0.1);
+   }
+}
+
+.followers .slick-list {
+   margin-right: -30px;
+}
+
+.followers-card {
+   max-width: 360px;
+   &__inner {
+      max-width: 360px;
+   }
+}

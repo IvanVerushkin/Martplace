@@ -11,1237 +11,1266 @@
 </head>
 
 <body>
-   <header class="header">
+   <div class="wrapper">
+      <div class="content">
+         <header class="header">
 
-      <div class="header__top">
-         <div class="container">
-            <div class="header__top-inner">
-               <a class="header__logo" href="#"><img src="images/Home/header/logo.png" alt="MartPlace"></a>
+            <div class="header__top">
+               <div class="container">
+                  <div class="header__top-inner d-flex">
+                     <a class="header__logo" href="#">
+                        <img class="header__logo-image" src="images/Home/header/logo.png" alt="MartPlace">
+                     </a>
 
-               <div class="header__rightside">
-                  <a class="header__link-seller btn-hover" href="#">Become a Seller</a>
+                     <div class="header__rightside d-flex">
+                        <a class="header__link-seller btn-hover" href="#">Become a Seller</a>
+                        
+                        <div class="header__notification d-flex">
+                           <div class="header__notification-item">
+                              <a class="header__icon header__icon--alarm" href="#">
+                                 <span class="header__icon-number header__icon-number--alarm">25</span>
+                              </a>
+                           </div>
+
+                           <div class="header__notification-item">
+                              <a class="header__icon header__icon--envelope" href="#">
+                                 <span class="header__icon-number header__icon-number--envelope">6</span>
+                              </a>
+                           </div>
+
+                           <div class="header__notification-item">
+                              <a class="header__icon header__icon--cart" href="#">
+                                 <span class="header__icon-number header__icon-number--cart">2</span>
+                              </a>
+                           </div>
+                        </div>
+
+                        <a class="header__account d-flex" href="#">
+                           <img class="header__account-face" src="images/Home/header/face1.jpg" alt="face">
+                           <div class="header__account-info">
+                              <span class="header__account-login">Taofiq Hakim</span>
+                              <span class="header__account-amount">$20.45</span>
+                           </div>
+                        </a>
+                     </div>  <!-- right side -->
+                  </div>  <!-- inner -->
+               </div>
+            </div>
+
+            <div class="header__bottom">
+               <div class="container">
+                  <div class="header__bottom-inner d-flex">
+                     <nav class="header__bottom-nav">
+                        <ul class="header__bottom-list d-flex">
+                           <li class="header__bottom-item"><a class="header__bottom-link" href="#">Home</a></li>
+                           <li class="header__bottom-item"><a class="header__bottom-link" href="#">All products</a></li>
+                           <li class="header__bottom-item"><a class="header__bottom-link" href="#">Wordpress</a></li>
+                           <li class="header__bottom-item"><a class="header__bottom-link" href="#">Festures</a></li>
+                           <li class="header__bottom-item"><a class="header__bottom-link" href="#">Pages</a></li>
+                        </ul>
+                     </nav>
                   
-                  <div class="header__notification">
-                     <div class="header__notification-item">
-                        <a class="header__icon header__icon-alarm" href="#">
-                           <span class="header__icon-number header__icon-number--alarm">25</span>
-                        </a>
+                     <form class="header__form">
+                        <label class="header__form-label">
+                           <span class="header__form-hidden">Enter search text here</span>
+                           <input class="header__form-search" type="search" name="" placeholder="Search product here..." required>
+                        </label>
+                        <button class="header__form-btn" type="submit"></button>
+                     </form>
+                  
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <main class="main">
+
+<!-- DIGITAL PRODUCTS -->
+
+            <section class="digital-product">
+               <div class="container">
+                  <div class="digital-product__inner">
+                     <div class="digital-product__title">
+                        <p class="digital-product__title--top">Create Your Own</p>
+                        <p class="digital-product__title--middle">Digital Product Marketplace</p>
+                        <p class="digital-product__title--bottom">MartPlace is the most powerful, & customizable template for
+                           Easy Digital Downloads Products</p>
                      </div>
 
-                     <div class="header__notification-item">
-                        <a class="header__icon header__icon-envelope" href="#">
-                           <span class="header__icon-number header__icon-number--envelope">6</span>
-                        </a>
-                     </div>
-
-                     <div class="header__notification-item">
-                        <a class="header__icon header__icon-cart" href="#">
-                           <span class="header__icon-number header__icon-number--cart">2</span>
-                        </a>
+                     <div class="digital-product__buttons">
+                        <a class="digital-product__button" href="#">View All Products</a>
+                        <a class="digital-product__button" href="#">Popular Products</a>
                      </div>
                   </div>
 
-                  <a class="header__account" href="#">
-                     <img class="header__account-face" src="images/Home/header/face1.jpg" alt="face">
-                     <div class="header__account-info">
-                        <span class="header__account-login">Taofiq Hakim</span>
-                        <span class="header__account-amount">$20.45</span>
+                  <div class="digital-product__terminal">
+                     <div class="container"> 
+                        <form class="digital-product__form d-flex">
+                           <input class="digital-product__search" type="search" placeholder="Search your products..." required>
+                           <select class="digital-product__dropdown"> 
+                              <option value="first">All Categories</option>
+                              <option value="second">second</option>
+                              <option value="third">third</option>
+                              <option value="Fourth">Fourth</option>
+                              <option value="Fifth">Fifth</option>
+                           </select>
+                        <button class="digital-product__btn btn-hover" type="submit">Seach Now</button>
+                        </form>
                      </div>
-                  </a>
-               </div>  <!-- right side -->
-            </div>  <!-- inner -->
-         </div>
-      </div>
-
-      <div class="header__bottom">
-         <div class="container">
-            <div class="header__bottom-inner">
-               <nav class="header__bottom-nav">
-                  <ul class="header__bottom-list">
-                     <li class="header__bottom-item"><a class="header__bottom-link" href="#">HOME</a></li>
-                     <li class="header__bottom-item"><a class="header__bottom-link" href="#">All products</a></li>
-                     <li class="header__bottom-item"><a class="header__bottom-link" href="#">Wordpress</a></li>
-                     <li class="header__bottom-item"><a class="header__bottom-link" href="#">Festures</a></li>
-                     <li class="header__bottom-item"><a class="header__bottom-link" href="#">Pages</a></li>
-                  </ul>
-               </nav>
-              
-               <form class="header__form">
-                  <input class="header__form-search" type="search" placeholder="Search product here..." required>
-                  <button class="header__form-btn" type="submit"></button>
-               </form>
-              
-            </div>
-         </div>
-      </div>
-   </header>
-
-   <main class="main">
-
-      <!-- DIGITAL PRODUCTS -->
-
-      <section class="digital-product">
-         <div class="container">
-            <div class="digital-product__inner">
-               <div class="digital-product__title">
-                  <p class="digital-product__title-top">Create Your Own</p>
-                  <p class="digital-product__title-middle">Digital Product Marketplace</p>
-                  <p class="digital-product__title-bottom">MartPlace is the most powerful, & customizable template for
-                     Easy Digital Downloads Products</p>
+                  </div>  
                </div>
+            </section>
 
-               <div class="digital-product__button">
-                  <a class="digital-product__button digital-buttons btn-hover" href="#">View All Products</a>
-                  <a class="digital-product__button digital-buttons btn-hover" href="#">Popular Products</a>
+<!-- SERVICE -->
+
+            <section class="service">
+               <div class="container">
+                  <div class="service__inner d-flex">
+
+                     <div class="service__item d-flex">
+                        <div class="service__img" style="background-image: url(images/Home/services/service_1.png);"></div>
+                        <div class="service__title">Best UX Research</div>
+                        <p class="service__text">
+                           Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                           the mattis, leo quam aliquet diam
+                           congue is laoreet elit metus.
+                        </p>
+                     </div>
+                     <div class="service__item d-flex">
+                        <div class="service__img" style="background-image: url(images/Home/services/service_2.png);"></div>
+                        <div class="service__title">Fully Responsive</div>
+                        <p class="service__text">
+                           Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                           the mattis, leo quam aliquet diam
+                           congue is laoreet elit metus.
+                        </p>
+                     </div>
+                     <div class="service__item d-flex">
+                        <div class="service__img" style="background-image: url(images/Home/services/service_3.png);"></div>
+                        <div class="service__title">Buy & Sell Easily</div>
+                        <p class="service__text">
+                           Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                           the mattis, leo quam aliquet diam
+                           congue is laoreet elit metus.
+                        </p>
+                     </div>
+
+                  </div>
                </div>
-            </div>
-
-            <div class="digital-product__terminal">
-               <div class="container"> <!-- specifically for searching -->
-                  <form class="digital-product__form">
-                     <input class="digital-product__search" type="search" placeholder="Search your products..." required>
-                     <select class="digital-product__dropdown"> <!-- test -->
-                        <option value="first">All Categories</option>
-                        <option value="second">second</option>
-                        <option value="third">third</option>
-                        <option value="Fourth">Fourth</option>
-                        <option value="Fifth">Fifth</option>
-                    </select>
-                    <button class="digital-product__btn btn-hover">Seach Now</button>
-                  </form>
-               </div>
-            </div>  <!-- search -->
-         </div>
-      </section>
-
-      <!-- SERVICE -->
-
-      <section class="service">
-         <div class="container">
-            <div class="service__inner">
-
-               <div class="service__item">
-                  <div class="service__img-left" style="background-image: url(../images/Home/services/service_1.png);"></div>
-                  <div class="service__title">Best UX Research</div>
-                  <p class="service__text">
-                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                     the mattis, leo quam aliquet diam
-                     congue is laoreet elit metus.
-                  </p>
-               </div>
-               <div class="service__item">
-                  <div class="service__img-middle" style="background-image: url(../images/Home/services/service_2.png);"></div>
-                  <div class="service__title">Fully Responsive</div>
-                  <p class="service__text">
-                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                     the mattis, leo quam aliquet diam
-                     congue is laoreet elit metus.
-                  </p>
-               </div>
-               <div class="service__item">
-                  <div class="service__img-right" style="background-image: url(../images/Home/services/service_3.png);"></div>
-                  <div class="service__title">Buy & Sell Easily</div>
-                  <p class="service__text">
-                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                     the mattis, leo quam aliquet diam
-                     congue is laoreet elit metus.
-                  </p>
-               </div>
-
-            </div>
-         </div>
-      </section>
+            </section>
 
 <!-- PRODUCTS SLIDER -->
 
-      <section class="products">
-         <div class="container">
-            <div class="products__inner">
-               <div class="products__control block-upper">
-                  <p class="products__control-info">Weekly Featured Products</p>
-                  <div class="products__control-arrows"></div>
+            <section class="products">
+               <div class="container">
+                  <div class="products__inner">
+                     <div class="products__control d-flex block-upper">
+                        <p class="products__control-info">Weekly Featured Products</p>
+                        <div class="products__control-arrows"></div>
+                     </div>
+
+                     <div class="products-slider"> <!-- for js -->
+                        
+                        <article class="products-slider__page"> <!--item-1 -->
+                           <div class="products-slider__image d-flex">
+                              <img class="products-slider__img" src="images/Home/slider-products/photo_1.jpg" alt="image-1">
+                              <div class="products-slider__background d-flex">
+                                 <a class="products-slider__btn btn-inside" href="#">More Info</a>
+                                 <a class="products-slider__btn btn-inside" href="#">Live Demo</a>
+                              </div>
+                           </div>
+                           <div class="products-slider__info">
+                              <div class="products-slider__info-inner">
+                                 <div class="products-slider__title">One Page Resume Template</div>
+                                 <div class="products-slider__subtitle d-flex">
+                                    <a class="products-slider__account-link d-flex" href="#">
+                                       <div class="products-slider__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="products-slider__account-name">AazzTech</span>
+                                    </a>
+                                    <a class="products-slider__plugin d-flex" href="#">
+                                       <div class="products-slider__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                       <span class="products-slider__plugin-name">WordPress</span>
+                                    </a>
+                                 </div>
+                                 <p class="products-slider__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                    Praesent
+                                    pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                 </p>
+                                 <div class="products-slider__links">
+                                    <a class="products-slider__link tag" href="#">website</a>
+                                    <a class="products-slider__link tag" href="#">plugin</a>
+                                    <a class="products-slider__link tag" href="#">landing page</a>
+                                 </div>
+                                 <footer class="products-slider__footer d-flex">
+                                    <div class="products-slider__leftside d-flex">
+                                       <span class="products-slider__leftside-price">$10 - $50</span>
+                                       <button class="products-slider__leftside-likes hearts" type="button">46</button>
+                                       <button class="products-slider__leftside-buys carts" type="button">634</button>
+                                    </div>
+                                    <div class="products-slider__rightside-stars rate-star"></div>
+                                 </footer>  <!-- /footer -->
+                              </div>  <!-- /inner -->
+                           </div>  <!-- /info -->
+                        </article>
+
+                        <article class="products-slider__page"> <!-- item-2 -->
+                           <div class="products-slider__image d-flex">
+                              <img class="products-slider__img" src="images/Home/slider-products/photo_2.jpg" alt="image-2">
+                              <div class="products-slider__background d-flex">
+                                 <a class="products-slider__btn btn-inside" href="#">More Info</a>
+                                 <a class="products-slider__btn btn-inside" href="#">Live Demo</a>
+                              </div>
+                           </div>
+                           <div class="products-slider__info">
+                              <div class="products-slider__info-inner">
+                                 <div class="products-slider__title">One Page Resume Template</div>
+                                 <div class="products-slider__subtitle d-flex">
+                                    <a class="products-slider__account-link d-flex" href="#">
+                                       <div class="products-slider__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="products-slider__account-name">AazzTech</span>
+                                    </a>
+                                    <a class="products-slider__plugin d-flex" href="#">
+                                       <div class="products-slider__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                       <span class="products-slider__plugin-name">WordPress</span>
+                                    </a>
+                                 </div>
+                                 <p class="products-slider__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                    Praesent
+                                    pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                 </p>
+                                 <div class="products-slider__links">
+                                    <a class="products-slider__link tag" href="#">website</a>
+                                    <a class="products-slider__link tag" href="#">plugin</a>
+                                    <a class="products-slider__link tag" href="#">landing page</a>
+                                 </div>
+                                 <footer class="products-slider__footer d-flex">
+                                    <div class="products-slider__leftside d-flex">
+                                       <span class="products-slider__leftside-price">$10 - $50</span>
+                                       <button class="products-slider__leftside-likes hearts" type="button">46</button>
+                                       <button class="products-slider__leftside-buys carts" type="button">634</button>
+                                    </div>
+                                    <div class="products-slider__rightside-stars rate-star"></div>
+                                 </footer>
+                              </div>  <!-- /inner -->
+                           </div>  <!-- /info -->
+                        </article> 
+
+                        <article class="products-slider__page"> <!-- item-3 -->
+                           <div class="products-slider__image d-flex">
+                              <img class="products-slider__img" src="images/Home/slider-products/photo_3.jpg" alt="image-3">
+                              <div class="products-slider__background d-flex">
+                                 <a class="products-slider__btn btn-inside" href="#">More Info</a>
+                                 <a class="products-slider__btn btn-inside" href="#">Live Demo</a>
+                              </div>
+                           </div>
+                           <div class="products-slider__info">
+                              <div class="products-slider__info-inner">
+                                 <div class="products-slider__title">One Page Resume Template</div>
+                                 <div class="products-slider__subtitle d-flex">
+                                    <a class="products-slider__account-link d-flex" href="#">
+                                       <div class="products-slider__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="products-slider__account-name">AazzTech</span>
+                                    </a>
+                                    <a class="products-slider__plugin d-flex" href="#">
+                                       <div class="products-slider__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                       <span class="products-slider__plugin-name">WordPress</span>
+                                    </a>
+                                 </div>
+                                 <p class="products-slider__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                    Praesent
+                                    pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                 </p>
+                                 <div class="products-slider__links">
+                                    <a class="products-slider__link tag" href="#">website</a>
+                                    <a class="products-slider__link tag" href="#">plugin</a>
+                                    <a class="products-slider__link tag" href="#">landing page</a>
+                                 </div>
+                                 <footer class="products-slider__footer d-flex">
+                                    <div class="products-slider__leftside d-flex">
+                                       <span class="products-slider__leftside-price">$10 - $50</span>
+                                       <button class="products-slider__leftside-likes hearts" type="button">46</button>
+                                       <button class="products-slider__leftside-buys carts" type="button">634</button>
+                                    </div>
+                                    <div class="products-slider__rightside-stars rate-star"></div>
+                                 </footer>
+                              </div>  <!-- /inner -->
+                           </div>  <!-- /info -->
+                        </article>                
+                     </div>  <!-- /products-slider -->
+                  </div>  <!-- /inner -->
                </div>
-
-               <div class="products-slider"> <!-- класс для js -->
-                  
-                  <div class="products-slider__page"> <!-- item-1 -->
-
-                     <div class="products-slider__image">
-                        <img class="products-slider__img" src="images/Home/slider-products/photo_1.jpg" alt="image-1">
-                        <div class="products-slider__background">
-                           <button class="products-slider__btn">More Info</button>
-                           <button class="products-slider__btn">Live Demo</button>
-                        </div>
-                     </div>
-                     <div class="products-slider__info">
-                        <div class="products-slider__info-inner">
-                           <div class="products-slider__title">One Page Resume Template</div>
-                           <div class="products-slider__subtitle">
-                              <a class="products-slider__account-link" href="#">
-                                 <div class="products-slider__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
-                                 <span class="products-slider__account-name">AazzTech</span>
-                              </a>
-                              <a class="products-slider__plugin" href="#">
-                                 <div class="products-slider__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
-                                 <span class="products-slider__plugin-name">WordPress</span>
-                              </a>
-                           </div>
-                           <p class="products-slider__text">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                              scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                              Praesent
-                              pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                           </p>
-                           <div class="products-slider__links">
-                              <a class="products-slider__link" href="#">website</a>
-                              <a class="products-slider__link" href="#">plugin</a>
-                              <a class="products-slider__link" href="#">landing page</a>
-                           </div>
-                           <div class="products-slider__footer">
-
-                              <div class="products-slider__leftside">
-                                 <div class="products-slider__leftside-price">$10 - $50</div>
-                                 <button class="products-slider__leftside-likes hearts">46</button>
-                                 <button class="products-slider__leftside-buys carts">634</button>
-                              </div>
-                              <div class="products-slider__rightside">
-                                 <div class="products-slider__rightside-stars rate-star"></div>
-                              </div>
-                           </div>  <!-- footer -->
-                        </div>  <!-- inner -->
-                     </div>  <!-- info -->
-                  </div> <!-- page -->
-
-                  <div class="products-slider__page"> <!-- item-2 -->
-                     <div class="products-slider__image">
-                        <img class="products-slider__img" src="images/Home/slider-products/photo_2.jpg" alt="image-2">
-                        <div class="products-slider__background">
-                           <button class="products-slider__btn">More Info</button>
-                           <button class="products-slider__btn">Live Demo</button>
-                        </div>
-                     </div>
-                     <div class="products-slider__info">
-                        <div class="products-slider__info-inner">
-                           <div class="products-slider__title">One Page Resume Template</div>
-                           <div class="products-slider__subtitle">
-                              <a class="products-slider__account-link" href="#">
-                                 <div class="products-slider__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
-                                 <span class="products-slider__account-name">AazzTech</span>
-                              </a>
-                              <a class="products-slider__plugin" href="#">
-                                 <div class="products-slider__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
-                                 <span class="products-slider__plugin-name">WordPress</span>
-                              </a>
-                           </div>
-                           <p class="products-slider__text">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                              scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                              Praesent
-                              pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                           </p>
-                           <div class="products-slider__links">
-                              <a class="products-slider__link" href="#">website</a>
-                              <a class="products-slider__link" href="#">plugin</a>
-                              <a class="products-slider__link" href="#">landing page</a>
-                           </div>
-                           <div class="products-slider__footer">
-
-                              <div class="products-slider__leftside">
-                                 <div class="products-slider__leftside-price">$10 - $50</div>
-                                 <button class="products-slider__leftside-likes hearts">46</button>
-                                 <button class="products-slider__leftside-buys carts">634</button>
-                              </div>
-                              <div class="products-slider__rightside">
-                                 <div class="products-slider__rightside-stars rate-star"></div>
-                              </div>
-                           </div>  <!-- footer -->
-                        </div>  <!-- inner -->
-                     </div>  <!-- info -->
-                  </div> <!-- page -->
-
-                  <div class="products-slider__page"> <!-- item-3 -->
-                     <div class="products-slider__image">
-                        <img class="products-slider__img" src="images/Home/slider-products/photo_3.jpg" alt="image-3">
-                        <div class="products-slider__background">
-                           <button class="products-slider__btn">More Info</button>
-                           <button class="products-slider__btn">Live Demo</button>
-                        </div>
-                     </div>
-                     <div class="products-slider__info">
-                        <div class="products-slider__info-inner">
-                           <div class="products-slider__title">One Page Resume Template</div>
-                           <div class="products-slider__subtitle">
-                              <a class="products-slider__account-link" href="#">
-                                 <div class="products-slider__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
-                                 <span class="products-slider__account-name">AazzTech</span>
-                              </a>
-                              <a class="products-slider__plugin" href="#">
-                                 <div class="products-slider__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
-                                 <span class="products-slider__plugin-name">WordPress</span>
-                              </a>
-                           </div>
-                           <p class="products-slider__text">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                              scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                              Praesent
-                              pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                           </p>
-                           <div class="products-slider__links">
-                              <a class="products-slider__link" href="#">website</a>
-                              <a class="products-slider__link" href="#">plugin</a>
-                              <a class="products-slider__link" href="#">landing page</a>
-                           </div>
-                           <div class="products-slider__footer">
-
-                              <div class="products-slider__leftside">
-                                 <div class="products-slider__leftside-price">$10 - $50</div>
-                                 <button class="products-slider__leftside-likes hearts">46</button>
-                                 <button class="products-slider__leftside-buys carts">634</button>
-                              </div>
-                              <div class="products-slider__rightside">
-                                 <div class="products-slider__rightside-stars rate-star"></div>
-                              </div>
-                           </div>  <!-- /footer -->
-                        </div>  <!-- /inner -->
-                     </div>  <!-- /info -->
-                  </div>  <!-- /page -->                  
-               </div>  <!-- /products-slider -->
-            </div>
-         </div>
-      </section>
+            </section>
 
 <!-- RELEASE PRODUCTS -->
 
-      <section class="newproducts">
-         <div class="container">
-            <div class="newproducts__inner">
-               <div class="newproducts__upper block-upper">
-                  <p class="newproducts__upper-info">Newest Release Products</p>
-                  <div class="newproducts__upper-filter"></div>
-               </div>
+            <section class="newproducts">
+               <div class="container">
+                  <div class="newproducts__inner">
+                     <div class="newproducts__upper block-upper">
+                        <p class="newproducts__upper-info">Newest Release Products</p>
 
-               <div class="newproducts__menu">
-                  <button class="newproducts__btn" type="button" data-filter=".category-plugins">Plugins</button>
-                  <button class="newproducts__btn" type="button" data-filter=".category-wordpress">Wordpress</button>
-                  <button class="newproducts__btn" type="button" data-filter=".category-site">Site Template</button>
-                  <button class="newproducts__btn" type="button" data-filter=".category-psd">PSD Template</button>
-                  <button class="newproducts__btn" type="button" data-filter=".category-joomla">Joomla</button>
-                  <button class="newproducts__btn" type="button" data-filter=".category-user">User Interface</button>
-                  <button class="newproducts__btn" type="button" data-filter=".category-landing">Landingpage</button>
-                  <button class="newproducts__btn" type="button" data-filter=".category-software">Software</button>
-               </div>
+                        <div class="filter">Filter by:
+                           <div class="filter__list">
+                              <button class="filter__btn" type="button"  data-sort="test:asc">Trending items</button></li>
+                              <button class="filter__btn" type="button">Best seller</button></li>
+                              <button class="filter__btn" type="button" data-sort="rate:asc">Best rating</button></li>
+                              <button class="filter__btn" type="button" data-sort="price:desc">Low price</button></li>
+                              <button class="filter__btn" type="button" data-sort="price:asc">High price</button></li>      
+                           </div>   
+                        </div>
+                     </div>
 
-               <div class="newproducts__items">
+                     <div class="newproducts__menu d-flex">
+                        <button class="newproducts__btn tag" type="button" data-filter=".category-plugins">Plugins</button>
+                        <button class="newproducts__btn tag" type="button" data-filter=".category-wordpress">Wordpress</button>
+                        <button class="newproducts__btn tag" type="button" data-filter=".category-site">Site Template</button>
+                        <button class="newproducts__btn tag" type="button" data-filter=".category-psd">PSD Template</button>
+                        <button class="newproducts__btn tag" type="button" data-filter=".category-joomla">Joomla</button>
+                        <button class="newproducts__btn tag" type="button" data-filter=".category-user">User Interface</button>
+                        <button class="newproducts__btn tag" type="button" data-filter=".category-landing">Landing Page</button>
+                        <button class="newproducts__btn tag" type="button" data-filter=".category-software">Software</button>
+                     </div>
 
-                  <div class="card-product mix category-wordpress .category-plugins" data-order="1"> <!-- item_1 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/newproducts/1.jpeg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn">More Info</button>
-                              <button class="card-product__btn">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">E-commerce Shopping Cart</div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">Theme-Valley</a>
-                              <a class="card-product__plugin" href="#">Plugin</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$20</span>
-                              <button class="card-product__likes hearts">90</button>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">246</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->   
-                  </div>  <!-- /item -->
+                     <div class="newproducts__items">
 
-                  <div class="card-product mix category-psd category-site" data-order="2"> <!-- item_2 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/newproducts/2.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn">More Info</button>
-                              <button class="card-product__btn">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">Marketify Coffee Shop</div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">EchoTheme</a>
-                              <span class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></span>
-                              <a class="card-product__psd" href="#">PSD</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$18</span>
-                              <button class="card-product__likes hearts">48</button>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">50</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item -->
+                        <article class="card-product mix category-wordpress category-plugins" data-order="1" data-rate="1" data-price="20" data-test="8"> <!-- item_1 -->
+                           <div class="card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/newproducts/1.jpeg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">E-commerce Shopping Cart</div>
 
-                  <div class="card-product mix category-software category-site category-psd" data-order="3"> <!-- item_3 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/newproducts/3.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn">More Info</button>
-                              <button class="card-product__btn">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">Bryson - Portfolio Template</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">Artcorner</a>
-                              <span class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></span>
-                              <a class="card-product__html" href="#">HTML</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside"> 
-                              <span class="card-product__price">$10</span>
-                              <button class="card-product__likes hearts">56</button>
-                              <div class="card-product__stars rate-star"></div>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">68</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item -->
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">Theme-Valley</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                       <span class="card-product__plugin-name">Plugin</span>
+                                    </a>
+                                 </div>
 
-                  <div class="card-product mix category-wordpress .category-plugins" data-order="4"> <!-- item_4 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/newproducts/4.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn">More Info</button>
-                              <button class="card-product__btn">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">E-commerce Shopping Cart</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">Design-Hub</a>
-                              <a class="card-product__plugin" href="#">Plugin</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$10 - 50</span>
-                              <button class="card-product__likes hearts">90</button>
-                              <div class="card-product__stars rate-star"></div>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">45</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item -->
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$20</span>
+                                    <button class="card-product__likes hearts" type="button">90</button>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">246</button>
+                              </footer>
+                           </div>  <!-- /inner -->   
+                        </article>  
 
-                  <div class="card-product mix category-psd category-landing" data-order="5"> <!-- item_5 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/newproducts/5.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn">More Info</button>
-                              <button class="card-product__btn">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">Marketify Coffee Shop</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">AazzTech</a>
-                              <span class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></span>
-                              <a class="card-product__psd" href="#">PSD</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$10 - 50</span>
-                              <button class="card-product__likes hearts">48</button>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">50</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item -->
+                        <article class="card-product mix category-psd category-site" data-order="2" data-rate="3" data-price="18" data-test="7"> <!-- item_2 -->
+                           <div class="card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/newproducts/2.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">Marketify Coffee Shop</div>
 
-                  <div class="card-product mix category-software category-joomla" data-order="6"> <!-- item_6 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/newproducts/6.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn">More Info</button>
-                              <button class="card-product__btn">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">Bryson - Portfolio Template</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">Coder-Lab</a>
-                              <span class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></span>
-                              <a class="card-product__html" href="#">HTML</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$10</span>
-                              <button class="card-product__likes hearts">56</button>
-                              <div class="card-product__stars rate-star"></div>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">68</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item -->
-               </div>  <!-- /items -->
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">EchoTheme</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></div>
+                                       <span class="card-product__psd">PSD</span>
+                                    </a>
+                                 </div>
 
-               <button class="newproducts__lower-btn btn-hover" type="button" data-filter="all">All New Products</button>
-               
-            </div> <!-- /newproducts__inner -->  
-         </div>  <!-- /container -->
-      </section>
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$18</span>
+                                    <button class="card-product__likes hearts" type="button">48</button>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">50</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>  
+
+                        <article class="card-product mix category-software category-site category-psd" data-order="3" data-rate="2" data-price="10" data-test="1"> <!-- item_3 -->
+                           <div class="card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/newproducts/3.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">Bryson - Portfolio Template</a> </div>
+
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">Artcorner</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></div>
+                                       <span class="card-product__html">HTML</span>
+                                    </a>
+                                 </div>
+
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex"> 
+                                    <span class="card-product__price">$10</span>
+                                    <button class="card-product__likes hearts" type="button">56</button>
+                                    <div class="card-product__stars rate-star"></div>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">68</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>  
+
+                        <article class="card-product mix category-wordpress category-plugins" data-order="4" data-rate="2" data-price="10-50"> <!-- item_4 -->
+                           <div class="card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/newproducts/4.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">E-commerce Shopping Cart</a> </div>
+
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">Design-Hub</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                       <span class="card-product__plugin-name">Plugin</span>
+                                    </a>
+                                 </div>
+
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$10 - 50</span>
+                                    <button class="card-product__likes hearts" type="button">90</button>
+                                    <div class="card-product__stars rate-star"></div>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">45</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>  
+
+                        <article class="card-product mix category-psd category-landing" data-order="5" data-rate="3" data-price="50"> <!-- item_5 -->
+                           <div class="card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/newproducts/5.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">Marketify Coffee Shop</a> </div>
+
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">AazzTech</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></div>
+                                       <span class="card-product__psd">PSD</span>
+                                    </a>
+                                 </div>
+
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$10 - 50</span>
+                                    <button class="card-product__likes hearts" type="button">48</button>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">50</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>
+
+                        <article class="card-product mix category-software category-joomla" data-order="6" data-rate="4" data-price="10"> <!-- item_6 -->
+                           <div class="card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/newproducts/6.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">Bryson - Portfolio Template</a> </div>
+
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">Coder-Lab</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></div>
+                                       <span class="card-product__html">HTML</span>
+                                    </a>
+                                 </div>
+
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$10</span>
+                                    <button class="card-product__likes hearts" type="button">56</button>
+                                    <div class="card-product__stars rate-star"></div>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">68</button>
+                              </footer>
+                           </div>
+                        </article>
+                     </div>  <!-- /items -->
+
+                     <button class="newproducts__lower-btn btn-hover d-flex" type="button" data-filter="all">All New Products</button>
+                     
+                  </div> <!-- /newproducts__inner -->  
+               </div>  <!-- /container -->
+            </section>
 
 <!-- FOLLOWERS - SLIDER -->
 
-      <section class="followers">
-         <div class="container">
-            <div class="followers__inner">   
-               <div class="followers__control block-upper">
-                  <p class="followers__control-info">Your Followers Feed</p>
-                  <div class="followers__control-arrows"></div>
-               </div>
+            <section class="followers">
+               <div class="container">
+                  <div class="followers__inner">   
+                     <div class="followers__control d-flex block-upper">
+                        <p class="followers__control-info">Your Followers Feed</p>
+                        <div class="followers__control-arrows"></div>
+                     </div>
 
-               <div class="followers__slider">
+                     <div class="followers__slider">
 
-                  <div class="card-product slider-card"><!-- item_1 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/followers/7.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn more-info ">More Info</button>
-                              <button class="card-product__btn live-demo">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">E-commerce Shopping Cart</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">Design-Hub</a>
-                              <a class="card-product__plugin" href="#">Plugin</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$20</span>
-                              <button class="card-product__likes hearts">90</button>
-                              <div class="card-product__stars rate-star"></div>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">246</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item 1-->
+                        <article class="followers-card card-product slider-card"> <!-- item-1 -->
+                           <div class="followers-card__inner card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/followers/7.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">E-commerce Shopping Cart</a> </div>
 
-                  <div class="card-product slider-card"> <!-- item_2 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/followers/8.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn more-info ">More Info</button>
-                              <button class="card-product__btn live-demo">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">Marketify Coffee Shop</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">AazzTech</a>
-                              <span class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></span>
-                              <a class="card-product__psd" href="#">PSD</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$18</span>
-                              <button class="card-product__likes hearts">48</button>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">50</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item 2-->
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">Theme-Valley</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                       <span class="card-product__html">Plugin</span>
+                                    </a>
+                                 </div>
 
-                  <div class="card-product slider-card"><!-- item_3 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/followers/9.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn more-info ">More Info</button>
-                              <button class="card-product__btn live-demo">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">Bryson - Portfolio Template</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">Coder-Lab</a>
-                              <span class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></span>
-                              <a class="card-product__html" href="#">HTML</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$10</span>
-                              <button class="card-product__likes hearts">56</button>
-                              <div class="card-product__stars rate-star"></div>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">68</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item 3-->
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$20</span>
+                                    <button class="card-product__likes hearts" type="button">90</button>
+                                    <div class="card-product__stars rate-star"></div>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">246</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>  
 
-                  <div class="card-product slider-card"><!-- item_4 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/followers/10.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn more-info ">More Info</button>
-                              <button class="card-product__btn live-demo">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">E-commerce Shopping Cart</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">Design-Hub</a>
-                              <a class="card-product__plugin" href="#">Plugin</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$30</span>
-                              <button class="card-product__likes hearts">64</button>
-                              <div class="card-product__stars rate-star"></div>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">81</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item 4-->
+                        <article class="followers-card card-product slider-card"> <!-- item-2 -->
+                           <div class="followers-card__inner card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/followers/8.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">Marketify Coffee Shop</a> </div>
 
-                  <div class="card-product slider-card"> <!-- item_5 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/followers/11.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn more-info ">More Info</button>
-                              <button class="card-product__btn live-demo">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">Marketify Coffee Shop</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">AazzTech</a>
-                              <span class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></span>
-                              <a class="card-product__psd" href="#">PSD</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$7</span>
-                              <button class="card-product__likes hearts">62</button>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">55</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item 5-->
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">AazzTech</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></div>
+                                       <span class="card-product__psd">PSD</span>
+                                    </a>
+                                 </div>
 
-                  <div class="card-product slider-card"><!-- item_6 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/followers/12.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn more-info ">More Info</button>
-                              <button class="card-product__btn live-demo">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content">
-                           <div class="card-product__title">Bryson - Portfolio Template</a> </div>
-                           <div class="card-product__subtitle">
-                              <a class="card-product__icon" style="background-image: url(images/Home/header/face1.jpg);" href="#"></a>
-                              <a class="card-product__theme" href="#">Coder-Lab</a>
-                              <span class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></span>
-                              <a class="card-product__html" href="#">HTML</a>
-                           </div>
-                           <p class="card-product__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <div class="card-product__leftside">
-                              <span class="card-product__price">$21</span>
-                              <button class="card-product__likes hearts">33</button>
-                              <div class="card-product__stars rate-star"></div>
-                           </div>
-      
-                           <div class="card-product__rightside">
-                              <button class="card-product__buys carts">44</button>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item 6-->
-                  
-              </div>  <!-- /followers wrapper -->
-            </div>  <!-- /followers inner -->
-         </div>  <!-- /container -->
-      </section>
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$18</span>
+                                    <button class="card-product__likes hearts" type="button">48</button>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">50</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>  
+
+                        <article class="followers-card card-product slider-card"> <!-- item-3 -->
+                           <div class="followers-card__inner card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/followers/9.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">Bryson - Portfolio Template</a> </div>
+                                 
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">Coder-Lab</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></div>
+                                       <span class="card-product__html">HTML</span>
+                                    </a>
+                                 </div>
+
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$10</span>
+                                    <button class="card-product__likes hearts" type="button">56</button>
+                                    <div class="card-product__stars rate-star"></div>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">68</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>
+
+                        <article class="followers-card card-product slider-card"> <!-- item-4 -->
+                           <div class="followers-card__inner card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/followers/10.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">E-commerce Shopping Cart</a> </div>
+
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">Design-Hub</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></div>
+                                       <span class="card-product__html">Plugin</span>
+                                    </a>
+                                 </div>
+
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$30</span>
+                                    <button class="card-product__likes hearts" type="button">64</button>
+                                    <div class="card-product__stars rate-star"></div>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">81</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>
+
+                        <article class="followers-card card-product slider-card"> <!-- item-5 -->
+                           <div class="followers-card__inner card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/followers/11.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">Marketify Coffee Shop</a> </div>
+
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">AazzTech</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></div>
+                                       <span class="card-product__html">PSD</span>
+                                    </a>
+                                 </div>
+
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$7</span>
+                                    <button class="card-product__likes hearts" type="button">62</button>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">55</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>
+
+                        <article class="followers-card card-product slider-card"> <!-- item-6 -->
+                           <div class="followers-card__inner card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/followers/12.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content">
+                                 <div class="card-product__title">Bryson - Portfolio Template</a> </div>
+
+                                 <div class="card-product__subtitle d-flex">
+                                    <a class="card-product__account-link d-flex" href="#">
+                                       <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                       <span class="card-product__account-name">Coder-Lab</span>
+                                    </a>
+                                    <a class="card-product__plugin d-flex" href="#">
+                                       <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></div>
+                                       <span class="card-product__html">HTML</span>
+                                    </a>
+                                 </div>
+
+                                 <p class="card-product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <footer class="card-product__footer d-flex">
+                                 <div class="card-product__leftside d-flex">
+                                    <span class="card-product__price">$21</span>
+                                    <button class="card-product__likes hearts" type="button">33</button>
+                                    <div class="card-product__stars rate-star"></div>
+                                 </div>
+                                 <button class="card-product__buys carts" type="button">44</button>
+                              </footer>
+                           </div>  <!-- /inner -->
+                        </article>  <!-- /item 6-->
+                     </div>  <!-- /followers slider -->
+                  </div>  <!-- /followers inner -->
+               </div>  <!-- /container -->
+            </section>
 
 <!-- INFO -->
 
-      <section class="info">
-         <div class="container">
-            <div class="info__inner">
+            <section class="info">
+               <div class="container">
+                  <div class="info__inner d-flex">
 
-               <div class="info__item info__item--first">
-                  <div class="info__image-briefcase info-images"></div>
-                  <div class="info__number">38,436</div>
-                  <span class="info__desc">items for sale</span>
-               </div>
+                     <div class="info__item info__item--first">
+                        <div class="info__image info__image--briefcase"></div>
+                        <div class="info__number">38,436</div>
+                        <span class="info__desc">items for sale</span>
+                     </div>
 
-               <div class="info__item info__item--second">
-                  <div class="info__image-cloud-download info-images"></div>
-                  <div class="info__number">3,736</div>
-                  <span class="info__desc">total sales</span>
-               </div>
+                     <div class="info__item info__item--second">
+                        <div class="info__image info__image--cloud-download"></div>
+                        <div class="info__number">3,736</div>
+                        <span class="info__desc">total sales</span>
+                     </div>
 
-               <div class="info__item info__item--third">
-                  <div class="info__image-smile info-images"></div>
-                  <div class="info__number">2,736</div>
-                  <span class="info__desc">happy customers</span>
-               </div>
+                     <div class="info__item info__item--third">
+                        <div class="info__image info__image--smile"></div>
+                        <div class="info__number">2,736</div>
+                        <span class="info__desc">happy customers</span>
+                     </div>
 
-               <div class="info__item info__item--fourth">
-                  <div class="info__image-users info-images"></div>
-                  <div class="info__number">25,736</div>
-                  <span class="info__desc">members</span>
+                     <div class="info__item info__item--fourth">
+                        <div class="info__image info__image--users"></div>
+                        <div class="info__number">25,736</div>
+                        <span class="info__desc">members</span>
+                     </div>
+                  </div>
                </div>
-            </div>
-         </div>
-      </section>
+            </section>
 
 <!-- ADVANTAGES -->
 
-      <section class="advantages">
-         <div class="container">
-            <div class="advantages__inner">
-               <div class="advantages__title">
-                  <span class="advantages__title-leftside">Why Choose</span>
-                  <span class="advantages__title-rightside">MartPlace</span></div>
-               <p class="advantages__subtitle">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. 
-                  Lid est laborum dolo rumes fugats untras.</p>
+            <section class="advantages">
+               <div class="container">
+                  <div class="advantages__inner">
+                     <div class="advantages__title">Why Choose<span class="advantages__title-rightside">MartPlace</span></div>
+                     <p class="advantages__subtitle">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. 
+                        Lid est laborum dolo rumes fugats untras.</p>
 
-               <div class="advantages__body">
+                     <div class="advantages__body d-flex">
 
-                  <div class="advantages__item">
-                     <div class="advantages__number">01</div>
-                     <div class="advantages__icon-license advantages-icons"></div>
-                     <p class="advantages__item-title">One Time Payment</p>
-                     <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-                        the mattis, leo quam aliquet diam
-                        congue is laoreet elit metus.</p>
-                  </div>
-                  <div class="advantages__item">
-                     <div class="advantages__number">02</div>
-                     <div class="advantages__icon-magic-wand advantages-icons"></div>
-                     <p class="advantages__item-title">Quality Products</p>
-                     <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-                        the mattis, leo quam aliquet diam
-                        congue is laoreet elit metus.</p>
-                  </div>
-                  <div class="advantages__item">
-                     <div class="advantages__number">03</div>
-                     <div class="advantages__icon-lock advantages-icons"></div>
-                     <p class="advantages__item-title">100% Secure Payment</p>
-                     <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-                        the mattis, leo quam aliquet diam
-                        congue is laoreet elit metus.</p>
-                  </div>
-                  <div class="advantages__item">
-                     <div class="advantages__number">04</div>
-                     <div class="advantages__icon-chart-bars advantages-icons"></div>
-                     <p class="advantages__item-title">Well Organized Code</p>
-                     <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-                        the mattis, leo quam aliquet diam
-                        congue is laoreet elit metus.</p>
-                  </div>
-                  <div class="advantages__item">
-                     <div class="advantages__number">05</div>
-                     <div class="advantages__icon-leaf advantages-icons"></div>
-                     <p class="advantages__item-title">Life Time Free Update</p>
-                     <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-                        the mattis, leo quam aliquet diam
-                        congue is laoreet elit metus.</p>
-                  </div>
-                  <div class="advantages__item">
-                     <div class="advantages__number">06</div>
-                     <div class="advantages__icon-phone advantages-icons"></div>
-                     <p class="advantages__item-title">Fast and Friendly Support</p>
-                     <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-                        the mattis, leo quam aliquet diam
-                        congue is laoreet elit metus.</p>
-                  </div>
+                        <div class="advantages__item">
+                           <div class="advantages__number">01</div>
+                           <div class="advantages__icon advantages__icon--license"></div>
+                           <p class="advantages__item-title">One Time Payment</p>
+                           <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                              the mattis, leo quam aliquet diam
+                              congue is laoreet elit metus.</p>
+                        </div>
+                        <div class="advantages__item">
+                           <div class="advantages__number">02</div>
+                           <div class="advantages__icon advantages__icon--magic-wand"></div>
+                           <p class="advantages__item-title">Quality Products</p>
+                           <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                              the mattis, leo quam aliquet diam
+                              congue is laoreet elit metus.</p>
+                        </div>
+                        <div class="advantages__item">
+                           <div class="advantages__number">03</div>
+                           <div class="advantages__icon advantages__icon--lock"></div>
+                           <p class="advantages__item-title">100% Secure Payment</p>
+                           <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                              the mattis, leo quam aliquet diam
+                              congue is laoreet elit metus.</p>
+                        </div>
+                        <div class="advantages__item">
+                           <div class="advantages__number">04</div>
+                           <div class="advantages__icon advantages__icon--chart-bars"></div>
+                           <p class="advantages__item-title">Well Organized Code</p>
+                           <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                              the mattis, leo quam aliquet diam
+                              congue is laoreet elit metus.</p>
+                        </div>
+                        <div class="advantages__item">
+                           <div class="advantages__number">05</div>
+                           <div class="advantages__icon advantages__icon--leaf"></div>
+                           <p class="advantages__item-title">Life Time Free Update</p>
+                           <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                              the mattis, leo quam aliquet diam
+                              congue is laoreet elit metus.</p>
+                        </div>
+                        <div class="advantages__item">
+                           <div class="advantages__number">06</div>
+                           <div class="advantages__icon advantages__icon--phone"></div>
+                           <p class="advantages__item-title">Fast and Friendly Support</p>
+                           <p class="advantages__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                              the mattis, leo quam aliquet diam
+                              congue is laoreet elit metus.</p>
+                        </div>
 
-               </div>  <!-- /body -->
-            </div>  <!-- /inner -->
-         </div>
-      </section>
+                     </div>  <!-- /body -->
+                  </div>  <!-- /inner -->
+               </div>
+            </section>
 
 <!-- SELL -->
 
-      <section class="sell">
-         <div class="sell__wrapper">
+            <section class="sell">
+               <div class="sell__wrapper d-flex">
 
-            <div class="sell__item" style="background-image: url(images/Home/sell__images/sell__left.jpg);">
-               <div class="sell__inner">
-                  <div class="sell__icon" style="background-image: url(images/Home/sell__images/icon_16936.png);"></div>
-                  <div class="sell__content">
-                     <p class="sell__title">Sell Your Products</p>
-                     <p class="sell__desc">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-                        the mattis, leo quam aliquet diamcongue is laoreet elit metus.</p>
-                     <a class="sell__btn sell__btn--left" href="#">Become an Author</a>
+                  <div class="sell__item" style="background-image: url(images/Home/sell__images/sell__left.jpg);">
+                     <div class="sell__inner">
+                        <div class="sell__icon" style="background-image: url(images/Home/sell__images/icon_16936.png);"></div>
+                        <div class="sell__content">
+                           <p class="sell__title">Sell Your Products</p>
+                           <p class="sell__desc">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                              the mattis, leo quam aliquet diamcongue is laoreet elit metus.</p>
+                           <a class="sell__btn sell__btn--left" href="#">Become an Author</a>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="sell__item" style="background-image: url(images/Home/sell__images/sell__right.jpg);">
+                     <div class="sell__inner">
+                        <div class="sell__icon" style="background-image: url(images/Home/sell__images/icon_16948.png);"></div>
+                        <div class="sell__content">
+                           <p class="sell__title">Start Shopping Today</p>
+                           <p class="sell__desc">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                              the mattis, leo quam aliquet diamcongue is laoreet elit metus.</p>
+                           <a class="sell__btn sell__btn--right" href="#">Start Shopping</a>
+                        </div>
+                     </div>
                   </div>
                </div>
-            </div>
-            
-            <div class="sell__item" style="background-image: url(images/Home/sell__images/sell__right.jpg);">
-               <div class="sell__inner">
-                  <div class="sell__icon" style="background-image: url(images/Home/sell__images/icon_16948.png);"></div>
-                  <div class="sell__content">
-                     <p class="sell__title">Start Shopping Today</p>
-                     <p class="sell__desc">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
-                        the mattis, leo quam aliquet diamcongue is laoreet elit metus.</p>
-                     <a class="sell__btn sell__btn--right" href="#">Start Shopping</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+            </section>
 
 <!-- FEED BACK -->
 
-      <section class="feedback">
-         <div class="container">
-            <div class="feedback__inner">
-               <p class="feedback__title">Our Clients <span class="feedback__title-rightside">Feedback</span></p>
-               <p class="feedback__subtitle">
-                  Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
-               </p>
-               <div class="feedback__arrows"></div>
-               <div class="feedback__slider">
-
-                  <div class="feedback__item-wrapper">
-                     <div class="feedback__item"> <!-- item-1 -->
-                        <div class="feedback__item-upper">
-                           <a class="feedback__account" href="#">
-                              <div class="feedback__face feedback__face--left" style="background-image: url(images/Home/feedback/face1.jpg);"></div>
-                              <div class="feedback__info">
-                                 <span class="feedback__name">Taofiqul Hakim</span>
-                                 <span class="feedback__profession">Product Designer</span>
-                              </div>
-                           </a>
-                           <div class="feedback__icon"></div>
-                        </div>
-                        <p class="feedback__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, 
-                           leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, 
-                           justo ut scelerisque.
-                        </p>
+            <section class="feedback">  
+               <div class="container">
+                  <div class="feedback__top">
+                     <p class="feedback__title">Our Clients <span class="feedback__title--rightside">Feedback</span></p>
+                     <p class="feedback__subtitle">
+                        Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. 
+                        Lid est laborum dolo rumes fugats untras.
+                     </p>
+                     <div class="swiper-arrows">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                      </div>
                   </div>
-
-                  <div class="feedback__item-wrapper">
-                     <div class="feedback__item"> <!-- item-2 -->
-                        <div class="feedback__item-upper">
-                           <a class="feedback__account" href="#">
-                              <div class="feedback__face feedback__face--right" style="background-image: url(images/Home/feedback/face2.jpg);"></div>
-                              <div class="feedback__info">
-                                 <span class="feedback__name">Saifullah Al Murtafee</span>
-                                 <span class="feedback__profession">Product Designer</span>
-                              </div>
-                           </a>
-                           <div class="feedback__icon"></div>
+               </div>
+               <div class="swiper-container">
+                        
+                  <div class="swiper-wrapper">
+                     
+                     <article class="feedback__item"> 
+                        <div class="feedback__item-inner">
+                           <div class="feedback__item-upper d-flex">
+                              <a class="feedback__account d-flex" href="#">
+                                 <div class="feedback__face feedback__face--left" style="background-image: url(images/Home/feedback/face1.jpg);"></div>
+                                 <div class="feedback__info d-flex">
+                                    <span class="feedback__name">Taofiqul Hakim</span>
+                                    <span class="feedback__profession">Product Designer</span>
+                                 </div>
+                              </a>
+                              <div class="feedback__icon"></div>
+                           </div>
+                           <p class="feedback__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, 
+                              leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, 
+                              justo ut scelerisque.
+                           </p>
                         </div>
-                        <p class="feedback__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, 
-                           leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, 
-                           justo ut scelerisque.
-                        </p>
-                     </div>
+                     </article>
+
+                     <article class="feedback__item"> 
+                        <div class="feedback__item-inner">
+                           <div class="feedback__item-upper d-flex">
+                              <a class="feedback__account d-flex" href="#">
+                                 <div class="feedback__face feedback__face--right" style="background-image: url(images/Home/feedback/face2.jpg);"></div>
+                                 <div class="feedback__info d-flex">
+                                    <span class="feedback__name">Saifullah Al Murtafee</span>
+                                    <span class="feedback__profession">Product Designer</span>
+                                 </div>
+                              </a>
+                              <div class="feedback__icon"></div>
+                           </div>
+                           <p class="feedback__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, 
+                              leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, 
+                              justo ut scelerisque.
+                           </p>
+                        </div>
+                     </article>
+
+                     <article class="feedback__item"> 
+                        <div class="feedback__item-inner">
+                           <div class="feedback__item-upper d-flex">
+                              <a class="feedback__account d-flex" href="#">
+                                 <div class="feedback__face feedback__face--left" style="background-image: url(images/Home/feedback/face1.jpg);"></div>
+                                 <div class="feedback__info d-flex">
+                                    <span class="feedback__name">Taofiqul Hakim</span>
+                                    <span class="feedback__profession">Product Designer</span>
+                                 </div>
+                              </a>
+                              <div class="feedback__icon"></div>
+                           </div>
+                           <p class="feedback__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, 
+                              leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, 
+                              justo ut scelerisque.
+                           </p>
+                        </div>
+                     </article>
+
+                     <article class="feedback__item"> 
+                        <div class="feedback__item-inner">
+                           <div class="feedback__item-upper d-flex">
+                              <a class="feedback__account d-flex" href="#">
+                                 <div class="feedback__face feedback__face--right" style="background-image: url(images/Home/feedback/face2.jpg);"></div>
+                                 <div class="feedback__info d-flex">
+                                    <span class="feedback__name">Saifullah Al Murtafee</span>
+                                    <span class="feedback__profession">Product Designer</span>
+                                 </div>
+                              </a>
+                              <div class="feedback__icon"></div>
+                           </div>
+                           <p class="feedback__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, 
+                              leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, 
+                              justo ut scelerisque.
+                           </p>
+                        </div>
+                     </article>
+                     
                   </div>
 
-                  <div class="feedback__item-wrapper">
-                     <div class="feedback__item"> <!-- item-3 -->
-                        <div class="feedback__item-upper">
-                           <a class="feedback__account" href="#">
-                              <div class="feedback__face feedback__face--left" style="background-image: url(images/Home/feedback/face1.jpg);"></div>
-                              <div class="feedback__info">
-                                 <span class="feedback__name">Taofiqul Hakim</span>
-                                 <span class="feedback__profession">Product Designer</span>
-                              </div>
-                           </a>
-                           <div class="feedback__icon"></div>
-                        </div>
-                        <p class="feedback__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, 
-                           leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, 
-                           justo ut scelerisque.
-                        </p>
-                     </div>
-                  </div>
-
-                  <div class="feedback__item-wrapper">
-                     <div class="feedback__item"> <!-- item-4 -->
-                        <div class="feedback__item-upper">
-                           <a class="feedback__account" href="#">
-                              <div class="feedback__face feedback__face--right" style="background-image: url(images/Home/feedback/face2.jpg);"></div>
-                              <div class="feedback__info">
-                                 <span class="feedback__name">Saifullah Al Murtafee</span>
-                                 <span class="feedback__profession">Product Designer</span>
-                              </div>
-                           </a>
-                           <div class="feedback__icon"></div>
-                        </div>
-                        <p class="feedback__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, 
-                           leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, 
-                           justo ut scelerisque.
-                        </p>
-                     </div>
-                  </div>
-               </div>  <!-- /slider -->
-               <a class="feedback__btn-link btn-hover" href="#">View All Reviews</a>
-               
-            </div>
-         </div>
-      </section>
+               </div>  
+               <div class="feedback__btn-wrapper"><a class="feedback__btn-link btn-hover" href="#">View All Reviews</a></div>              
+            </section>
 
 <!-- LATEST NEWS -->
 
-      <section class="news">
-         <div class="container">
-            <div class="news__inner">
-               <p class="news__title">Latest <span class="news__title-rightside">News</span></p>
-               <p class="news__subtitle">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. 
-                  Lid est laborum dolo rumes fugats untras.
-               </p>
-               <div class="news__items">
+            <section class="news">
+               <div class="container">
+                  <div class="news__inner">
+                     <p class="news__title">Latest <span class="news__title-rightside">News</span></p>
+                     <p class="news__subtitle">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. 
+                        Lid est laborum dolo rumes fugats untras.
+                     </p>
+                     <div class="news__items d-flex">
 
-                  <div class="card-product"> <!-- item_1 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/news/11.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn">More Info</button>
-                              <button class="card-product__btn">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content news__content">
-                           <p class="card-product__title news__item-title">Web Design Trends in 2017</p>
-                           <p class="card-product__desc news__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <a class="news__footer-leftside" href="#">24 Feb 2017</a>
-                           <div class="news__footer-rightside">
-                              <div class="news__bubble">45</div>
-                              <div class="news__eye">345</div>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->   
-                  </div>  <!-- /item -->
+                        <article class="card-product news__size"> <!-- item_1 -->
+                           <div class="card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/news/11.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content news__content">
+                                 <p class="card-product__title news__item-title">Web Design Trends in 2017</p>
+                                 <p class="card-product__desc news__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <div class="card-product__footer news__footer d-flex">
+            
+                                 <time class="news__footer-leftside">24 Feb 2017</time>
+                                 <div class="news__footer-rightside d-flex">
+                                    <a class="news__bubble" href="#">45</a>
+                                    <span class="news__eye">345</span>
+                                 </div>
+            
+                              </div>  <!-- /footer -->
+                           </div>  <!-- /inner -->   
+                        </article>  <!-- /item -->
 
-                  <div class="card-product"> <!-- item_2 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/news/13.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn">More Info</button>
-                              <button class="card-product__btn">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content news__content">
-                           <p class="card-product__title news__item-title">The best advices to start your own project</p>
-                           <p class="card-product__desc news__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque</p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <a class="news__footer-leftside" href="#">15 Mar 2017</a>
-                           <div class="news__footer-rightside">
-                              <div class="news__bubble">45</div>
-                              <div class="news__eye">345</div>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item -->
+                        <article class="card-product news__size"> <!-- item_2 -->
+                           <div class="card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/news/13.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content news__content">
+                                 <p class="card-product__title news__item-title">The best advices to start your own project</p>
+                                 <p class="card-product__desc news__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque</p>
+                              </div>
+                              <div class="card-product__footer news__footer d-flex">
+            
+                                 <time class="news__footer-leftside">15 Mar 2017</time>
+                                 <div class="news__footer-rightside d-flex">
+                                    <a class="news__bubble" href="#">45</a>
+                                    <span class="news__eye">345</span>
+                                 </div>
+            
+                              </div>  <!-- /footer -->
+                           </div>  <!-- /inner -->
+                        </article>  <!-- /item -->
 
-                  <div class="card-product"> <!-- item_3 -->
-                     <div class="card-product__inner">
-                        <div class="card-product__image">
-                           <img class="card-product__img" src="images/Home/news/14.jpg" alt="space">
-                           <div class="card-product__background">
-                              <button class="card-product__btn">More Info</button>
-                              <button class="card-product__btn">Live Demo</button>
-                           </div>
-                        </div>
-                        <div class="card-product__content news__content">
-                           <p class="card-product__title news__item-title">Best Related Post Plugin</p>
-                           <p class="card-product__desc news__desc">
-                              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                              the mattis, leo quam aliquet congue.
-                           </p>
-                        </div>
-                        <div class="card-product__footer">
-      
-                           <a class="news__footer-leftside" href="#">20 Dec 2016</a>
-                           <div class="news__footer-rightside">
-                              <div class="news__bubble">45</div>
-                              <div class="news__eye">345</div>
-                           </div>
-      
-                        </div>  <!-- /footer -->
-                     </div>  <!-- /inner -->
-                  </div>  <!-- /item -->
-               </div>  <!-- /items-->
-            </div>  <!-- /inner -->
-         </div>
-      </section>
+                        <article class="card-product  news__size"> <!-- item_3 -->
+                           <div class="card-product__inner d-flex">
+                              <div class="card-product__image">
+                                 <img class="card-product__img" src="images/Home/news/14.jpg" alt="space">
+                                 <div class="card-product__background">
+                                    <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                    <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                 </div>
+                              </div>
+                              <div class="card-product__content news__content">
+                                 <p class="card-product__title news__item-title">Best Related Post Plugin</p>
+                                 <p class="card-product__desc news__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                 </p>
+                              </div>
+                              <div class="card-product__footer news__footer d-flex">
+            
+                                 <time class="news__footer-leftside">20 Dec 2016</time>
+                                 <div class="news__footer-rightside d-flex">
+                                    <a class="news__bubble" href="#">45</a>
+                                    <span class="news__eye">345</span>
+                                 </div>
+            
+                              </div>  <!-- /footer -->
+                           </div>  <!-- /inner -->
+                        </article>  <!-- /item -->
+                     </div>  <!-- /items-->
+                  </div>  <!-- /inner -->
+               </div>
+            </section>
 
 <!-- SUPPORT -->
 
-      <section class="support">
-         <div class="container">
-            <div class="support__inner">
-            
-               <div class="support__item support__item--left">
-                  <div class="support__image support__image--guarantee" style="background-image: url(images/Home/support/guarantee.png);"></div>
-                  <p class="support__desc">30 Days Money Back<a class="support__desc--guarantee" href="#">Guarantee</a></p>
-               </div>       
-         
-               <div class="support__item support__item--right">
-                  <div class="support__image support__image--support" style="background-image: url(images/Home/support/support.png);"></div>
-                  <p class="support__desc">Fast and Friendly<a class="support__desc--support" href="#">Support</a></p>
-               </div>
+            <section class="support">
+               <div class="container">
+                  <div class="support__inner d-flex">
+                  
+                     <div class="support__item support__item--left">
+                        <div class="support__image support__image--guarantee" style="background-image: url(images/Home/support/guarantee.png);"></div>
+                        <p class="support__desc">30 Days Money Back<span class="support__desc--guarantee">Guarantee</span></p>
+                     </div>       
                
-            </div>
-         </div>
-      </section>
+                     <div class="support__item support__item--right">
+                        <div class="support__image support__image--support" style="background-image: url(images/Home/support/support.png);"></div>
+                        <p class="support__desc">Fast and Friendly<span class="support__desc--support">Support</span></p>
+                     </div>
+                     
+                  </div>
+               </div>
+            </section>
 
 <!-- JOIN -->
 
-      <section class="join">
-         <div class="container">
-            <div class="join__inner">
-               <p class="join__title">Ready to Join Our Marketplace!</p>
-               <p class="join__subtitle">Over 25,000 designers and developers trust the MartPlace.</p>
-               <a class="join__btn-link btn-hover" href="#">Join Us Today</a>
-            </div>
-         </div>
+            <section class="join">
+               <div class="container">
+                  <div class="join__inner">
+                     <p class="join__title">Ready to Join Our Marketplace!</p>
+                     <p class="join__subtitle">Over 25,000 designers and developers trust the MartPlace.</p>
+                     <a class="join__btn-link btn-hover" href="#">Join Us Today</a>
+                  </div>
+               </div>
 
-      </section>
+            </section>
+      
+         </div>
 
 <!-- FOOTER -->
 
-      <footer class="footer">
-         <div class="footer__top">
-            <div class="container">
-               <div class="footer__inner">
+         <footer class="footer">
+            <div class="footer__top">
+               <div class="container">
+                  <div class="footer__inner d-flex">
 
-                  <div class="footer__column footer__column--first">
-                     <a class="footer__logo-link" href="#">
-                        <img class="footer__logo-image" src="images/Home/footer/footer-logo.png" alt="MartPlace">
-                     </a>
-                     <p class="footer__text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.</p>
-                  
-                     <a class="footer__link footer__link--phone" href="tel:+67898752235">Phone: +6789-875-2235</a>
-                     <a class="footer__link footer__link--email" href="mailto:support@aazztech.com">support@aazztech.com</a>
-                     <div class="footer__link footer__link--local">202 New Hampshire Avenue
-                        Northwest #100, New York-2573
-                     </div>
-                  </div>
-
-                  <div class="footer__column footer__column--second">
-                     <p class="footer__column-title">Our Company</p>
-                     <ul class="footer__column-list">
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">About Us</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">How It Work</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Affiliates</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Testimonials</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Contact Us</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Copyright Notice</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Blog</a></li>
-                     </ul>
-                  </div>
-
-                  <div class="footer__column footer__column--third">
-                     <p class="footer__column-title">Help Support</p>
-                     <ul class="footer__column-list">
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Support Forum</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Terms & Conditions</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Support Policy</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Refund Policy</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">FAQs</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Buyers Faq</a></li>
-                        <li class="footer__link-wrapper"><a class="footer__link" href="#">Sellers Faq</a></li>
-                     </ul>
-                  </div>
-
-                  <div class="footer__column footer__column--fourth">
-                     <p class="footer__column-title">Newsletter</p>
-                     <p class="footer__desc">Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</p>
-
-                     <form class="footer__form">
-                        <input class="footer__form-search" type="search" placeholder="Enter email" required>
-                        <button class="footer__form-btn" type="submit">Submit</button>
-                     </form>
-
-                     <div class="footer__socials">
-                        <a class="footer__link-facebook social-links" href="#"></a>
-                        <a class="footer__link-twitter social-links" href="#"></a>
-                        <a class="footer__link-google social-links" href="#"></a>
-                        <a class="footer__link-pinterest social-links" href="#"></a>
-                        <a class="footer__link-linkedin social-links" href="#"></a>
-                        <a class="footer__link-dribbble social-links" href="#"></a>
+                     <div class="footer__column d-flex footer__column--first">
+                        <a class="footer__logo-link" href="#">
+                           <img class="footer__logo-image" src="images/Home/footer/footer-logo.png" alt="MartPlace">
+                        </a>
+                        <p class="footer__text">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.</p>
+                        <address class="footer__address d-flex">
+                           <a class="footer__link footer__link--phone" href="tel:+67898752235">Phone: +6789-875-2235</a>
+                           <a class="footer__link footer__link--email" href="mailto:support@aazztech.com">support@aazztech.com</a>
+                           <a class="footer__link footer__link--local" href="#">202 New Hampshire Avenue <span>Northwest #100, New York-2573</span></a>
+                        </address>
                      </div>
 
-                  </div>
+                     <div class="footer__column d-flex footer__column--second">
+                        <p class="footer__column-title">Our Company</p>
+                        <ul class="footer__column-list">
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">About Us</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">How It Work</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Affiliates</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Testimonials</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Contact Us</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Copyright Notice</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Blog</a></li>
+                        </ul>
+                     </div>
 
+                     <div class="footer__column d-flex footer__column--third">
+                        <p class="footer__column-title">Help Support</p>
+                        <ul class="footer__column-list">
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Support Forum</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Terms & Conditions</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Support Policy</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Refund Policy</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">FAQs</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Buyers Faq</a></li>
+                           <li class="footer__link-wrapper"><a class="footer__link" href="#">Sellers Faq</a></li>
+                        </ul>
+                     </div>
+
+                     <div class="footer__column d-flex footer__column--fourth">
+                        <p class="footer__column-title">Newsletter</p>
+                        <p class="footer__desc">Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</p>
+
+                        <form class="footer__form">
+                           <label class="footer__form-label">
+                              <input class="footer__form-search" type="email" placeholder="Enter email" required>
+                              <button class="footer__form-btn" type="submit">Submit</button>
+                              <span class="footer__form-hidden">Enter your email here</span>
+                           </label>
+                        </form>
+
+                        <div class="footer__socials d-flex">
+                           <a class="footer__link-facebook social-links" href="#"></a>
+                           <a class="footer__link-twitter social-links" href="#"></a>
+                           <a class="footer__link-google social-links" href="#"></a>
+                           <a class="footer__link-pinterest social-links" href="#"></a>
+                           <a class="footer__link-linkedin social-links" href="#"></a>
+                           <a class="footer__link-dribbble social-links" href="#"></a>
+                        </div>
+                     </div>   <!-- /footer__column -->
+                  </div> <!-- /inner -->
                </div>
             </div>
-         </div>
-         
-         <div class="footer__lower">
-            <div class="container">
-               <p class="footer__copy">©2017 
-                  <a class="footer__copy--link" href="#">MartPlace.</a>
-                  All rights reserved. Created by
-                  <a class="footer__copy--link" href="#">AazzTech</a>
-               </p>
+            
+            <div class="footer__lower">
+               <div class="container">
+                  <p class="footer__copy">©2017 
+                     <a class="footer__copy--link" href="#">MartPlace.</a>
+                     All rights reserved. Created by
+                     <a class="footer__copy--link" href="#">AazzTech</a>
+                  </p>
+               </div>
             </div>
-         </div>
-      
-      </footer>
-
-   </main>
+         
+         </footer>
+      </main>
+   </div>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="js/libs.min.js"></script>

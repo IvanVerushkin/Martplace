@@ -1,0 +1,122 @@
+//---- DIGITAL PRODUCT ----//
+
+.digital-product {
+   position: relative;
+   background-image: linear-gradient(-90.0deg, #0030de 0%, #2e5afb 100%);
+   &__inner {
+      padding-top: 190px;
+      padding-bottom: 246px;
+      text-align: center;
+   }
+   &__title {
+      font-size: 60px;
+      font-weight: 400;
+      color: #f3f3f8;
+      &--top {
+         margin-bottom: 42px;
+         text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+      }
+      &--middle {
+         font-weight: 700;
+         margin-bottom: 27px;
+         text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+      }
+      &--bottom {
+         margin-bottom: 57px;
+         font-size: 20px;
+         line-height: 72px;
+         font-weight: 500;
+         color: #f3f3f8;
+      }
+   }
+   &__button {
+      padding: 17px 30px;
+      margin: 0 15px;
+      border: 1.0px solid #ffffff;
+      border-radius: 27.5px;
+      color: #ffffff;
+      background-color: inherit;
+      text-decoration: none;
+      &:hover {
+      background-color: #fff;
+      border-color: #193fc4;
+      color: #0674ec;
+      box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.1);
+      }
+   }
+   
+   &__terminal {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: -65px;
+      outline: transparent;
+   }
+   &__form {
+      position: relative;
+      justify-content: center;
+      padding: 40px;
+      border-radius: 6px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.07);
+      &::before {
+         content: '';
+         position: absolute;
+         top: -13px;
+         right: 15px;
+         height: 20px;
+         width: 97.4%;
+         background-color: #ffffff;
+         border-radius: 6px;
+         opacity: 0.5;
+      }
+      &::after {
+         content: '';
+         position: absolute;
+         top: -26px;
+         right: 30px;
+         height: 50px;
+         width: 94.8%;
+         background-color: #ffffff;
+         border-radius: 6px;
+         opacity: 0.5;
+      }
+   }  
+   &__search {
+      flex: 1 1 auto;
+      padding-left: 30px;
+      border: 1px solid #dcdcdc;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-right: none;
+      outline: transparent;
+      color: #676767;
+      &:focus {
+         border: 1px solid #0674ec;
+      }
+   }
+   &__dropdown {
+      max-width: 195px;
+      width: 100%;
+      padding-left: 20px;
+      border: 1px solid #dcdcdc;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      outline: transparent;
+      appearance: none;
+      background-image: url(/images/Home/lnr-chevron-down.svg);
+      background-repeat: no-repeat;
+      background-size: 13px;
+      background-position: 87% 50%;
+   }
+   &__btn {
+      padding: 18px 70px;
+      margin-left: 30px;
+      border: none;
+      border-radius: 4px;
+      background-color: #0674ec;
+      color: #fff;
+      outline: transparent;
+      cursor: pointer;
+   }
+}
