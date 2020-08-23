@@ -10,7 +10,6 @@
 
 .swiper-wrapper {
    display: -webkit-box;
-   // display: flex;
 }
 
 .swiper-arrows {
@@ -149,49 +148,5 @@
       border-radius: 27.5px;
       text-decoration: none;
       color: #ffffff;
-   }
-}
-
-.feedback__arrows {
-   position: relative;
-   z-index: 10;
-}
-
-.feedback .slick-arrow {
-   position: absolute;
-   width: 50px;
-   height: 50px;
-   top: 150px;
-   border-radius: 50%;
-   border: none;
-   font-size: 14px;
-   color: #7347c1;
-   outline: transparent;
-   cursor: pointer;
-   background-color: #fff;
-   box-shadow: 0px 4px 15px 0px rgba(67,67,67,0.15);
-
-   &--next {
-      right: -37px;
-     
-      &::before {
-         content: "\e876";
-         font-family: Linearicons-Free;
-      }
-      &:hover {
-         box-shadow: 0 0 5px 6px #7347c1;
-      }
-   }
-
-   &--prev {
-      left: -37px;
-   
-      &::before {
-         content: "\e875";
-         font-family: Linearicons-Free;
-      }
-      &:hover {
-         box-shadow: 0 0 5px 6px #0674ec;
-      }
    }
 }

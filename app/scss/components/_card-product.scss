@@ -83,6 +83,8 @@
       align-items: center;
    }
    &__price {
+      display: flex;
+      flex-wrap: nowrap;
       padding: 0px 14px;
       margin-right: 9px;
       background-color: #e4f0fc;
