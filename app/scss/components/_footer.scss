@@ -7,28 +7,90 @@
       background-color: #262b30;
       color: #ababab;
       font-size: 15px;
+      @include max-w(1000) {
+         padding: 70px 0 35px;
+      }
+      @include max-w(533) {
+         padding: 30px 0;
+      }
+      @include max-w(360) {
+         padding: 30px 0;
+      }
    }
    &__inner {
       justify-content: space-between;
+      @include max-w(1000) {
+         width: 100%;
+         flex-wrap: wrap;
+         margin: 0 auto;
+      }
+      @include max-w(800) {
+         margin-left: 20px;
+      }
+      @include max-w(600) {
+         margin-left: auto;
+      }
+      @include max-w(533) {
+         padding-left: 35px;
+         padding-right: 20px;
+      }
+      @include max-w(360) {
+         padding-left: 0;
+         padding-right: 0;
+      }
    }
    &__column {
       flex-direction: column;
       &--first {
          width: 270px;
          margin-right: 15px;
+         @include max-w(1000) {
+            margin-right: 45px;
+         }
+         @include max-w(600) {
+            margin-bottom: 30px;
+            width: auto;
+         }
       }
       &--second {
          width: 130px;
          margin: 12px auto 0;
+         @include max-w(600) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: auto;
+            margin: 0;
+            margin-bottom: 30px;
+         }
+         @include max-w(360) {
+            margin-bottom: 25px;
+
+         }
       }
       &--third {
          width: 145px;
          margin: 12px auto 0;
+         @include max-w(600) {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            margin: 0;
+            margin-bottom: 30px;
+         }
       }
       &--fourth {
          width: 360px;
          margin-top: 12px;
          margin-left: -6px;
+         @include max-w(1000) {
+            width: 670px;
+            margin-top: 60px;
+         }
+         @include max-w(600) {
+            margin-left: 0;
+            margin-top: 0;
+         }
       }
    }
    &__logo-link {
@@ -46,6 +108,18 @@
    }
    &__column-list {
       line-height: 27px;
+      @include max-w(600) {
+         display: flex;
+      }
+      @include max-w(533) {
+         display: flex;
+         flex-wrap: wrap;
+         width: 360px;
+         height: 100px;
+      }
+      @include max-w(360) {
+         width: auto;
+      }
    }
    &__address {
       flex-direction: column;
@@ -53,6 +127,9 @@
    }
    &__link-wrapper {
       margin-bottom: 5px;
+      @include max-w(600) {
+         margin-right: 15px;
+      }
    }
    &__link {
       color: #ababab;
@@ -89,25 +166,52 @@
             left: -30px;
             top: 15px;
          }
+         @include max-w(600) {
+            width: auto;
+         }
       }
    }
    &__desc {
       margin-bottom: 27px;
+      @include max-w(320) {
+         margin-bottom: 35px;
+      }
    }
    &__form {
       position: relative;
+      @include max-w(1000) {
+         width: 381px;
+      }
+      @include max-w(360) {
+         width: auto;
+      }
    }
    &__form-hidden {
       font-size: 0;
    }
    &__form-search {
       height: 48px;
-      width: 360px;
+      width: 323px;
       border: 1px solid #d9dfe5;
       border-radius: 23px;
       padding: 16px 75px 20px 25px;
       font-size: 15px;
       outline: transparent;
+      @include max-w(1000) {
+         width: 340px;
+         padding: 16px 40px 20px 25px;
+      }
+      @include max-w(533) {
+         width: 380px;
+         height: 43px;
+      }
+      @include max-w(360) {
+         width: 280px;
+         height: 40px;
+      }
+      @include max-w(320) {
+         width: 250px;
+      }
    }
    &__form-btn {
       position: absolute;
@@ -125,11 +229,44 @@
       &:hover {
          background-color: #7347c1;
       }
+      @include max-w(1000) {
+         right: -35px;
+      }
+      @include max-w(533) {
+         right: -5px;
+         height: 43px;
+      }
+      @include max-w(360) {
+         right: 0;
+         width: 82px;
+         height: 40px;
+      }
+      @include max-w(320) {
+         right: 1px;
+         height: 38px;
+         width: 75px;
+      }
    }
    &__socials {
       justify-content: space-between;
       max-width: 320px;
-      margin-top: 15px;
+      margin-top: 49px;
+      @include max-w(1000) {
+         max-width: 420px;
+         margin-top: 40px;
+      }
+      @include max-w(533) {
+         margin-top: 10px;
+         width: 388px;
+      }
+      @include max-w(360) {
+         width: 300px;
+         margin: auto;
+         margin-top: 30px;
+      }
+      @include max-w(320) {
+         width: 292px;
+      }
    }
    &__link-facebook {
       background-color: #395799;
@@ -175,6 +312,15 @@
       text-align: center;
       font-size: 15px;
       color: #999999;
+      @include max-w(533) {
+         padding: 20px 0;
+      }
+      @include max-w(360) {
+         padding: 10px 15px;
+      }
+      @include max-w(320) {
+         padding: 5px 0;
+      }
       &--link {
          text-decoration: none;
          color: #ffffff;

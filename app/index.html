@@ -21,7 +21,11 @@
                      <a class="header__logo" href="#">
                         <img class="header__logo-image" src="images/Home/header/logo.png" alt="MartPlace">
                      </a>
-
+                     <div class="header__middle d-flex">
+                        <a class="header__middle-link" href="#">Start Seling</a>
+                        <a class="header__middle-link" href="#">Forums</a>
+                        <a class="header__middle-link" href="#">Help</a>
+                     </div>
                      <div class="header__rightside d-flex">
                         <a class="header__link-seller btn-hover" href="#">Become a Seller</a>
                         
@@ -224,8 +228,9 @@
                            </div>
                         </div>
 
-                     </div>  <!-- right side -->
-                  </div>  <!-- inner -->
+                     </div>
+                     <div class="header__btn-menu"></div>
+                  </div>
                </div>
             </div>
 
@@ -233,7 +238,12 @@
                <div class="container">
                   <div class="header__bottom-inner d-flex">
                      <nav class="header__bottom-nav">
-                        <ul class="header__bottom-list d-flex">
+                        <div class="drop-menu__btn">
+                           <div class="drop-menu__line"></div>
+                           <div class="drop-menu__line"></div>
+                           <div class="drop-menu__line"></div>
+                        </div>
+                        <ul class="header__bottom-list">
 
                            <li class="header__bottom-item">
                               <a class="header__bottom-link header__bottom-link--home" href="#">Home</a>
@@ -365,30 +375,32 @@
                                           <li><a class="mega-menu__link" href="#">Menu & Footer Variation</a></li> 
                                        </ul>
                                     </li>
-                                 </ul> <!-- columns -->
-                              </nav> <!-- mega-menu -->
-                           </li> <!-- item -->
-                        </ul> <!-- bottom-list -->
-                     </nav> <!-- bottom-nav -->
+                                 </ul>
+                              </nav>
+                           </li>
+                        </ul>
+                     </nav>
                   
-                     <form class="header__form">
-                        <label class="header__form-label">
-                           <span class="header__form-hidden">Enter search text here</span>
-                           <input class="header__form-search" type="search" name="" placeholder="Search product here..." required>
-                        </label>
-                        <button class="header__form-btn" type="submit"></button>
-                     </form>
+                     <div class="header__wrapper-form">
+                        <form class="header__form">
+                           <label class="header__form-label">
+                              <span class="header__form-hidden">Enter search text here</span>
+                              <input class="header__form-search" type="search" name="" placeholder="Search product here..." required>
+                           </label>
+                           <button class="header__form-btn" type="submit"></button>
+                        </form>
+                     </div>
                   
                   </div>
                </div>
             </div>
          </header>
 
-         <main class="main">
+         <!-- <main class="main"> -->
 
 <!-- DIGITAL PRODUCTS -->
 
-            <section class="digital-product">
+            <!-- <section class="digital-product">
                <div class="container">
                   <div class="digital-product__inner">
                      <div class="digital-product__title">
@@ -420,11 +432,11 @@
                      </div>
                   </div>  
                </div>
-            </section>
+            </section> -->
 
 <!-- SERVICE -->
 
-            <section class="service">
+            <!-- <section class="service">
                <div class="container">
                   <div class="service__inner d-flex">
 
@@ -458,11 +470,11 @@
 
                   </div>
                </div>
-            </section>
+            </section> -->
 
 <!-- PRODUCTS SLIDER -->
 
-            <section class="products">
+            <!-- <section class="products">
                <div class="container">
                   <div class="products__inner">
                      <div class="products__control d-flex block-upper">
@@ -470,9 +482,9 @@
                         <div class="products__control-arrows"></div>
                      </div>
 
-                     <div class="products-slider"> <!-- for js -->
+                     <div class="products-slider"> 
                         
-                        <article class="products-slider__page"> <!--item-1 -->
+                        <article class="products-slider__page"> 
                            <div class="products-slider__image d-flex">
                               <img class="products-slider__img" src="images/Home/slider-products/photo_1.jpg" alt="image-1">
                               <div class="products-slider__background d-flex">
@@ -511,12 +523,12 @@
                                        <button class="products-slider__leftside-buys carts" type="button">634</button>
                                     </div>
                                     <div class="products-slider__rightside-stars rate-star"></div>
-                                 </footer>  <!-- /footer -->
-                              </div>  <!-- /inner -->
-                           </div>  <!-- /info -->
+                                 </footer>
+                              </div>
+                           </div>
                         </article>
 
-                        <article class="products-slider__page"> <!-- item-2 -->
+                        <article class="products-slider__page">
                            <div class="products-slider__image d-flex">
                               <img class="products-slider__img" src="images/Home/slider-products/photo_2.jpg" alt="image-2">
                               <div class="products-slider__background d-flex">
@@ -556,11 +568,11 @@
                                     </div>
                                     <div class="products-slider__rightside-stars rate-star"></div>
                                  </footer>
-                              </div>  <!-- /inner -->
-                           </div>  <!-- /info -->
+                              </div>
+                           </div>
                         </article> 
 
-                        <article class="products-slider__page"> <!-- item-3 -->
+                        <article class="products-slider__page">
                            <div class="products-slider__image d-flex">
                               <img class="products-slider__img" src="images/Home/slider-products/photo_3.jpg" alt="image-3">
                               <div class="products-slider__background d-flex">
@@ -600,17 +612,17 @@
                                     </div>
                                     <div class="products-slider__rightside-stars rate-star"></div>
                                  </footer>
-                              </div>  <!-- /inner -->
-                           </div>  <!-- /info -->
-                        </article>                
-                     </div>  <!-- /products-slider -->
-                  </div>  <!-- /inner -->
+                              </div>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
                </div>
-            </section>
+            </section> -->
 
 <!-- RELEASE PRODUCTS -->
 
-            <section class="newproducts">
+            <!-- <section class="newproducts">
                <div class="container">
                   <div class="newproducts__inner">
                      <div class="newproducts__upper block-upper">
@@ -640,7 +652,7 @@
 
                      <div class="newproducts__items">
 
-                        <article class="card-product mix category-wordpress category-plugins" data-order="1" data-rate="1" data-price="20" data-test="8"> <!-- item_1 -->
+                        <article class="card-product mix category-wordpress category-plugins" data-order="1" data-rate="1" data-price="20" data-test="8">
                            <div class="card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/newproducts/1.jpeg" alt="space">
@@ -675,10 +687,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">246</button>
                               </footer>
-                           </div>  <!-- /inner -->   
+                           </div>
                         </article>  
 
-                        <article class="card-product mix category-psd category-site" data-order="2" data-rate="3" data-price="18" data-test="7"> <!-- item_2 -->
+                        <article class="card-product mix category-psd category-site" data-order="2" data-rate="3" data-price="18" data-test="7">
                            <div class="card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/newproducts/2.jpg" alt="space">
@@ -713,10 +725,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">50</button>
                               </footer>
-                           </div>  <!-- /inner -->
+                           </div>
                         </article>  
 
-                        <article class="card-product mix category-software category-site category-psd" data-order="3" data-rate="2" data-price="10" data-test="1"> <!-- item_3 -->
+                        <article class="card-product mix category-software category-site category-psd" data-order="3" data-rate="2" data-price="10" data-test="1">
                            <div class="card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/newproducts/3.jpg" alt="space">
@@ -752,10 +764,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">68</button>
                               </footer>
-                           </div>  <!-- /inner -->
+                           </div>
                         </article>  
 
-                        <article class="card-product mix category-wordpress category-plugins" data-order="4" data-rate="2" data-price="10-50"> <!-- item_4 -->
+                        <article class="card-product mix category-wordpress category-plugins" data-order="4" data-rate="2" data-price="10-50">
                            <div class="card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/newproducts/4.jpg" alt="space">
@@ -791,10 +803,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">45</button>
                               </footer>
-                           </div>  <!-- /inner -->
+                           </div>
                         </article>  
 
-                        <article class="card-product mix category-psd category-landing" data-order="5" data-rate="3" data-price="50"> <!-- item_5 -->
+                        <article class="card-product mix category-psd category-landing" data-order="5" data-rate="3" data-price="50">
                            <div class="card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/newproducts/5.jpg" alt="space">
@@ -829,10 +841,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">50</button>
                               </footer>
-                           </div>  <!-- /inner -->
+                           </div>
                         </article>
 
-                        <article class="card-product mix category-software category-joomla" data-order="6" data-rate="4" data-price="10"> <!-- item_6 -->
+                        <article class="card-product mix category-software category-joomla" data-order="6" data-rate="4" data-price="10">
                            <div class="card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/newproducts/6.jpg" alt="space">
@@ -870,17 +882,17 @@
                               </footer>
                            </div>
                         </article>
-                     </div>  <!-- /items -->
+                     </div>
 
                      <button class="newproducts__lower-btn btn-hover d-flex" type="button" data-filter="all">All New Products</button>
                      
-                  </div> <!-- /newproducts__inner -->  
-               </div>  <!-- /container -->
-            </section>
+                  </div>
+               </div>
+            </section> -->
 
 <!-- FOLLOWERS - SLIDER -->
 
-            <section class="followers">
+            <!-- <section class="followers">
                <div class="container">
                   <div class="followers__inner">   
                      <div class="followers__control d-flex block-upper">
@@ -890,7 +902,7 @@
 
                      <div class="followers__slider">
 
-                        <article class="followers-card card-product slider-card"> <!-- item-1 -->
+                        <article class="followers-card card-product slider-card">
                            <div class="followers-card__inner card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/followers/7.jpg" alt="space">
@@ -926,10 +938,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">246</button>
                               </footer>
-                           </div>  <!-- /inner -->
+                           </div>
                         </article>  
 
-                        <article class="followers-card card-product slider-card"> <!-- item-2 -->
+                        <article class="followers-card card-product slider-card">
                            <div class="followers-card__inner card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/followers/8.jpg" alt="space">
@@ -964,10 +976,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">50</button>
                               </footer>
-                           </div>  <!-- /inner -->
+                           </div>
                         </article>  
 
-                        <article class="followers-card card-product slider-card"> <!-- item-3 -->
+                        <article class="followers-card card-product slider-card">
                            <div class="followers-card__inner card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/followers/9.jpg" alt="space">
@@ -1003,10 +1015,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">68</button>
                               </footer>
-                           </div>  <!-- /inner -->
+                           </div>
                         </article>
 
-                        <article class="followers-card card-product slider-card"> <!-- item-4 -->
+                        <article class="followers-card card-product slider-card">
                            <div class="followers-card__inner card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/followers/10.jpg" alt="space">
@@ -1042,10 +1054,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">81</button>
                               </footer>
-                           </div>  <!-- /inner -->
+                           </div>
                         </article>
 
-                        <article class="followers-card card-product slider-card"> <!-- item-5 -->
+                        <article class="followers-card card-product slider-card">
                            <div class="followers-card__inner card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/followers/11.jpg" alt="space">
@@ -1080,10 +1092,10 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">55</button>
                               </footer>
-                           </div>  <!-- /inner -->
+                           </div>
                         </article>
 
-                        <article class="followers-card card-product slider-card"> <!-- item-6 -->
+                        <article class="followers-card card-product slider-card">
                            <div class="followers-card__inner card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/followers/12.jpg" alt="space">
@@ -1119,16 +1131,16 @@
                                  </div>
                                  <button class="card-product__buys carts" type="button">44</button>
                               </footer>
-                           </div>  <!-- /inner -->
-                        </article>  <!-- /item 6-->
-                     </div>  <!-- /followers slider -->
-                  </div>  <!-- /followers inner -->
-               </div>  <!-- /container -->
-            </section>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
+               </div>
+            </section> -->
 
 <!-- INFO -->
 
-            <section class="info">
+            <!-- <section class="info">
                <div class="container">
                   <div class="info__inner d-flex">
 
@@ -1157,11 +1169,11 @@
                      </div>
                   </div>
                </div>
-            </section>
+            </section> -->
 
 <!-- ADVANTAGES -->
 
-            <section class="advantages">
+            <!-- <section class="advantages">
                <div class="container">
                   <div class="advantages__inner">
                      <div class="advantages__title">Why Choose<span class="advantages__title-rightside">MartPlace</span></div>
@@ -1219,14 +1231,14 @@
                               congue is laoreet elit metus.</p>
                         </div>
 
-                     </div>  <!-- /body -->
-                  </div>  <!-- /inner -->
+                     </div>
+                  </div>
                </div>
-            </section>
+            </section> -->
 
 <!-- SELL -->
 
-            <section class="sell">
+            <!-- <section class="sell">
                <div class="sell__wrapper d-flex">
 
                   <div class="sell__item" style="background-image: url(images/Home/sell__images/sell__left.jpg);">
@@ -1253,11 +1265,11 @@
                      </div>
                   </div>
                </div>
-            </section>
+            </section> -->
 
 <!-- FEED BACK -->
 
-            <section class="feedback">  
+            <!-- <section class="feedback">  
                <div class="container">
                   <div class="feedback__top">
                      <p class="feedback__title">Our Clients <span class="feedback__title--rightside">Feedback</span></p>
@@ -1355,11 +1367,11 @@
 
                </div>  
                <div class="feedback__btn-wrapper"><a class="feedback__btn-link btn-hover" href="#">View All Reviews</a></div>              
-            </section>
+            </section> -->
 
 <!-- LATEST NEWS -->
 
-            <section class="news">
+            <!-- <section class="news">
                <div class="container">
                   <div class="news__inner">
                      <p class="news__title">Latest <span class="news__title-rightside">News</span></p>
@@ -1368,7 +1380,7 @@
                      </p>
                      <div class="news__items d-flex">
 
-                        <article class="card-product news__size"> <!-- item_1 -->
+                        <article class="card-product news__size">
                            <div class="card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/news/11.jpg" alt="space">
@@ -1392,11 +1404,11 @@
                                     <span class="news__eye">345</span>
                                  </div>
             
-                              </div>  <!-- /footer -->
-                           </div>  <!-- /inner -->   
-                        </article>  <!-- /item -->
+                              </div>
+                           </div> 
+                        </article>
 
-                        <article class="card-product news__size"> <!-- item_2 -->
+                        <article class="card-product news__size">
                            <div class="card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/news/13.jpg" alt="space">
@@ -1418,11 +1430,11 @@
                                     <span class="news__eye">345</span>
                                  </div>
             
-                              </div>  <!-- /footer -->
-                           </div>  <!-- /inner -->
-                        </article>  <!-- /item -->
+                              </div>
+                           </div>
+                        </article>
 
-                        <article class="card-product  news__size"> <!-- item_3 -->
+                        <article class="card-product  news__size">
                            <div class="card-product__inner d-flex">
                               <div class="card-product__image">
                                  <img class="card-product__img" src="images/Home/news/14.jpg" alt="space">
@@ -1446,17 +1458,17 @@
                                     <span class="news__eye">345</span>
                                  </div>
             
-                              </div>  <!-- /footer -->
-                           </div>  <!-- /inner -->
-                        </article>  <!-- /item -->
-                     </div>  <!-- /items-->
-                  </div>  <!-- /inner -->
+                              </div>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
                </div>
-            </section>
+            </section> -->
 
 <!-- SUPPORT -->
 
-            <section class="support">
+            <!-- <section class="support">
                <div class="container">
                   <div class="support__inner d-flex">
                   
@@ -1472,11 +1484,11 @@
                      
                   </div>
                </div>
-            </section>
+            </section> -->
 
 <!-- JOIN -->
 
-            <section class="join">
+            <!-- <section class="join">
                <div class="container">
                   <div class="join__inner">
                      <p class="join__title">Ready to Join Our Marketplace!</p>
@@ -1485,7 +1497,7 @@
                   </div>
                </div>
 
-            </section>
+            </section> -->
       
          </div>
 
@@ -1540,7 +1552,7 @@
 
                         <form class="footer__form">
                            <label class="footer__form-label">
-                              <input class="footer__form-search" type="email" placeholder="Enter email" required>
+                              <input class="footer__form-search" type="email"  name="" placeholder="Enter email" required>
                               <button class="footer__form-btn" type="submit">Submit</button>
                               <span class="footer__form-hidden">Enter your email here</span>
                            </label>

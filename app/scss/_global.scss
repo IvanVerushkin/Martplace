@@ -103,12 +103,12 @@ body {
    box-shadow: 0px 5px 40px 0px rgba(82,85,90,0.2);
    border-radius: 0px 0px 3px 3px;
    border-top: 1px solid #0674ec;
-   z-index: 10;
+   z-index: 50;
    transition: all .3s;
    &::before {
       content: '';
       position: absolute;
-      z-index: 5;
+      z-index: 50;
    }
 }
 
@@ -175,6 +175,36 @@ body {
    }
 }
 
+.tag {
+   margin-right: 7px;
+   padding: 5px 14px;
+   font-size: 15px;
+   color: #868c96;
+   background-color: #f1f3f6;
+   border-radius: 14px;
+   outline: transparent;
+   border: none;
+   transition: all 0.3s;
+   text-decoration: none;
+   cursor: pointer;
+   &:hover {
+      color: #fff;
+      background-color: #0674ec;
+   }
+}
+
+@mixin max-w($width) {
+   @media only screen and (max-width: $width+ "px") {
+      @content;
+   }
+}
+  
+@mixin min-w($width) {
+   @media only screen and (min-width: $width+ "px") {
+      @content;
+   }
+}
+
 .social-links {
    width: 42px;
    height: 42px;
@@ -191,22 +221,8 @@ body {
    &:hover {
       box-shadow: 0 0 10px 8px #fff; 
    }
-}
-
-.tag {
-   margin-right: 7px;
-   padding: 5px 14px;
-   font-size: 15px;
-   color: #868c96;
-   background-color: #f1f3f6;
-   border-radius: 14px;
-   outline: transparent;
-   border: none;
-   transition: all 0.3s;
-   text-decoration: none;
-   cursor: pointer;
-   &:hover {
-      color: #fff;
-      background-color: #0674ec;
+   @include max-w(320) {
+      width: 40px;
+      height: 40px;
    }
 }

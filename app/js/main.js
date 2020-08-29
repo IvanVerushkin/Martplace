@@ -28,9 +28,6 @@ $(function(){
       spacing: "3px"
    });
 
-   var mixer = mixitup('.newproducts__items');
-
-
    let swiper = new Swiper('.swiper-container', {
       wrapperClass: 'swiper-wrapper',
       slideClass: 'feedback__item',
@@ -45,5 +42,14 @@ $(function(){
   
    });
 
+   $('.drop-menu__btn').on('click',function(){
+      $('.header__bottom-list').slideToggle();
+   });
+
+   $('.header__btn-menu').on('click',function (){
+      $('.header__rightside').toggleClass('active');
+   });
+
+   var mixer = mixitup('.newproducts__items');
 
 });
