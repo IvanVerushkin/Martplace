@@ -28,6 +28,7 @@ body {
    line-height: 30px;
    font-weight: 400;
    color: #555555;
+   overflow-x: hidden;
 }
 
 .wrapper {
@@ -103,12 +104,10 @@ body {
    box-shadow: 0px 5px 40px 0px rgba(82,85,90,0.2);
    border-radius: 0px 0px 3px 3px;
    border-top: 1px solid #0674ec;
-   z-index: 50;
    transition: all .3s;
    &::before {
       content: '';
       position: absolute;
-      z-index: 50;
    }
 }
 

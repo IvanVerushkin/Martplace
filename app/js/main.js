@@ -42,12 +42,16 @@ $(function(){
   
    });
 
-   $('.drop-menu__btn').on('click',function(){
+   $('.drop-menu__btn').on('click', function(){
       $('.header__bottom-list').slideToggle();
    });
 
-   $('.header__btn-menu').on('click',function (){
+   $('.header__btn-menu').on('click', function (){
       $('.header__rightside').toggleClass('active');
+   });
+
+   $('.header__bottom-item').on('click', function (){
+      $('.nav-menu__list').toggleClass('active');
    });
 
    var mixer = mixitup('.newproducts__items');
