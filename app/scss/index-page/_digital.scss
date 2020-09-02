@@ -7,19 +7,62 @@
       padding-top: 190px;
       padding-bottom: 246px;
       text-align: center;
+      @include max-w(768) {
+         padding: 120px 0 190px;
+      }
+      @include max-w(649) {
+         padding: 100px 0 160px;
+      }
+      @include max-w(599) {
+         padding: 90px 0 150px;
+      }
+      @include max-w(533) {
+         padding: 80px 0 130px;
+      }
+      @include max-w(480) {
+         padding: 60px 0 110px;
+      }
+      @include max-w(360) {
+         padding: 40px 0 120px;
+      }
    }
    &__title {
       font-size: 60px;
       font-weight: 400;
       color: #f3f3f8;
+      @include max-w(768) {
+         font-size: 57px;
+      }
+      @include max-w(649) {
+         font-size: 52px;
+      }
+      @include max-w(480) {
+         font-size: 44px;  
+      }
+      @include max-w(360) {
+         font-size: 34px;
+      }
+      @include max-w(320) {
+         font-size: 32px;
+      }
       &--top {
          margin-bottom: 42px;
          text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+         @include max-w(360) {
+            margin-bottom: 30px;
+         }
       }
       &--middle {
          font-weight: 700;
          margin-bottom: 27px;
          text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+         @include max-w(768) {
+            line-height: 1.1;
+            margin-bottom: 20px;
+         }
+         @include max-w(649) {
+            line-height: 1.3;
+         }
       }
       &--bottom {
          margin-bottom: 57px;
@@ -27,6 +70,22 @@
          line-height: 72px;
          font-weight: 500;
          color: #f3f3f8;
+         @include max-w(768) {
+            line-height: 2.2;
+         }
+         @include max-w(480) {
+            font-size: 18px;
+         }
+         @include max-w(480) {
+            margin-bottom: 50px;
+         }
+         @include max-w(360) {
+            margin-bottom: 40px;
+            font-size: 13px;
+         }
+         @include max-w(320) {
+            font-size: 12px;
+         }
       }
    }
    &__button {
@@ -38,10 +97,24 @@
       background-color: inherit;
       text-decoration: none;
       &:hover {
-      background-color: #fff;
-      border-color: #193fc4;
-      color: #0674ec;
-      box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.1);
+         background-color: #fff;
+         border-color: #193fc4;
+         color: #0674ec;
+         box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.1);
+      }
+      @include max-w(768) {
+         padding: 13px 24px;
+      }
+      @include max-w(480) {
+         padding: 10px 17px;  
+      }
+      @include max-w(360) {
+         padding: 10px 12px;
+         margin: 0 4px;
+         font-size: 14px;  
+      }
+      @include max-w(320) {
+         font-size: 12px;
       }
    }
    
@@ -51,6 +124,21 @@
       left: 0;
       bottom: -65px;
       outline: transparent;
+      @include max-w(649) {
+         bottom: -55px;  
+      }
+      @include max-w(599) {
+         bottom: -45px;  
+      }
+      @include max-w(533) {
+         bottom: -40px;  
+      }
+      @include max-w(480) {
+         bottom: -35px;  
+      }
+      @include max-w(360) {
+         bottom: -70px;  
+      }
    }
    &__form {
       position: relative;
@@ -69,6 +157,24 @@
          background-color: #ffffff;
          border-radius: 6px;
          opacity: 0.5;
+         @include max-w(768) {
+            right: 10px;
+         }
+         @include max-w(649) {
+            right: 11px;
+            top: -9px;
+            width: 96.4%;
+         }
+         @include max-w(533) {
+            right: 8px;
+            top: -9px;
+         }
+         @include max-w(480) {
+            top: -8px;
+         }
+         @include max-w(360) {
+            width: 95.4%;
+         }
       }
       &::after {
          content: '';
@@ -80,6 +186,46 @@
          background-color: #ffffff;
          border-radius: 6px;
          opacity: 0.5;
+         @include max-w(768) {
+            right: 19px;
+         }
+         @include max-w(649) {
+            right: 21px;
+            top: -18px;
+            width: 92.8%;
+         }
+         @include max-w(533) {
+            right: 17px;
+            top: -17px;
+         }
+         @include max-w(480) {
+            right: 16px;
+            top: -15px;
+         }
+         @include max-w(360) {
+            width: 90.8%;
+         }
+         @include max-w(320) {
+            width: 89.8%;
+            right: 15px;
+         }
+      }
+      @include max-w(768) {
+         padding: 26px;
+      }
+      @include max-w(649) {
+         padding: 21px;  
+      }
+      @include max-w(533) {
+         padding: 15px;
+      }
+      @include max-w(480) {
+         padding: 15px 13px;  
+      }
+      @include max-w(360) {
+         display: block;
+         padding: 13px;
+         text-align: center;
       }
    }  
    &__search {
@@ -93,6 +239,18 @@
       color: #676767;
       &:focus {
          border: 1px solid #0674ec;
+      }
+      @include max-w(649) {
+         padding-left: 15px;  
+      }
+      @include max-w(480) {
+         font-size: 14px;  
+      }
+      @include max-w(360) {
+         font-size: 15px;
+         padding: 6px;
+         margin-bottom: 8px;
+         width: 100%;
       }
    }
    &__dropdown {
@@ -108,6 +266,28 @@
       background-repeat: no-repeat;
       background-size: 13px;
       background-position: 87% 50%;
+      @include max-w(599) {
+         padding-left: 10px;
+         max-width: 170px;
+         background-position: 92% 50%;
+      }
+      @include max-w(533) {
+         max-width: 152px;  
+      }
+      @include max-w(480) {
+         max-width: 145px;
+         font-size: 15px;
+      }
+      @include max-w(360) {
+         max-width: 100%;
+         font-size: 16px;
+         margin-bottom: 8px;
+         padding: 5px;
+         background-position: 94% 50%;
+      }
+      @include max-w(320) {
+         font-size: 15px;
+      }
    }
    &__btn {
       padding: 18px 70px;
@@ -118,5 +298,27 @@
       color: #fff;
       outline: transparent;
       cursor: pointer;
+      z-index: 2;
+      @include max-w(768) {
+         padding: 15px 30px;
+      }
+      @include max-w(649) {
+         padding: 15px 19px;
+         margin-left: 20px;
+      }
+      @include max-w(599) {
+         padding: 10px 7px;
+         margin-left: 10px;
+      }
+      @include max-w(480) {
+         padding: 10px 6px;
+         font-size: 12px;
+      }
+      @include max-w(360) {
+         width: 100%;
+         padding: 6px;
+         font-size: 15px;
+         margin-left: 0;
+      }
    }
 }
