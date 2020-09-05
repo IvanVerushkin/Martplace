@@ -51,6 +51,18 @@ body {
    padding: 0 15px;
 }
 
+@mixin max-w($width) {
+   @media only screen and (max-width: $width+ "px") {
+      @content;
+   }
+}
+  
+@mixin min-w($width) {
+   @media only screen and (min-width: $width+ "px") {
+      @content;
+   }
+}
+
 .block-upper {
    position: relative;
    display: flex;
@@ -62,6 +74,29 @@ body {
    color: #000000;
    background-color: #ffffff;
    box-shadow: 0px 2px 4px 0px rgba(107,110,115,0.1);
+   @include max-w(1024) {
+      padding: 17px 30px;
+      margin-bottom: 40px;
+   }
+   @include max-w(768) {
+      margin-bottom: 50px;
+      text-align: center;
+   }
+   @include max-w(650) {
+      font-size: 24px;
+      padding: 17px 10px;
+   }
+   @include max-w(480) {
+      font-size: 22px;
+   }
+   @include max-w(375) {
+      font-size: 18px;
+      padding: 8px 10px;
+   }
+   @include max-w(320) {
+      font-size: 15px;
+      padding: 8px 5px;
+   }
 }
 
 .hearts {
@@ -124,6 +159,10 @@ body {
       width: 100%;
       border-radius: 4px 4px 0px 0px;
       object-fit: cover;
+      @include max-w(768) {
+         height: auto;
+         border-radius: 0;
+      }
    }
    &__background {
       position: absolute;
@@ -139,6 +178,16 @@ body {
       &:hover {
          opacity: 1;
       }
+   }
+   @include max-w(768) {
+      max-width: 75%;
+      margin: auto;
+   }
+   @include max-w(640) {
+      max-width: 80%;
+   }
+   @include max-w(414) {
+      max-width: 90%;
    }
 }
 
@@ -190,17 +239,13 @@ body {
       color: #fff;
       background-color: #0674ec;
    }
-}
-
-@mixin max-w($width) {
-   @media only screen and (max-width: $width+ "px") {
-      @content;
+   @include max-w(650) {
+      padding: 5px 11px;
+      margin-right: 5px;
+      font-size: 11px;     
    }
-}
-  
-@mixin min-w($width) {
-   @media only screen and (min-width: $width+ "px") {
-      @content;
+   @include max-w(360) {
+      font-size: 14px;
    }
 }
 

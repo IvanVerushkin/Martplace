@@ -13,6 +13,9 @@
       @include max-w(649) {
          padding: 100px 0 160px;
       }
+      @include max-w(640) {
+         padding: 30px 0 140px;
+      }
       @include max-w(599) {
          padding: 90px 0 150px;
       }
@@ -23,7 +26,7 @@
          padding: 60px 0 110px;
       }
       @include max-w(360) {
-         padding: 40px 0 120px;
+         padding: 40px 0 130px;
       }
    }
    &__title {
@@ -35,6 +38,9 @@
       }
       @include max-w(649) {
          font-size: 52px;
+      }
+      @include max-w(640) {
+         font-size: 35px;
       }
       @include max-w(480) {
          font-size: 44px;  
@@ -73,10 +79,11 @@
          @include max-w(768) {
             line-height: 2.2;
          }
-         @include max-w(480) {
-            font-size: 18px;
+         @include max-w(640) {
+            font-size: 16px;
          }
          @include max-w(480) {
+            font-size: 18px;
             margin-bottom: 50px;
          }
          @include max-w(360) {
@@ -105,8 +112,21 @@
       @include max-w(768) {
          padding: 13px 24px;
       }
+      @include max-w(640) {
+         padding: 11px 13px;
+      }
       @include max-w(480) {
          padding: 10px 17px;  
+      }
+      @include max-w(414) {
+         padding: 10px 15px;
+         margin: 0 7px;
+      }
+      @include max-w(411) {
+         padding: 10px 14px;
+      }
+      @include max-w(375) {
+         padding: 10px 13px; 
       }
       @include max-w(360) {
          padding: 10px 12px;
@@ -211,10 +231,14 @@
          }
       }
       @include max-w(768) {
+         width: 99.9%;
          padding: 26px;
       }
       @include max-w(649) {
          padding: 21px;  
+      }
+      @include max-w(640) {
+         padding: 18px;
       }
       @include max-w(533) {
          padding: 15px;
@@ -222,7 +246,7 @@
       @include max-w(480) {
          padding: 15px 13px;  
       }
-      @include max-w(360) {
+      @include max-w(411) {
          display: block;
          padding: 13px;
          text-align: center;
@@ -245,6 +269,14 @@
       }
       @include max-w(480) {
          font-size: 14px;  
+      }
+      @include max-w(414) {
+         font-size: 13px;
+      }
+      @include max-w(375) {
+         width: 100%;
+         border: 1px solid #dcdcdc;
+         font-size: 16px;
       }
       @include max-w(360) {
          font-size: 15px;
@@ -278,6 +310,15 @@
          max-width: 145px;
          font-size: 15px;
       }
+      @include max-w(414) {
+         font-size: 13px;
+         max-width: 37%;
+      }
+      @include max-w(375) {
+         max-width: 66%;
+         font-size: 15px;
+         height: 32px;
+      }
       @include max-w(360) {
          max-width: 100%;
          font-size: 16px;
@@ -306,6 +347,9 @@
          padding: 15px 19px;
          margin-left: 20px;
       }
+      @include max-w(640) {
+         padding: 12px 19px;
+      }
       @include max-w(599) {
          padding: 10px 7px;
          margin-left: 10px;
@@ -313,6 +357,10 @@
       @include max-w(480) {
          padding: 10px 6px;
          font-size: 12px;
+      }
+      @include max-w(375) {
+         padding: 8px 10px;
+         font-size: 14px;
       }
       @include max-w(360) {
          width: 100%;

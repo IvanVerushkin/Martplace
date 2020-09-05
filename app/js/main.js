@@ -7,7 +7,16 @@ $(function(){
       slidesToScroll: 1,
       prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"></button>',
       nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"></button>',
-      appendArrows:$('.products__control-arrows')
+      appendArrows:$('.products__control-arrows'),
+      responsive:[
+         {
+            breakpoint: 769,
+            settings: {
+            arrows: false,
+            dots: true
+           }
+         }
+      ]
    });
 
    $('.followers__slider').slick({

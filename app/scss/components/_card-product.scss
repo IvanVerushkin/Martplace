@@ -10,6 +10,12 @@
    }
    &__content {
       padding: 34px 25px 27px 31px;
+      @include max-w(768) {
+         padding: 40px 25px 27px 34px;     
+      }
+      @include max-w(320) {
+         padding: 25px 20px 27px 20px;
+      }
    }
    &__title {
       margin-bottom: 24px;
@@ -17,6 +23,21 @@
       line-height: 7px;
       font-weight: 500;
       color: #000000;
+      @include max-w(1024) {
+         font-size: 19px;
+      }
+      @include max-w(768) {
+         font-size: 22px;
+      }
+      @include max-w(375) {
+         font-size: 16px;
+      }
+      @include max-w(360) {
+         font-size: 18px;
+      }
+      @include max-w(320) {
+         font-size: 16px;
+      }
    }
    &__subtitle {
       align-items: center;
@@ -38,6 +59,9 @@
    &__account-name {
       font-size: 15px;
       color: #000000;
+      @include max-w(768) {
+         font-size: 17px;  
+      }
    }
    &__plugin {
       padding-left: 20px;
@@ -52,6 +76,9 @@
    }
    &__plugin-name {
       font-size: 15px;
+      @include max-w(768) {
+         font-size: 17px;  
+      }
    }
    &__psd {
       margin-left: 6px;
@@ -76,6 +103,9 @@
       align-items: center;
       padding: 14px 22px 14px 33px;
       border-top: 1px solid #ececec;
+      @include max-w(1024) {
+         padding: 14px 5px;
+      }
    } 
    &__leftside {
       justify-content: space-between;

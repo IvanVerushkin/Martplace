@@ -198,11 +198,7 @@
          .user__menu {
          opacity: 1;
          visibility: visible;
-         top: 85px;
          z-index: 30;
-         @include max-w(320) {
-            top: 102px;
-         }
          }
       }
    }
@@ -247,12 +243,21 @@
       padding: 19px 11px;
       font-size: 15px;
       line-height: 23px;
+      @include max-w(360) {
+         top: 124px;
+      }
+      @include max-w(320) {
+         top: 102px;
+      }
       &::before {
          content: ''; 
          top: -18px;
          right: 25px;
          border: 8px solid transparent;
          border-bottom: 10px solid #0674ec;
+         @include max-w(360) {
+            right: 135px;
+         }
          @include max-w(320) {
             right: 146px;
          }

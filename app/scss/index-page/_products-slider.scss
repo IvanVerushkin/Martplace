@@ -4,6 +4,12 @@
    background-color: #EFF1F5;
    &__inner {
       padding-top: 118px;
+      @include max-w(1024) {
+         padding-top: 60px;
+      }
+      @include max-w(480) {
+         padding-top: 40px;  
+      }
    }
    &__control {
       justify-content: space-between;
@@ -11,6 +17,9 @@
    }
    &__control-info {
       margin: 0;
+      @include max-w(768) {
+         margin: 0 auto;
+      }
    }
 }
 
@@ -45,31 +54,94 @@
       background-color: #0674ec;
       opacity: .8;
    }
+   @include max-w(768) {
+      display: none !important;
+   }
 }
 
+.slick-dots {
+   position: absolute;
+   display: flex;
+   text-align: center;
+   left: 44%;
+   top: -5%;
+   width: 108px;
+   @include max-w(650) {
+      top: -5.5%;
+   }
+   @include max-w(533) {
+      top: -5.7%;
+   }
+   @include max-w(480) {
+      left: 40%;
+   }
+   @include max-w(360) {
+      left: 35%;
+      top: -5.8%;
+   }
+}
+
+.slick-dots li {
+   margin: 0 10px;
+}
+
+.slick-dots button {
+   font-size: 0;
+   width: 10px;
+   height: 16px;
+   background-color: #0674ec;
+   border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+   background-color: #7347c1;
+   border-color: transparent;
+   outline-color: transparent;
+   border-radius: 100%;
+}
 
 .products-slider {
    &__page {
       flex: 1 1 auto;
       display: flex !important;
       justify-content: center;
-      max-height: 450px;
+      max-height: 455px;
       margin-bottom: 120px;
       box-shadow: 0px 2px 30px 0px rgba(146,155,168,0.1);
+      @include max-w(768) {
+         display: block !important;
+         max-height: 100%;
+         max-width: 85%;
+         margin: auto;
+         margin-bottom: 80px;
+      }
+      @include max-w(533) {
+         display: block !important;
+         max-width: 90%;
+      }
+      @include max-w(320) {
+         max-width: 100%;
+      }
    } 
    &__image {
       position: relative;
       flex: 1 1 auto;
       max-width: 49%;
       border-radius: 4.0px 0.0px 0.0px 4.0px;
+      @include max-w(768) {
+         max-width: 100%;
+      }
    }
    &__img {
       display: block;
-      min-width: 555px;
-      height: 450px;
+      max-width: 100%;
+      max-height: 100%;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
       object-fit: cover;
+      @include max-w(768) {
+         border-radius: 0;
+      }
    }
    &__background {
       position: absolute;
@@ -85,18 +157,61 @@
       &:hover {
          opacity: 1;
       }
+      @include max-w(768) {
+         padding: 150px 35px;
+      }
+      @include max-w(650) {
+         padding: 100px 0;
+      }
+      @include max-w(533) {
+         padding: 30% 0;  
+      }
    }
    &__btn { 
       margin: 0 20px;
+      @include max-w(480) {
+         margin: -15px 20px;
+         width: 25%;
+         font-size: 15px;
+         height: 43px;
+      }
+      @include max-w(360) {
+         width: 30%;
+         font-size: 13px;
+      }
    }
    &__info {
       max-width: 51%;
+      @include max-w(768) {
+         max-width: 100%;
+      }
+      // @include max-w(640) {
+      //    max-width: 100%;
+      // }
+      // @include max-w(533) {
+      //    max-width: 100%;  
+      // }
    }
    &__info-inner {
-      padding: 55px 46px 0px 46px;
+      padding: 55px 46px 0 46px;
       background-color: #fff;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
+      @include max-w(1024) {
+         padding: 35px 30px 0 30px;
+      }
+      @include max-w(768) {
+         padding: 23px 20px 0 20px;  
+      }
+      // @include max-w(650) {
+      //    padding: 13px 15px 0 15px;  
+      // }
+      // @include max-w(640) {
+      //    padding: 25px 15px 0 15px;
+      // }
+      // @include max-w(533) {
+      //    padding: 20px 15px 0 15px;  
+      // }
    }
    &__title {
       margin-bottom: 28px;
@@ -104,12 +219,36 @@
       line-height: 7px;
       font-weight: 500;
       color: #000000;
+      @include max-w(768) {
+         font-size: 23px;
+         margin-bottom: 25px;
+      }
+      @include max-w(650) {
+         font-size: 20px;
+         margin-bottom: 20px;
+      }
+      @include max-w(533) {
+         margin-bottom: 25px;
+      }
+      @include max-w(380) {
+         font-size: 18px;
+      }
+      @include max-w(320) {
+         font-size: 16px;
+      }
    }
    &__subtitle {
       margin-bottom: 27px;
+      @include max-w(768) {
+         margin-bottom: 15px;
+      }
    }
    &__account-link {
       text-decoration: none;
+      // @include max-w(640) {
+      //    align-items: center;
+      //    margin-right: 20px;
+      // }
    }
    &__account-icon {
       width: 30px;
@@ -118,16 +257,27 @@
       border-radius: 50%;
       background-size: cover;
       background-repeat: no-repeat;
+      // @include max-w(640) {
+      //    width: 50px;
+      //    height: 50px;
+      //    margin-right: 20px;
+      // }
    }
    &__account-name {
       font-size: 15px;
       color: #000000;
+      // @include max-w(640) {
+      //    font-size: 17px;
+      // }
    }
    &__plugin {
       padding-left: 20px;
       align-items: center;
       text-decoration: none;
       color: #7347c1;
+      // @include max-w(640) {
+      //    align-items: center;
+      // }
    }
    &__plugin-icon {
       width: 16px;
@@ -136,6 +286,9 @@
    }
    &__plugin-name {
       font-size: 15px;
+      // @include max-w(640) {
+      //    font-size: 17px;
+      // }
    }
    &__text {
       max-height: 125px;
@@ -143,9 +296,39 @@
       margin-bottom: 31px;
       padding: 0;
       overflow-x: hidden;
+      @include max-w(768) {
+         font-size: 14px;
+         line-height: 1.8;
+         margin-bottom: 25px;
+         max-height: 100%;
+      }
+      @include max-w(650) {
+         font-size: 13px;
+      }
    }
    &__links {
       margin-bottom: 44px;
+      @include max-w(768) {
+         margin-bottom: 20px;  
+      }
+      @include max-w(415) {
+         max-width: 70%;
+         margin: 0 auto 10px auto;
+         text-align: center;
+      }
+      @include max-w(360) {
+         max-width: 80%;
+      }
+      @include max-w(320) {
+         margin: 0 auto 10px auto;
+      }
+   }
+   &__link {
+      margin: 0 5px;
+      @include max-w(640) {
+         font-size: 15px;
+         padding: 7px 12px;
+      }
    }
    &-plugin {
       margin: 0 7px;
@@ -156,9 +339,28 @@
       padding: 22px 0;
       font-size: 15px;
       border-top: 1px solid #ececec;
+      @include max-w(768) {
+         padding: 13px 0;  
+      }
+      @include max-w(650) {
+         padding: 5px 0;
+      }
+      @include max-w(533) {
+         padding: 8px 0;
+      }
+      @include max-w(415) {
+         display: block;
+      }
+      @include max-w(360) {
+         font-size: 13px;
+      }
    }
    &__leftside {
       align-items: center;
+      @include max-w(320) {
+         max-width: 265px;
+         margin: 0 auto;
+      }
    }
    &__leftside-price {
       padding: 1px 19px;
@@ -166,6 +368,25 @@
       font-weight: 500;
       color: #fff;
       background-color: #0674ec;
-      border-radius: 16.0px;
+      border-radius: 16px;
+      @include max-w(650) {
+         padding: 0 9px;
+         border-radius: 14px;
+      }
+      @include max-w(320) {
+         margin-right: auto;  
+      }
+   }
+   &__leftside-likes {
+      margin-right: auto;
+   }
+   &__rightside-stars {
+      margin: 12px auto;
+      @include max-w(768) {
+         margin: 12px 0 12px auto;
+      }
+      @include max-w(415) {
+         margin: 12px auto;
+      }
    }
 }

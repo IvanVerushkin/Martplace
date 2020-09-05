@@ -11,6 +11,16 @@
       &-info {
          margin: 0;
       }
+      @include max-w(768) {
+         padding: 25px 30px;
+      }
+      @include max-w(360) {
+         padding: 15px 10px;
+         font-size: 17px;
+      }
+      @include max-w(320) {
+         padding: 10px 5px;
+      }
    }
    &__menu {
       padding: 31px 0px;
@@ -20,11 +30,19 @@
       line-height: 30px;
       font-weight: 500;
       background-color: #ffffff;
+      @include max-w(768) {
+         flex-wrap: wrap;
+         padding: 10px;
+      }
+      
    }
    &__btn {
       padding: 7px 22px;
       margin-right: 4px;
       color: #747b86;
+      @include max-w(768) {
+         margin-bottom: 10px;
+      }
    }
    &__items {
       display: inline-flex;
@@ -32,6 +50,10 @@
       flex-wrap: wrap;
       margin-bottom: 28px;
       margin-right: -30px;
+      @include max-w(768) {
+         display: block;
+         max-width: 100%;
+      }
    }
 }
 

@@ -4,9 +4,24 @@
    background-color: #fff;
    &__inner {
       justify-content: space-between;
-      padding-top: 190px;
-      padding-bottom: 134px;
+      padding: 190px 0 134px;
       text-align: center;
+      @include max-w(768) {
+         flex-direction: column;
+         padding: 130px 0 80px;
+      }
+      @include max-w(640) {
+         padding: 115px 60px;
+      }
+      @include max-w(480) {
+         padding: 80px 0 50px;
+      }
+      @include max-w(375) {
+         padding: 50px 0 30px;
+      }
+      @include max-w(320) {
+         padding: 80px 0 50px;  
+      }
    }
    &__item {
       flex-direction: column;
@@ -17,6 +32,22 @@
       &:hover {
          box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.07);
       }
+      @include max-w(768) {
+         display: block;
+         margin: auto;
+         max-width: 100%;
+         padding: 50px 32px 31px 32px;
+      }
+      @include max-w(375) {
+         padding: 50px 10px 25px;
+         font-size: 15px;
+      }
+      @include max-w(360) {
+         padding: 50px 10px 31px;  
+      }
+      @include max-w(320) {
+         padding: 50px 10px 31px;  
+      }
    }
    &__img {
       background-repeat: no-repeat;
@@ -25,6 +56,16 @@
       margin-bottom: 40px;
       width: 120px;
       height: 120px;
+      @include max-w(768) {
+         margin: 0 auto 60px;  
+      }
+      @include max-w(480) {
+         width: 100px;
+         height: 100px;
+      }
+      @include max-w(375) {
+         margin: 0 auto 45px;
+      }
    }
    &__title {
       margin-bottom: 30px;
@@ -34,5 +75,8 @@
    }
    &__text {
       text-align: center;
+      @include max-w(768) {
+         width: auto;  
+      }
    }
 }
