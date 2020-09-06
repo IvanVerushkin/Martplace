@@ -28,6 +28,24 @@ $(function(){
       prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"></button>',
       nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"></button>',
       appendArrows: '.followers__control-arrows',
+      responsive:[
+         {
+            breakpoint: 1025,
+            settings: {
+            slidesToShow: 2,
+            arrows: false,
+            dots: true,
+           }
+         },
+         {
+           breakpoint: 769,
+            settings: {
+            slidesToShow: 1,
+            arrows: false,
+            dots: true
+           }
+         }
+      ]
    });
 
    $(".rate-star").rateYo({

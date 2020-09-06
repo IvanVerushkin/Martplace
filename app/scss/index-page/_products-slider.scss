@@ -65,7 +65,9 @@
    text-align: center;
    left: 44%;
    top: -5%;
-   width: 108px;
+   @include max-w(1024) {
+      top: -90px;
+   }
    @include max-w(650) {
       top: -5.5%;
    }
@@ -80,6 +82,8 @@
       top: -5.8%;
    }
 }
+
+
 
 .slick-dots li {
    margin: 0 10px;
@@ -118,6 +122,9 @@
       @include max-w(533) {
          display: block !important;
          max-width: 90%;
+      }
+      @include max-w(360) {
+         margin-bottom: 40px;  
       }
       @include max-w(320) {
          max-width: 100%;
@@ -185,12 +192,6 @@
       @include max-w(768) {
          max-width: 100%;
       }
-      // @include max-w(640) {
-      //    max-width: 100%;
-      // }
-      // @include max-w(533) {
-      //    max-width: 100%;  
-      // }
    }
    &__info-inner {
       padding: 55px 46px 0 46px;
@@ -203,15 +204,6 @@
       @include max-w(768) {
          padding: 23px 20px 0 20px;  
       }
-      // @include max-w(650) {
-      //    padding: 13px 15px 0 15px;  
-      // }
-      // @include max-w(640) {
-      //    padding: 25px 15px 0 15px;
-      // }
-      // @include max-w(533) {
-      //    padding: 20px 15px 0 15px;  
-      // }
    }
    &__title {
       margin-bottom: 28px;
@@ -245,10 +237,6 @@
    }
    &__account-link {
       text-decoration: none;
-      // @include max-w(640) {
-      //    align-items: center;
-      //    margin-right: 20px;
-      // }
    }
    &__account-icon {
       width: 30px;
@@ -257,27 +245,17 @@
       border-radius: 50%;
       background-size: cover;
       background-repeat: no-repeat;
-      // @include max-w(640) {
-      //    width: 50px;
-      //    height: 50px;
-      //    margin-right: 20px;
-      // }
+      margin-right: 20px;
    }
    &__account-name {
       font-size: 15px;
       color: #000000;
-      // @include max-w(640) {
-      //    font-size: 17px;
-      // }
    }
    &__plugin {
       padding-left: 20px;
       align-items: center;
       text-decoration: none;
       color: #7347c1;
-      // @include max-w(640) {
-      //    align-items: center;
-      // }
    }
    &__plugin-icon {
       width: 16px;
@@ -286,9 +264,6 @@
    }
    &__plugin-name {
       font-size: 15px;
-      // @include max-w(640) {
-      //    font-size: 17px;
-      // }
    }
    &__text {
       max-height: 125px;

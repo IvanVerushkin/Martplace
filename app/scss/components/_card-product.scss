@@ -29,6 +29,9 @@
       @include max-w(768) {
          font-size: 22px;
       }
+      @include max-w(414) {
+         font-size: 21px;
+      }
       @include max-w(375) {
          font-size: 16px;
       }
@@ -101,7 +104,7 @@
    &__footer {
       justify-content: space-between;
       align-items: center;
-      padding: 14px 22px 14px 33px;
+      padding: 14px 22px 14px 25px;
       border-top: 1px solid #ececec;
       @include max-w(1024) {
          padding: 14px 5px;

@@ -4,6 +4,9 @@
    background-color: #f6f7fb;
    &__inner {
       padding: 120px 0;
+      @include max-w(414) {
+         padding: 60px 0 60px;
+      }
    }
    &__upper {
       margin-bottom: 30px;
@@ -143,4 +146,7 @@
    color: #ffffff;
    outline: transparent;
    border: none;
+   @include max-w(414) {
+      padding: 15px 20px;     
+   }
 }

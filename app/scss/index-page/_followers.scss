@@ -5,6 +5,9 @@
    &__inner {
       display: block;
       padding: 119px 0 88px;
+      @include max-w(414) {
+         padding: 50px 0 88px;
+      }
    }
    &__control {
       justify-content: space-between;
@@ -12,6 +15,10 @@
    }
    &__control-info {
       margin: 0;
+      @include max-w(414) {
+         margin: auto;
+         font-size: 22px;
+      }
    }
    &__control-arrows .slick-arrow{
       background-color: #0674ec;
@@ -21,6 +28,9 @@
    }
    &__slider {
       overflow: hidden;
+      @include max-w(1024) {
+         overflow: visible;
+      }
    }
 }
 
@@ -36,11 +46,68 @@
 
 .followers .slick-list {
    margin-right: -30px;
+   @include max-w(1024) {
+      margin-right: 0;
+   }
 }
 
 .followers-card {
    max-width: 360px;
    &__inner {
       max-width: 360px;
+      @include max-w(1024) {
+         max-width: 100%;
+      }
+   }
+   @include max-w(1024) {
+      max-width: 90%;
+      margin-left: 25px;
+   }
+   @include max-w(768) {
+      margin-left: 35px;
+   }
+   @include max-w(480) {
+      margin-left: 23px;
+   }
+   @include max-w(360) {
+      max-width: 93%;
+      margin-left: 14px;
+   }
+   @include max-w(320) {
+      max-width: 100%;
+      margin-left: 0;
+   }
+}
+
+.followers .slick-dots {
+   @include max-w(1024) {
+      top: -90px;
+   }
+   @include max-w(768) {
+      top: -12.5%;
+   }
+   @include max-w(650) {
+      top: -5.5%;
+   }
+   @include max-w(640) {
+      top: -14%;
+   }
+   @include max-w(533) {
+      top: -15%;
+      left: 52%;
+   }
+   @include max-w(480) {
+      top: -7%;
+      left: 27%;
+   }
+   @include max-w(414) {
+      left: 22%;
+   }
+   @include max-w(360) {
+      left: 20%;
+      top: -7.8%;
+   }
+   @include max-w(320) {
+      left: 14%;
    }
 }
