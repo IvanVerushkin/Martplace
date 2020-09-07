@@ -66,13 +66,16 @@
    left: 44%;
    top: -5%;
    @include max-w(1024) {
-      top: -90px;
+      top: -6%;
    }
    @include max-w(650) {
       top: -5.5%;
    }
    @include max-w(533) {
       top: -5.7%;
+   }
+   @include max-w(414) {
+      top: -6.7%;
    }
    @include max-w(480) {
       left: 40%;
@@ -117,7 +120,7 @@
          max-height: 100%;
          max-width: 85%;
          margin: auto;
-         margin-bottom: 80px;
+         margin-bottom: 10px;
       }
       @include max-w(533) {
          display: block !important;
@@ -141,7 +144,7 @@
    }
    &__img {
       display: block;
-      max-width: 100%;
+      width: 100%;
       max-height: 100%;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;

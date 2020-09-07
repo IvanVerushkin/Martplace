@@ -15,6 +15,10 @@
    }
    &__control-info {
       margin: 0;
+      @include max-w(768) {
+         margin: auto;
+         font-size: 32px;
+      }
       @include max-w(414) {
          margin: auto;
          font-size: 22px;
@@ -64,7 +68,7 @@
       margin-left: 25px;
    }
    @include max-w(768) {
-      margin-left: 35px;
+      margin-left: 20px;
    }
    @include max-w(480) {
       margin-left: 23px;
@@ -84,7 +88,8 @@
       top: -90px;
    }
    @include max-w(768) {
-      top: -12.5%;
+      top: -7.5%;
+      left: 36%;
    }
    @include max-w(650) {
       top: -5.5%;

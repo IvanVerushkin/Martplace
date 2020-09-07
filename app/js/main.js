@@ -13,7 +13,7 @@ $(function(){
             breakpoint: 769,
             settings: {
             arrows: false,
-            dots: true
+            dots: true,
            }
          }
       ]
