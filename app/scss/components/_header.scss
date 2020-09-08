@@ -1,11 +1,18 @@
 .header {
+
    &__top {
       background-color: #eef1f3;
+      @include max-w(414) {
+         overflow-x: hidden;
+      }
    }
    &__top-inner {
       justify-content: space-between;
       align-items: center;
       height: 100px;
+      @include max-w(414) {
+         position: relative;
+      }
       @include max-w(360) {
          height: 70px;
       }
@@ -16,7 +23,6 @@
    &__logo {
       margin-left: 7px;
       margin-top: 7px;
-      
    }
    &__logo-image {
       @include max-w(360) {
@@ -44,17 +50,19 @@
       }
    }
    &__rightside {
+      
       align-items: center;
       background-color: #eef1f3;
       transition: all .5s;
+      
       z-index: 20;
       @include max-w(414) {
          position: absolute;
-         left: 100%;
+         transform: translateX(200%);
          height: 42px;
       }
       &.active {
-         left: 15px;
+         transform: translateX(0px);
       }
    }
    &__link-seller {
@@ -140,7 +148,7 @@
          width: 70px;
          height: 70px;
          position: absolute;
-         right: 0;
+         right: -15px;
          top: 0;
          color: white;
          background-color: #0674ec;
@@ -767,30 +775,30 @@
       padding: 0;
       border-top: 1px solid rgba(#0674ec, 1);
    }
-   &__list {
-      position: static;
-      padding: 20px;
-      width: 270px;
-      background-color: #ffffff;
-      box-shadow: 0px 5px 40px 0px rgba(82,85,90,0.2);
-      border-radius: 0px 0px 3px 3px;
-      z-index: 10;
-      transition: all .3s;
-      &.active {
-         position: static;
-         height: 300px;
-         opacity: 1;
-         padding: 20px 20px 35px;
-      }
-   }
+   // &__list {
+   //    position: static;
+   //    padding: 20px;
+   //    width: 270px;
+   //    background-color: #ffffff;
+   //    box-shadow: 0px 5px 40px 0px rgba(82,85,90,0.2);
+   //    border-radius: 0px 0px 3px 3px;
+   //    z-index: 10;
+   //    transition: all .3s;
+   //    &.active {
+   //       position: static;
+   //       height: 300px;
+   //       opacity: 1;
+   //       padding: 20px 20px 35px;
+   //    }
+   // }
    &__link {
       display: block;
       font-size: 15px;
       line-height: 16px;
       color: #54667a;
       border-radius: 2px;
-      overflow: hidden;
       padding: 14px 10px;
+      text-decoration: none;
       &:hover {
          background-color: blue;
          color: #fff;
@@ -927,10 +935,12 @@
          }
       }
       @include max-w(900) {
+         display: block;
+         height: auto;
          text-align: center;
          border-top: 1px solid #262b30;
          margin-left: 0;
-         padding-right: auto;
+         padding-right: 0;
          &:hover {
             .nav-menu, .mega-menu {
                display: none;
