@@ -2,9 +2,9 @@
 
    &__top {
       background-color: #eef1f3;
-      @include max-w(414) {
-         overflow-x: hidden;
-      }
+      // @include max-w(414) {
+      //    overflow-x: hidden;
+      // }
    }
    &__top-inner {
       justify-content: space-between;
@@ -12,6 +12,10 @@
       height: 100px;
       @include max-w(414) {
          position: relative;
+         height: 70px;
+      }
+      @include max-w(375) {
+         height: 70px;
       }
       @include max-w(360) {
          height: 70px;
@@ -50,20 +54,21 @@
       }
    }
    &__rightside {
-      
       align-items: center;
       background-color: #eef1f3;
       transition: all .5s;
-      
+      &.active {
+         transform: translateX(0px);
+      }
       z-index: 20;
       @include max-w(414) {
          position: absolute;
          transform: translateX(200%);
-         height: 42px;
+         height: 60px;
       }
-      &.active {
-         transform: translateX(0px);
-      }
+      @include max-w(320) {
+         height: 50px;
+      } 
    }
    &__link-seller {
       padding: 3px 18px;
@@ -143,7 +148,7 @@
       position: relative;
       display: none;
       z-index: 20;
-      @include max-w(360) {
+      @include max-w(414) {
          display: block;
          width: 70px;
          height: 70px;
@@ -153,6 +158,9 @@
          color: white;
          background-color: #0674ec;
       }
+      // @include max-w(375) {
+
+      // }
       @include max-w(320) {
          width: 50px;
          height: 50px;
@@ -246,16 +254,19 @@
    }
    &__menu {
       position: absolute;
-      top: 100px;
+      top: 85px;
       right: 0;
       padding: 19px 11px;
       font-size: 15px;
       line-height: 23px;
+      @include max-w(414) {
+         top: 68px;
+      }
       @include max-w(360) {
-         top: 124px;
+         top: 70px;
       }
       @include max-w(320) {
-         top: 102px;
+         top: 60px;
       }
       &::before {
          content: ''; 
@@ -264,10 +275,10 @@
          border: 8px solid transparent;
          border-bottom: 10px solid #0674ec;
          @include max-w(360) {
-            right: 135px;
+            right: 100px;
          }
          @include max-w(320) {
-            right: 146px;
+            right: 102px;
          }
       }
    }
@@ -366,25 +377,32 @@
       width: 400px;
       top: 71px;
       right: -39px;
+      @include max-w(414) {
+         width: 414px;
+         right: auto;
+         left: -15px;
+         top: 56px;
+      }
+      @include max-w(360) {
+         width: 360px;
+         left: -15px;
+         top: 55px;
+      }
+      @include max-w(320) {
+         top: 43px;
+         width: 320px;
+      }
       &::before {   
          top: -18px;
          right: 41px;
          border: 8px solid transparent;
          border-bottom: 10px solid #0674ec;
-         @include max-w(360) {
+         @include max-w(414) {
             right: auto;
-            left: 5px;
+            left: 20px;
          }
       }
-      @include max-w(360) {
-         width: 342px;
-         left: -15px;
-         top: 112px;
-      }
-      @include max-w(320) {
-         top: 84px;
-         width: 320px;
-      }
+      
    }
    &__item {
       border-bottom: 1px solid #e8ebf0;
@@ -757,7 +775,7 @@
 
 .nav-menu {
    display: none;
-   position: static;
+   position: absolute;
    top: 80px;
    left: 0;
    width: 270px;
@@ -769,6 +787,7 @@
    overflow: hidden;
    z-index: 20;
    @include max-w(900) {
+      position: static;
       width: 100%;
       border-top: none;
       box-shadow: none;
@@ -819,8 +838,8 @@
    visibility: hidden;
    width: 1140px;
    padding: 20px 51px 20px 29px;
-   top: 61px;
-   left: -450px;
+   top: 80px;
+   left: -566px;
    background-color: #ffffff;
    transition: all .3s;
    box-shadow: 0px 5px 40px 0px rgba(82,85,90,0.2);
@@ -896,6 +915,12 @@
       @include max-w(900) {
          position: static;
       }
+      @include max-w(414) {
+         height: 70px;
+      }
+      @include max-w(375) {
+         height: 60px;
+      }
       @include max-w(360) {
          height: 55px;
       }
@@ -909,12 +934,21 @@
          display: none;
          position: absolute;
          left: 0;
-         top: 80px;
+         top: 54px;
          width: 100%;
          background-color: #fff;
          margin-left: 0;
          z-index: 5;
          border-bottom: 5px solid blue;
+      }
+      @include max-w(414) {
+         top: 70px;
+      }
+      @include max-w(375) {
+         top: 60px;
+      }
+      @include max-w(320) {
+         top: 42px;
       }
    }
    &__bottom-item {
