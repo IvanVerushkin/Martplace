@@ -5,10 +5,20 @@
    &__inner {
       padding: 121px 0 90px;
       text-align: center;
+      @include max-w(768) {
+         padding: 50px 0;
+      }
    }
    &__size {
       max-width: 31.6%;
       margin: 0;
+      @include max-w(768) {
+         margin: auto;
+         max-width: 90%;
+      }
+      @include max-w(320) {
+         max-width: 100%;
+      }
    }
    &__title {
       font-size: 36px;
@@ -24,6 +34,9 @@
    }
    &__items {
       justify-content: space-between;
+      @include max-w(768) {
+         display: block;
+      }
    }
    &__content {
       padding: 0;
@@ -33,6 +46,12 @@
       text-align: left;
       font-size: 22px;
       line-height: 30px;
+      @include max-w(1024) {
+         font-size: 21px;
+      }
+      @include max-w(992) {
+         font-size: 20px;
+      }
    }
    &__desc {
       padding: 0 28px;
@@ -41,6 +60,9 @@
    }
    &__footer {
       padding: 14px 28px 14px 28px;
+      @include max-w(320) {
+         padding: 13px 24px;
+      }
    }
    &__footer-leftside {
       display: block;
@@ -71,12 +93,16 @@
          font-family: Linearicons-Free;
          margin-left: 33px;
          margin-right: 10px;
+         @include max-w(320) {
+            margin-left: 23px;
+         }
       }
       &:hover {
          color: #0674ec;
       }
    }
    &__eye {
+      margin-left: 12px;
       &::before {
          content: "\e81b";
          font-family: Linearicons-Free;

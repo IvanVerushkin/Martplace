@@ -2,16 +2,33 @@
 
 .support {
    background-color: #fff;
+   &__inner {
+      display: flex;
+      @include max-w(414) {
+         display: block;
+      }
+   }
    &__item {
       width: 50%;
       text-align: center; 
       padding: 60px 0;
+      @include max-w(414) {
+         width: auto;
+      }
       &--left {
          border-right: 1px solid #e8eaf3;
          padding-right: 41px;
+         @include max-w(414) {
+            padding-right: 0;
+            border-bottom: 10px solid #eff1f5;
+            border-right: none;
+         }
       }
       &--right {
          padding-right: 10px;
+         @include max-w(414) {
+            padding-right: 0;
+         }
       }
    }
    
@@ -19,14 +36,17 @@
       margin: 0 auto;
       margin-bottom: 25px;
       object-fit: cover;
+      background-repeat: no-repeat;
 
       &--guarantee {
          width: 150px;
          height: 120px;
+         object-fit: cover;
       }
       &--support {
          width: 155px;
          height: 117px;
+         object-fit: cover;
       }
    }
    &__desc {
@@ -42,6 +62,10 @@
          margin-left: 10px;
          text-decoration: none;
          color: #7347c1;
+      }
+      @include max-w(736) {
+         max-width: 230px;
+         margin: auto;
       }
    }
 }

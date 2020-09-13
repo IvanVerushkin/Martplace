@@ -1,0 +1,314 @@
+// -- HOW DO IT -- //
+
+// become //
+
+.become-swiper {
+   position: relative;
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+.become {
+   background-image: linear-gradient(-90.0deg, #0d3ef2 0%, #4c1f9c 100%);
+   &__inner {
+      margin: auto;
+      padding: 80px 0 23px;
+      text-align: center;
+      @include max-w(736) {
+         padding: 100px 0 79px;
+      }
+      @include max-w(667) {
+         padding: 100px 0 40px;
+      } 
+      @include max-w(640) {
+         padding: 100px 0 25px;
+      }
+      @include max-w(568) {
+         padding: 43px 0 25px;
+      }
+   }
+   &__text {
+      max-width: 400px;
+      margin: 0 auto 55px;
+      font-size: 30px;
+      line-height: 1.6;
+      font-weight: 500;
+      color: #f3f3f8;
+      @include max-w(736) {
+         max-width: 430px;
+         margin: 0 auto 96px;
+         font-size: 34px;
+      }
+      @include max-w(568) {
+         max-width: 340px;
+         margin: 0 auto 30px;
+         font-size: 24px;
+      } 
+      @include max-w(414) {
+         margin: 0 auto 50px;
+         font-size: 26px;
+         max-width: 365px;
+      } 
+   }
+   &__text-down {
+      font-weight: 300;
+   }
+   &__links {
+      font-size: 23px;
+      text-decoration: none;
+   }
+   &__home {
+      text-decoration: none;
+      color: #fff;
+   }
+   &__howitworks {
+      text-decoration: none;
+      color: #bfcad7;
+   }
+}
+
+
+.create, 
+.upload,
+.money {
+   &__inner {
+      padding: 100px 0;
+      justify-content: space-between;
+      @include max-w(667) {
+         padding: 70px 0;
+      }
+      @include max-w(568) {
+         padding: 60px 0;
+      }
+      @include max-w(480) {
+         display: block;
+         text-align: center;
+         padding: 80px 0;
+      }
+      @include max-w(360) {
+         padding: 70px 0;
+      }
+      @include max-w(320) {
+         padding: 50px 0;
+      }
+   }
+   &__layer {
+      order: 1;
+      @include max-w(992) {
+         width: 420px;
+      }
+      @include max-w(960) {
+         width: 410px;
+      }
+      @include max-w(768) {
+         width: 335px;
+         height: 300px;
+      }
+      @include max-w(736) {
+         width: 325px;
+         height: 270px;
+      }
+      @include max-w(667) {
+         width: 300px;
+         height: 250px;
+      }
+      @include max-w(640) {
+         width: 290px;
+         height: 250px;
+      }
+      @include max-w(568) {
+         width: 245px;
+         height: 190px;
+      }
+      @include max-w(533) {
+         width: 220px;
+         height: 175px;
+      } 
+      @include max-w(375) {
+         width: 260px;
+         height: 215px;
+      }
+      @include max-w(360) {
+         width: 250px;
+         height: 200px;
+      }
+      @include max-w(320) {
+         width: 230px;
+         height: 180px;
+      }
+   }
+   &__info {
+      order: 2;
+      max-width: 450px;
+      @include max-w(768) {
+         max-width: 345px;
+      }
+      @include max-w(667) {
+         max-width: 290px;
+      }
+      @include max-w(640) {
+         max-width: 280px;
+      } 
+      @include max-w(568) {
+         max-width: 50%;
+         margin: 0;
+      }
+      @include max-w(533) {
+         max-width: 50%;
+      }
+      @include max-w(480) {
+         margin: auto;
+         max-width: 95%;
+      } 
+   }
+   &__title {
+      font-size: 30px;
+      line-height: 46px;
+      font-weight: 400;
+      color: #000000;
+      margin: 21px 0 26px;
+      @include max-w(992) {
+         margin: 10px 0 26px;
+      }
+      @include max-w(960) {
+         margin: 0 0 25px;
+      }
+      @include max-w(667) {
+         font-size: 28px;
+      }
+      @include max-w(640) {
+         font-size: 27px;
+      }
+      @include max-w(568) {
+         font-size: 24px;
+      }
+      @include max-w(533) {
+         font-size: 23px;
+      } 
+   }
+   &__text {
+      margin-bottom: 32px;
+      color: #555555;
+   }
+   &__btn {
+      text-decoration: none;
+      color: #fff;
+      background-color: #0674ec;
+      padding: 15px 35px;
+      border-radius: 25px;
+      @include max-w(480) {
+         padding: 12px 20px;
+      } 
+   }
+}
+
+.create {
+   &__info {
+      margin-right: 9px;
+      @include max-w(768) {
+         margin: auto;
+      }
+      @include max-w(568) {
+         margin: 0;
+      }
+      @include max-w(480) {
+         margin: auto;
+      }
+   }
+}
+
+.upload {
+   background-color: #eff1f5;
+   &__inner {
+      padding: 99px 0;
+      @include max-w(667) {
+         padding: 70px 0;
+      }
+      @include max-w(320) {
+         padding: 60px 0;
+      }
+   }
+   &__layer {
+      order: 3;
+   }
+   &__info {
+      margin-left: 18px;
+      @include max-w(480) {
+         margin: auto;
+      }
+   }
+   &__btn {
+      background-color: #fff;
+      color: #0674ec;
+      box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.1);
+      margin-left: 2px;
+   }
+}
+
+.money {
+   &__inner {
+      padding: 98px 0;
+      @include max-w(667) {
+         padding: 70px 0;
+      }
+      @include max-w(320) {
+         padding: 60px 0;
+      }
+   }
+   &__info {
+      margin-right: 10px;
+      @include max-w(480) {
+         margin: auto;
+      }
+   }
+   &__btn {
+      margin-left: -10px;
+      background-color: #fff;
+      color: #0674ec;
+      box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.1);
+   }
+}
+
+.ready {
+   background-image: linear-gradient(-90.0deg, #0d3ef2 0%, #7221a0 100%);
+   &__inner {
+      padding: 89px 0 121px;
+      text-align: center;
+      @include max-w(667) {
+         padding: 70px 0 80px;
+      }
+      @include max-w(414) {
+         padding: 60px 0;
+      }
+   }
+   &__title {
+      font-size: 36px;
+      line-height: 1.8;
+      color: #ffffff;
+      margin-bottom: 10px;
+      @include max-w(414) {
+         font-size: 32px;
+      }
+   }
+   &__text {
+      font-size: 18px;
+      line-height: 1;
+      color: #e7e7e7;
+      margin-bottom: 63px;
+      @include max-w(414) {
+         line-height: 2;
+         margin-bottom: 50px;
+      }
+   }
+   &__btn {
+      padding: 18px 42px;
+      background-color: #ffffff;
+      color: #0674ec;
+      border-radius: 27.5px;
+      box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.1);
+      text-decoration: none;
+      @include max-w(480) {
+         padding: 13px 25px;
+      }
+   }
+}

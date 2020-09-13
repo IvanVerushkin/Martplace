@@ -5,6 +5,9 @@
    &__inner {
       display: block;
       padding: 119px 0 88px;
+      @include max-w(667) {
+         padding: 90px 0 20px;
+      }
       @include max-w(414) {
          padding: 50px 0 88px;
       }
@@ -88,7 +91,7 @@
       top: -90px;
    }
    @include max-w(768) {
-      top: -7.5%;
+      top: -6%;
       left: 36%;
    }
    @include max-w(650) {
@@ -98,8 +101,8 @@
       top: -14%;
    }
    @include max-w(533) {
-      top: -15%;
-      left: 52%;
+      top: -7%;
+      left: 32%;
    }
    @include max-w(480) {
       top: -7%;

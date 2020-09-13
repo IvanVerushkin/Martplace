@@ -27,6 +27,9 @@
       @include max-w(800) {
          margin-left: 20px;
       }
+      @include max-w(768) {
+         margin-left: auto;
+      }
       @include max-w(600) {
          margin-left: auto;
       }

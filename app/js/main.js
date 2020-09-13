@@ -66,7 +66,16 @@ $(function(){
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-  
+      
+      breakpoints: {
+         320: {
+           slidesPerView: 1,
+         },
+         1024: {
+            slidesPerView: 2,
+         }
+      }
+
    });
 
    $('.header__btn-menu').on('click', function (){
@@ -85,6 +94,14 @@ $(function(){
 
    $('.header__bottom-item').on('click', function (){
       $('.nav-menu__list').toggleClass('active');
+   });
+   
+   $('.become__test').slick({
+      infinite: true,
+      dots: false,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
    });
 
    var mixer = mixitup('.newproducts__items');
