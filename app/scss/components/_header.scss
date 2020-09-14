@@ -7,9 +7,12 @@
       justify-content: space-between;
       align-items: center;
       height: 100px;
-      @include max-w(640) {
+      @include max-w(812) {
          height: 70px;
       }
+      @include max-w(667) {
+         height: 50px;
+      } 
       @include max-w(414) {
          position: relative;   
       }
@@ -24,6 +27,9 @@
    }
    &__logo-image {
       margin-bottom: 0;
+      @include max-w(667) {
+         width: 165px;
+      } 
       @include max-w(360) {
          height: 40px;
       }
@@ -56,10 +62,12 @@
          transform: translateX(0px);
       }
       z-index: 20;
+      @include max-w(667) {
+         height: 50px;
+      }
       @include max-w(414) {
          position: absolute;
          transform: translateX(200%);
-         height: 60px;
       }
       @include max-w(320) {
          height: 50px;
@@ -112,6 +120,9 @@
          font-size: 20px;
          top: 10px;
       }
+      @include max-w(667) {
+         top: 21px;
+      }
    }
 
    &__icon-number {
@@ -145,34 +156,22 @@
       z-index: 20;
       @include max-w(414) {
          display: block;
-         width: 70px;
-         height: 70px;
+         width: 50px;
+         height: 50px;
          position: absolute;
          right: -15px;
          top: 0;
          color: white;
          background-color: #0674ec;
       }
-      // @include max-w(375) {
-
-      // }
-      @include max-w(320) {
-         width: 50px;
-         height: 50px;
-      }
       &::before {
          content: "\e82a";
          position: absolute;
          font-family: Linearicons-Free;
          color: #fff;
-         font-size: 45px;
-         top: 19px;
-         left: 14px;
-         @include max-w(320) {
-            font-size: 38px;
-            top: 12px;
-            left: 8px;
-         }
+         font-size: 36px;
+         top: 12px;
+         left: 9px;
       }
    }
 }
@@ -228,7 +227,7 @@
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 0;
-      @include max-w(320) {
+      @include max-w(667) {
          width: 46px;
          height: 44px;
          margin-right: 15px;
@@ -255,13 +254,19 @@
       padding: 19px 11px;
       font-size: 15px;
       line-height: 23px;
+      @include max-w(736) {
+         top: 70px;
+         right: -15px;
+      } 
+      @include max-w(667) {
+         right: -15px;
+         top: 60px;
+      }
       @include max-w(414) {
-         top: 68px;
+         width: 300px;
+         right: -168px;
       }
       @include max-w(360) {
-         top: 70px;
-      }
-      @include max-w(320) {
          top: 60px;
       }
       &::before {
@@ -270,12 +275,9 @@
          right: 25px;
          border: 8px solid transparent;
          border-bottom: 10px solid #0674ec;
-         @include max-w(360) {
-            right: 100px;
-         }
-         @include max-w(320) {
-            right: 102px;
-         }
+         @include max-w(414) {
+            right: 190px;
+         } 
       }
    }
    &__link {
@@ -373,16 +375,24 @@
       width: 400px;
       top: 71px;
       right: -39px;
+      @include max-w(736) {
+         top: 56px;
+      } 
+      @include max-w(667) {
+         top: 39px;
+      } 
       @include max-w(414) {
          width: 414px;
          right: auto;
          left: -15px;
-         top: 56px;
       }
+      @include max-w(375) {
+         width: 375px;
+      } 
       @include max-w(360) {
          width: 360px;
          left: -15px;
-         top: 55px;
+         top: 38px;
       }
       @include max-w(320) {
          top: 43px;
@@ -395,7 +405,7 @@
          border-bottom: 10px solid #0674ec;
          @include max-w(414) {
             right: auto;
-            left: 20px;
+            left: 32px;
          }
       }
       
@@ -403,6 +413,9 @@
    &__item {
       border-bottom: 1px solid #e8ebf0;
       padding: 26px 35px 25px 26px;
+      @include max-w(414) {
+         padding: 20px 35px 20px 20px;
+      } 
       @include max-w(360) {
          padding: 20px 13px 12px 12px;
       }
@@ -476,9 +489,12 @@
       font-size: 20px;
       font-weight: 700;
       text-align: right;
+      @include max-w(414) {
+         padding: 15px;
+         margin-bottom: 0;
+      } 
       @include max-w(360) {
          padding: 12px;
-         margin-bottom: 5px;
       }
    }
    &__total-text {
@@ -941,14 +957,8 @@
       @include max-w(900) {
          position: static;
       }
-      @include max-w(640) {
-         height: 70px;
-      }
-      @include max-w(375) {
-         height: 60px;
-      }
-      @include max-w(360) {
-         height: 55px;
+      @include max-w(812) {
+         height: 50px;
       }
       @include max-w(320) {
          height: 42px;
@@ -967,17 +977,8 @@
          z-index: 5;
          border-bottom: 5px solid blue;
       }
-      @include max-w(768) {
-         top: 75px;
-      }
-      @include max-w(640) {
-         top: 70px;
-      }
-      @include max-w(375) {
-         top: 60px;
-      }
-      @include max-w(360) {
-         top: 54px;
+      @include max-w(812) {
+         top: 50px;
       }
       @include max-w(320) {
          top: 42px;
@@ -1066,8 +1067,12 @@
          border-color: #0030de;
       }
       @include max-w(1024) {
-         width: 300px;
+         width: 300px;  
       }
+      @include max-w(812) {
+         height: 35px;
+         padding: 16px 40px 20px 25px;
+      } 
       @include max-w(533) {
          width: auto;
       }
@@ -1100,7 +1105,7 @@
       &:hover {
          background-color: #7347c1;
       }
-      @include max-w(360) {
+      @include max-w(812) {
          width: 42px;
          height: 37px;
       }
