@@ -4,7 +4,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Martplace</title>
+      <title>Favorites</title>
       <link rel="shortcut icon" href="images/Home/favicon.ico">
       <link rel="stylesheet" href="css/libs.min.css">
       <link rel="stylesheet" href="css/style.min.css">
@@ -111,7 +111,52 @@
 
             <main>
 
-            
+               <section class="favorites-banner">
+                  <div class="container">
+                     <div class="favorites-slider">
+                        <div class="favorites-banner__inner">
+                           <div class="favorites-banner__items">
+                              <div class="favorites-banner__item">
+                                 <div class="error-banner__links">
+                                    <a class="error-banner__link" href="index.html">Home / </a>
+                                    <a class="error-banner__link error-banner__link--error" href="error-404.html">Favorites</a>
+                                 </div>
+                                 <p class="error-banner__message">Your Favourites</p>
+                              </div>
+                              <div class="favorites-banner__item">
+                                 <div class="error-banner__links">
+                                    <a class="error-banner__link" href="index.html">Home / </a>
+                                    <a class="error-banner__link error-banner__link--error" href="error-404.html">Favorites</a>
+                                 </div>
+                                 <p class="error-banner__message">Your Favourites</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               
+               <section class="shop">
+                  <div class="container">
+                     <div class="shop__top-menu">
+                        <div class="shop__top-inner"></div>
+                        <p class="shop__found">570 Favourites Found</p>
+                        <div class="filter">Filter by:
+                           <div class="filter__list">
+                              <button class="filter__btn" type="button"  data-sort="test:asc">Trending items</button>
+                              <button class="filter__btn" type="button">Best seller</button>
+                              <button class="filter__btn" type="button" data-sort="rate:asc">Best rating</button>
+                              <button class="filter__btn" type="button" data-sort="price:desc">Low price</button>
+                              <button class="filter__btn" type="button" data-sort="price:asc">High price</button>
+                           </div>
+                        </div>
+                        <div class="shop__price"></div>
+                        <div class="shop__items-per-page"></div>
+                        <div class="shop__form-list"></div>
+                     </div>
+                  </div>
+               </section>
+
             </main>
          </div>
             <footer class="footer">
@@ -195,6 +240,9 @@
             </footer>
             
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/libs.min.js"></script>
+      <script src="js/main.js"></script>
    </body>
 
 

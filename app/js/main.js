@@ -104,6 +104,14 @@ $(function(){
       slidesToScroll: 1,
    });
 
+   $('.favorites-banner__items').slick({
+      infinite: true,
+      dots: false,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+   });
+
    var mixer = mixitup('.newproducts__items');
 
 });

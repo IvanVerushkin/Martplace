@@ -2,10 +2,12 @@
 
 .info {
    background-color: #202225;
-   padding-top: 104px;
-   padding-bottom: 91px;
+   padding: 104px 0 91px;
+   @include max-w(640) {
+      padding: 60px 0;
+   }
    @include max-w(600) {
-      padding: 65px 0;
+      padding: 60px 0 30px;
    }
    &__inner {
       justify-content: space-between;

@@ -2,24 +2,16 @@
 
    &__top {
       background-color: #eef1f3;
-      // @include max-w(414) {
-      //    overflow-x: hidden;
-      // }
    }
    &__top-inner {
       justify-content: space-between;
       align-items: center;
       height: 100px;
+      @include max-w(640) {
+         height: 70px;
+      }
       @include max-w(414) {
-         position: relative;
-         height: 70px;
-      }
-      @include max-w(375) {
-         height: 70px;
-      }
-      @include max-w(360) {
-         position: relative;
-         height: 70px;
+         position: relative;   
       }
       @include max-w(320) {
          height: 50px;
@@ -949,7 +941,7 @@
       @include max-w(900) {
          position: static;
       }
-      @include max-w(414) {
+      @include max-w(640) {
          height: 70px;
       }
       @include max-w(375) {
@@ -978,7 +970,7 @@
       @include max-w(768) {
          top: 75px;
       }
-      @include max-w(414) {
+      @include max-w(640) {
          top: 70px;
       }
       @include max-w(375) {

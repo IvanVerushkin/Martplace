@@ -8,8 +8,11 @@
       @include max-w(667) {
          padding: 90px 0 20px;
       }
+      @include max-w(640) {
+         padding: 60px 0 0px;
+      }
       @include max-w(414) {
-         padding: 50px 0 88px;
+         padding: 50px 0 0px;
       }
    }
    &__control {
@@ -98,7 +101,7 @@
       top: -5.5%;
    }
    @include max-w(640) {
-      top: -14%;
+      top: -6%;
    }
    @include max-w(533) {
       top: -7%;

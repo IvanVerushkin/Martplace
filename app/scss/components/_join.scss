@@ -6,15 +6,16 @@
    &__inner {
       padding: 110px 0 120px;
       text-align: center;
-      @include max-w(414) {
-         padding: 80px 0;
+      @include max-w(640) {
+         padding: 60px 0;
       }
    }
    &__title {
       font-size: 36px;
       color: #ffffff;
       margin-bottom: 21px;
-      @include max-w(414) {
+      @include max-w(640) {
+         font-size: 30px;
          line-height: 1.3;
       } 
    }

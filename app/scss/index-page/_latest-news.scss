@@ -24,6 +24,9 @@
       font-size: 36px;
       color: #000000;
       margin-bottom: 26px;
+      @include max-w(640) {
+         font-size: 30px;
+      }
    }
    &__title-rightside {
       color: #0674ec;

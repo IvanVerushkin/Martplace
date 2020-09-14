@@ -11,9 +11,6 @@
          padding: 130px 0 80px;
       }
       @include max-w(640) {
-         padding: 115px 60px;
-      }
-      @include max-w(480) {
          padding: 80px 0 50px;
       }
       @include max-w(375) {
