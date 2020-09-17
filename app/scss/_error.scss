@@ -3,23 +3,12 @@
    &__inner {
       padding: 50px 0 55px;
    }
-   &__links {
-      margin-bottom: 14px;
-   }
-   &__link {
-      color: #fff;
-      text-decoration: none;
-      &--error {
-         color: #bfcad7;
-         text-decoration: none;
-      }
-   }
    &__message {
+      margin-top: 15px;
       font-size: 30px;
       color: #fff;
       font-weight: 500;
    }
-
 }
 
 .error-picture {

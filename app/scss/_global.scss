@@ -271,3 +271,29 @@ body {
       height: 40px;
    }
 }
+
+.breadcrumbs {
+   li {
+      display: inline-block;
+      & + li {
+         padding-left: 19px;
+         position: relative;
+         &::before {
+            content: '/';
+            position: absolute;
+            left: 2px;
+            color: #bfcad7;
+         }
+      }
+      &:last-child {
+         a, span {
+            color: #bfcad7;
+         }
+      }
+   }
+   
+   a {
+      color: #fff;
+      text-decoration: none;
+   }
+}

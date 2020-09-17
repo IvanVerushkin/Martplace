@@ -109,50 +109,548 @@
                </div>
             </header>
 
-            <main>
+            <main class="favorites-main">
 
                <section class="favorites-banner">
                   <div class="container">
-                     <div class="favorites-slider">
-                        <div class="favorites-banner__inner">
-                           <div class="favorites-banner__items">
-                              <div class="favorites-banner__item">
-                                 <div class="error-banner__links">
-                                    <a class="error-banner__link" href="index.html">Home / </a>
-                                    <a class="error-banner__link error-banner__link--error" href="error-404.html">Favorites</a>
-                                 </div>
-                                 <p class="error-banner__message">Your Favourites</p>
-                              </div>
-                              <div class="favorites-banner__item">
-                                 <div class="error-banner__links">
-                                    <a class="error-banner__link" href="index.html">Home / </a>
-                                    <a class="error-banner__link error-banner__link--error" href="error-404.html">Favorites</a>
-                                 </div>
-                                 <p class="error-banner__message">Your Favourites</p>
-                              </div>
-                           </div>
+                     <div class="favorites-banner__inner">
+                        <div class="breadcrumbs">
+                           <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__pnt"><a class="breadcrumbs__link" href="index.html">Home</a></li>
+                              <li class="breadcrumbs__pnt"><span class="breadcrumbs__link">Favorites</span></li>
+                           </ul>
                         </div>
+                        <p class="favorites-banner__message">Your Favourites</p>
                      </div>
                   </div>
                </section>
                
                <section class="shop">
-                  <div class="container">
-                     <div class="shop__top-menu">
-                        <div class="shop__top-inner"></div>
-                        <p class="shop__found">570 Favourites Found</p>
-                        <div class="filter">Filter by:
-                           <div class="filter__list">
-                              <button class="filter__btn" type="button"  data-sort="test:asc">Trending items</button>
-                              <button class="filter__btn" type="button">Best seller</button>
-                              <button class="filter__btn" type="button" data-sort="rate:asc">Best rating</button>
-                              <button class="filter__btn" type="button" data-sort="price:desc">Low price</button>
-                              <button class="filter__btn" type="button" data-sort="price:asc">High price</button>
+                  <div class="shop__top-menu">
+                     <div class="container">
+                        <div class="shop__top-inner d-flex">
+                           <p class="shop__found"><span class="shop__found-number">570</span> Favourites Found</p>
+                           <div class="shop__filter">
+                              <div class="shop__filter-inner">Filter By
+                                 <div class="shop__filter-list">
+                                    <button class="shop__filter-btn" type="button"  data-sort="test:asc">Trending items</button>
+                                    <button class="shop__filter-btn" type="button">Best seller</button>
+                                    <button class="shop__filter-btn" type="button" data-sort="rate:asc">Best rating</button>
+                                    <button class="shop__filter-btn" type="button" data-sort="price:desc">Low price</button>
+                                    <button class="shop__filter-btn" type="button" data-sort="price:asc">High price</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="shop__price">Price:
+                              <select class="shop__price-dropdown">
+                                 <option class="shop__price-btn" value="first">Low to Hight</option>
+                                 <option class="shop__price-btn" value="second">Hight to Low</option>
+                                 <option class="shop__price-btn" value="third">Middle</option>
+                              </select>
+                           </div>
+                           <div class="shop__items-per-page">
+                              <select class="shop__items-per-page-dropdown">
+                                 <option class="shop__items-per-page-btn" value="first">6 Items Per Page</option>
+                                 <option class="shop__items-per-page-btn" value="second">9 Items Per Page</option>
+                                 <option class="shop__items-per-page-btn" value="third">12 Items Per Page</option>
+                              </select>
+                           </div>
+                           <div class="shop__overview">
+                              <button class="shop__overview-grid"></button>
+                              <button class="shop__overview-list"></button>
                            </div>
                         </div>
-                        <div class="shop__price"></div>
-                        <div class="shop__items-per-page"></div>
-                        <div class="shop__form-list"></div>
+                     </div>
+                  </div>
+                  <div class="shop__wrapper">
+                     <div class="container">
+                        <div class="newproducts__items">
+
+                           <article class="card-product mix category-wordpress category-plugins" data-order="1" data-rate="1" data-price="20" data-test="8">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/1.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">E-commerce Shopping Cart</div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">Theme-Valley</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                          <span class="card-product__plugin-name">Plugin</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$20</span>
+                                       <button class="card-product__likes hearts" type="button">90</button>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">246</button>
+                                 </footer>
+                              </div>
+                           </article>  
+      
+                           <article class="card-product mix category-psd category-site" data-order="2" data-rate="3" data-price="18" data-test="7">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/2.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">Marketify Coffee Shop</div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">EchoTheme</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></div>
+                                          <span class="card-product__psd">PSD</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$18</span>
+                                       <button class="card-product__likes hearts" type="button">48</button>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">50</button>
+                                 </footer>
+                              </div>
+                           </article>  
+      
+                           <article class="card-product mix category-software category-site category-psd" data-order="3" data-rate="2" data-price="10" data-test="1">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/3.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">Bryson - Portfolio Template</a> </div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">Artcorner</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></div>
+                                          <span class="card-product__html">HTML</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex"> 
+                                       <span class="card-product__price">$10</span>
+                                       <button class="card-product__likes hearts" type="button">56</button>
+                                       <div class="card-product__stars rate-star"></div>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">68</button>
+                                 </footer>
+                              </div>
+                           </article>  
+      
+                           <article class="card-product mix category-wordpress category-plugins" data-order="4" data-rate="2" data-price="10-50">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/4.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">E-commerce Shopping Cart</a> </div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">Design-Hub</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                          <span class="card-product__plugin-name">Plugin</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$10 - 50</span>
+                                       <button class="card-product__likes hearts" type="button">90</button>
+                                       <div class="card-product__stars rate-star"></div>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">45</button>
+                                 </footer>
+                              </div>
+                           </article>  
+      
+                           <article class="card-product mix category-psd category-landing" data-order="5" data-rate="3" data-price="50">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/5.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">Marketify Coffee Shop</a> </div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">AazzTech</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></div>
+                                          <span class="card-product__psd">PSD</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$10 - 50</span>
+                                       <button class="card-product__likes hearts" type="button">48</button>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">50</button>
+                                 </footer>
+                              </div>
+                           </article>
+      
+                           <article class="card-product mix category-software category-joomla" data-order="6" data-rate="4" data-price="10">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/6.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">Bryson - Portfolio Template</a> </div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">Coder-Lab</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></div>
+                                          <span class="card-product__html">HTML</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$10</span>
+                                       <button class="card-product__likes hearts" type="button">56</button>
+                                       <div class="card-product__stars rate-star"></div>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">68</button>
+                                 </footer>
+                              </div>
+                           </article>
+      
+                           <article class="card-product mix category-wordpress category-plugins" data-order="1" data-rate="1" data-price="20" data-test="8">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/1.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">E-commerce Shopping Cart</div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">Theme-Valley</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                          <span class="card-product__plugin-name">Plugin</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$20</span>
+                                       <button class="card-product__likes hearts" type="button">90</button>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">246</button>
+                                 </footer>
+                              </div>
+                           </article>  
+      
+                           <article class="card-product mix category-psd category-site" data-order="2" data-rate="3" data-price="18" data-test="7">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/2.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">Marketify Coffee Shop</div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">EchoTheme</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></div>
+                                          <span class="card-product__psd">PSD</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$18</span>
+                                       <button class="card-product__likes hearts" type="button">48</button>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">50</button>
+                                 </footer>
+                              </div>
+                           </article>  
+      
+                           <article class="card-product mix category-software category-site category-psd" data-order="3" data-rate="2" data-price="10" data-test="1">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/3.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">Bryson - Portfolio Template</a> </div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">Artcorner</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></div>
+                                          <span class="card-product__html">HTML</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex"> 
+                                       <span class="card-product__price">$10</span>
+                                       <button class="card-product__likes hearts" type="button">56</button>
+                                       <div class="card-product__stars rate-star"></div>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">68</button>
+                                 </footer>
+                              </div>
+                           </article>  
+      
+                           <article class="card-product mix category-wordpress category-plugins" data-order="4" data-rate="2" data-price="10-50">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/4.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">E-commerce Shopping Cart</a> </div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">Design-Hub</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__plugin-icon" style="background-image: url(images/Home/slider-products/wp-icon.svg);"></div>
+                                          <span class="card-product__plugin-name">Plugin</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$10 - 50</span>
+                                       <button class="card-product__likes hearts" type="button">90</button>
+                                       <div class="card-product__stars rate-star"></div>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">45</button>
+                                 </footer>
+                              </div>
+                           </article>  
+      
+                           <article class="card-product mix category-psd category-landing" data-order="5" data-rate="3" data-price="50">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/5.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">Marketify Coffee Shop</a> </div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">AazzTech</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/forma_1_copy_2_23710.png);"></div>
+                                          <span class="card-product__psd">PSD</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$10 - 50</span>
+                                       <button class="card-product__likes hearts" type="button">48</button>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">50</button>
+                                 </footer>
+                              </div>
+                           </article>
+      
+                           <article class="card-product mix category-software category-joomla" data-order="6" data-rate="4" data-price="10">
+                              <div class="card-product__inner d-flex">
+                                 <div class="card-product__image">
+                                    <img class="card-product__img" src="images/Home/newproducts/6.jpg" alt="space">
+                                    <div class="card-product__background">
+                                       <a class="card-product__btn btn-inside" href="#">More Info</a>
+                                       <a class="card-product__btn btn-inside" href="#">Live Demo</a>
+                                    </div>
+                                 </div>
+                                 <div class="card-product__content">
+                                    <div class="card-product__title">Bryson - Portfolio Template</a> </div>
+      
+                                    <div class="card-product__subtitle d-flex">
+                                       <a class="card-product__account-link d-flex" href="#">
+                                          <div class="card-product__account-icon" style="background-image: url(images/Home/header/face1.jpg);"></div>
+                                          <span class="card-product__account-name">Coder-Lab</span>
+                                       </a>
+                                       <a class="card-product__plugin d-flex" href="#">
+                                          <div class="card-product__ps-icon" style="background-image: url(images/Home/newproducts/html_23743.png);"></div>
+                                          <span class="card-product__html">HTML</span>
+                                       </a>
+                                    </div>
+      
+                                    <p class="card-product__desc">
+                                       Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                       the mattis, leo quam aliquet congue.
+                                    </p>
+                                 </div>
+                                 <footer class="card-product__footer d-flex">
+                                    <div class="card-product__leftside d-flex">
+                                       <span class="card-product__price">$10</span>
+                                       <button class="card-product__likes hearts" type="button">56</button>
+                                       <div class="card-product__stars rate-star"></div>
+                                    </div>
+                                    <button class="card-product__buys carts" type="button">68</button>
+                                 </footer>
+                              </div>
+                           </article>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  
+               </section>
+
+               <div class="pagination d-flex">
+                  <div class="pagination__arrow pagination__arrow--back"><a class="pagination__icon pagination__icon--back" href="#"></a></div>
+                  <ul class="pagination__list d-flex">
+                     <li><a class="pagination__link active" href="#">1</a></li>
+                     <li><a class="pagination__link" href="#">2</a></li>
+                     <li><div class="pagination__dots">...</div></li>
+                     <li><a class="pagination__link" href="#">8</a></li>
+                  </ul>
+                  <div class="pagination__arrow pagination__arrow--next"><a class="pagination__icon pagination__icon--next" href="#"></a></div>
+               </div>
+
+               <section class="ready favorites-ready">
+                  <div class="container">
+                     <div class="ready__inner">
+                        <p class="ready__title">Ready to Join Our Marketplace!</p>
+                        <p class="ready__text">Over 25,000 designers and developers trust the MartPlace.</p>
+                        <a class="ready__btn" href="#">Join Us Today</a>
                      </div>
                   </div>
                </section>

@@ -1,12 +1,6 @@
-// -- HOW DO IT -- //
+// -- HOW IT WORKS -- //
 
 // become //
-
-.become-swiper {
-   position: relative;
-   max-width: 1170px;
-   margin: 0 auto;
-}
 
 .become {
    background-image: linear-gradient(-90.0deg, #0d3ef2 0%, #4c1f9c 100%);
@@ -52,18 +46,6 @@
    }
    &__text-down {
       font-weight: 300;
-   }
-   &__links {
-      font-size: 23px;
-      text-decoration: none;
-   }
-   &__home {
-      text-decoration: none;
-      color: #fff;
-   }
-   &__howitworks {
-      text-decoration: none;
-      color: #bfcad7;
    }
 }
 
