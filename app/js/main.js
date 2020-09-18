@@ -96,7 +96,16 @@ $(function(){
       $('.nav-menu__list').toggleClass('active');
    });
 
-
+   $('.shop__overview-list').on('click', function(){
+      $('.card-product').addClass('list');
+      $('.shop__overview-list').addClass('active');
+      $('.shop__overview-grid').removeClass('active');
+   });
+   $('.shop__overview-grid').on('click', function(){
+      $('.card-product').removeClass('list')
+      $('.shop__overview-grid').addClass('active');
+      $('.shop__overview-list').removeClass('active');
+   });
 
    var mixer = mixitup('.newproducts__items');
 
