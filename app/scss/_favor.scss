@@ -6,6 +6,9 @@
    background-image: linear-gradient(-90.0deg, #0d3ef2 0%, #4c1f9c 100%);
    &__inner {
       padding: 49px 0 62px;
+      @include max-w(812) {
+         padding: 5px 0;
+      } 
    }
    &__links {
       margin-bottom: 14px;
@@ -23,6 +26,10 @@
       font-size: 30px;
       color: #fff;
       font-weight: 500;
+      @include max-w(812) {
+         font-size: 22px;
+         margin-top: 7px;
+      }
    }
 }
 
@@ -30,21 +37,67 @@
    &__wrapper {
       padding-top: 80px;
       margin-bottom: 21px;
+      @include max-w(812) {
+         padding-top: 30px;
+      }
    }
    &__top-menu {
-      
       background-color: #fff;
       box-shadow: 0px 2px 4px 0px rgba(107,110,115,0.1);
    }
    &__top-inner {
       height: 100px;
       align-items: center;
+      @include max-w(992) {
+         height: 80px;
+      }
+      @include max-w(812) {
+         height: 60px;
+      }
+      @include max-w(533) {
+         width: 463px;
+         height: 76px;
+         margin: auto;
+         text-align: center;
+         flex-wrap: wrap;
+      }
+      @include max-w(360) {
+         width: auto;
+         height: 104px;
+      }
    }
    &__found {
-      width: 325px;
+      width: 280px;
       margin-bottom: 7px;
+      margin-right: 48px;
       font-size: 24px;
       color: #000;
+      @include max-w(1024) {
+         font-size: 23px;
+         margin-right: 0;
+      }
+      @include max-w(960) {
+         font-size: 20px;
+      }
+      @include max-w(812) {
+         font-size: 18px;
+      }
+      @include max-w(768) {
+         font-size: 17px;
+      }
+      @include max-w(650) {
+         font-size: 14px;
+      }
+      @include max-w(414) {
+         margin-bottom: 0;
+      }
+      @include max-w(375) {
+         width: 250px;
+      }
+      @include max-w(360) {
+         margin: auto;
+         width: auto;
+      }
    }
    &__found-number {
       font-weight: 500;
@@ -66,8 +119,33 @@
    padding: 30px 27px 38px;
    border-left: 1px solid #eceff2;
    border-right: 1px solid #eceff2;
-   
+   @include max-w(992) {
+      padding: 21px 10px 29px;
+   }
+   @include max-w(812) {
+      padding: 13px 10px 17px;
+   }
+   @include max-w(736) {
+      padding: 15px 10px;
+   }
+   @include max-w(667) {
+      padding: 15px 5px;
+   }
+   @include max-w(650) {
+      font-size: 13px;
+   }
+   @include max-w(533) {
+      border: 1px solid #eceff2;
+      padding: 0;
+   }
+   @include max-w(360) {
+      margin: auto;
+   }
    &-inner {
+      width: 85px;
+      @include max-w(650) {
+         width: 75px;
+      }
       &:hover .shop__filter-list {
          display: block;
          opacity: 1;
@@ -77,6 +155,9 @@
          font-family: Linearicons-Free;
          font-size: 12px;
          margin-left: 6px;
+         @include max-w(375) {
+            font-size: 9px;
+         }
       }
    }
    &-list {
@@ -105,17 +186,62 @@
 }
 
 .shop__price {
+   min-width: 219px;
    height: 44px;
-   padding: 6px 18px 4px;
-   margin-left: 35px;
+   padding: 6px 11px 4px 17px;
+   margin-left: 32px;
    margin-bottom: 7px;
    font-size: 14px;
    border: 1px solid #eceff2;
+   @include max-w(1024) {
+      margin-left: 20px;
+   }
+   @include max-w(812) {
+      min-width: 170px;
+      padding: 6px 7px 4px 10px;
+   }
+   @include max-w(736) {
+      margin-left: 10px;
+      margin-bottom: 0;
+   }
+   @include max-w(667) {
+      min-width: 160px;
+      padding: 6px 5px 4px 5px;
+   }
+   @include max-w(650) {
+      font-size: 13px;
+      min-width: 150px;
+   }
+   @include max-w(533) {
+      min-width: 165px;
+      height: auto;
+      padding: 0;
+      margin-left: 0;
+   }
+   @include max-w(414) {
+      min-width: 145px;
+   }
+   @include max-w(375) {
+      min-width: 138px;
+   }
+   @include max-w(360) {
+      min-width: 150px;
+      margin: auto;
+   }
    &::after {
       content: "\e874";
       font-family: Linearicons-Free;
       font-size: 11px;
       margin-left: 47px;
+      @include max-w(812) {
+         margin-left: 10px;
+      }
+      @include max-w(414) {
+         margin-left: 5px;
+      }
+      @include max-w(375) {
+         font-size: 9px;
+      }
    }
    &-dropdown {
       appearance: none;
@@ -136,17 +262,58 @@
 
 .shop__items-per-page {
    height: 44px;
-   width: 220px;
+   min-width: 220px;
    padding: 6px 0px 6px 23px;
-   margin-left: 77px;
+   margin-left: 75px;
    margin-bottom: 7px;
    font-size: 14px;
    border: 1px solid #eceff2;
+   @include max-w(1024) {
+      margin-left: 20px;
+   }
+   @include max-w(812) {
+      min-width: 155px;
+      padding: 6px 0 6px 10px;
+   }
+   @include max-w(736) {
+      margin-left: 10px;
+      margin-bottom: 0;
+   }
+   @include max-w(667) {
+      min-width: 145px;
+      padding: 6px 0 6px 5px;
+   }
+   @include max-w(650) {
+      font-size: 13px;
+      min-width: 140px;
+   }
+   @include max-w(533) {
+      min-width: 160px;
+      height: auto;
+      padding: 0;
+      margin-left: 20px;
+   }
+   @include max-w(414) {
+      min-width: 140px;
+      margin-left: 10px;
+   }
+   @include max-w(375) {
+      min-width: 126px;
+   }
+   @include max-w(360) {
+      margin: auto;
+   }
    &::after {
       content: "\e874";
       font-family: Linearicons-Free;
       font-size: 12px;
       margin-left: 48px;
+      @include max-w(812) {
+         margin-left: 0;
+      }
+      @include max-w(375) {
+         font-size: 9px;
+      }
    }
    &-dropdown {
       appearance: none;
@@ -167,11 +334,30 @@
 
 .shop__overview {
    padding: 9px 0;
-   width: 96px;
+   min-width: 96px;
    height: 44px;
    margin-bottom: 7px;
    margin-left: 27px;
    border: 1px solid #eceff2;
+   @include max-w(1024) {
+      margin-left: 20px;
+   }
+   @include max-w(736) {
+      margin-left: 10px;
+      margin-bottom: 0;
+   }
+   @include max-w(667) {
+      min-width: 78px;
+   }
+   @include max-w(533) {
+      position: relative;
+      height: 32px;
+      padding: 0;
+      min-width: 71px;
+   }
+   @include max-w(360) {
+      margin: auto;
+   }
    &-grid {
       width: 21px;
       height: 20px;
@@ -181,6 +367,15 @@
       outline: transparent;
       border: transparent;
       background-color: transparent;
+      @include max-w(667) {
+         margin-left: 10px;
+      }
+      @include max-w(533) {
+         position: absolute;
+         left: 1px;
+         top: 5px;
+      } 
+     
    }
    &-list {
       width: 21px;
@@ -191,6 +386,11 @@
       outline: transparent;
       border: transparent;
       background-color: transparent;
+      @include max-w(533) {
+         position: absolute;
+         top: 5px;
+         margin-left: 5px;
+      }
    }
 }
 
@@ -211,17 +411,38 @@
          max-width: 300px;
          width: 100%;
          border-radius: 0;
+         @include max-w(812) {
+            max-width: 220px;
+            height: 190px;
+
+         }
       }
       .card-product__content {
          display: flex;
          flex-direction: column;
          padding: 20px;
       }
+      .card-product__title {
+         @include max-w(667) {
+            font-size: 19px;
+            margin-bottom: 20px;
+         }
+      }
+      .card-product__subtitle {
+         margin-bottom: 15px;
+      }
+      .card-product__desc {
+         font-size: 15px;
+         line-height: 1.6;
+      }
       .card-product__footer {
          flex-direction: column;
          padding: 20px 15px;
          width: 150px;
          border-left: 1px solid #eceff2;
+         @include max-w(812) {
+            padding: 20px 5px;
+         }
       }
       .card-product__leftside{
          flex-wrap: wrap;
