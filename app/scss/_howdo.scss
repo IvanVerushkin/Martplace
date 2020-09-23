@@ -33,6 +33,10 @@
          margin: 0 auto 96px;
          font-size: 34px;
       }
+      @include max-w(650) {
+         margin: 0 auto 35px;
+         font-size: 31px;
+      }
       @include max-w(568) {
          max-width: 340px;
          margin: 0 auto 30px;
@@ -59,8 +63,8 @@
       @include max-w(667) {
          padding: 70px 0;
       }
-      @include max-w(568) {
-         padding: 60px 0;
+      @include max-w(640) {
+         padding: 50px 0;
       }
       @include max-w(480) {
          display: block;
@@ -77,70 +81,40 @@
    &__layer {
       order: 1;
       @include max-w(992) {
-         width: 420px;
+         margin: 0 20px;
+         width: 30%;
+         object-fit: contain;
       }
       @include max-w(960) {
-         width: 410px;
+         width: 30%;
       }
-      @include max-w(768) {
-         width: 335px;
-         height: 300px;
-      }
-      @include max-w(736) {
-         width: 325px;
-         height: 270px;
-      }
-      @include max-w(667) {
-         width: 300px;
-         height: 250px;
-      }
-      @include max-w(640) {
-         width: 290px;
-         height: 250px;
-      }
-      @include max-w(568) {
-         width: 245px;
-         height: 190px;
+      @include max-w(823) {
+         width: 30%;
       }
       @include max-w(533) {
-         width: 220px;
-         height: 175px;
+         width: 33%
       } 
       @include max-w(375) {
-         width: 260px;
-         height: 215px;
-      }
-      @include max-w(360) {
-         width: 250px;
-         height: 200px;
-      }
-      @include max-w(320) {
-         width: 230px;
-         height: 180px;
+         width: 40%
       }
    }
    &__info {
       order: 2;
       max-width: 450px;
-      @include max-w(768) {
-         max-width: 345px;
+      @include max-w(992) {
+         width: 65%;
+         max-width: 700px;
       }
-      @include max-w(667) {
-         max-width: 290px;
+      @include max-w(960) {
+         width: 63%;
+         max-width: 600px;
       }
-      @include max-w(640) {
-         max-width: 280px;
-      } 
-      @include max-w(568) {
-         max-width: 50%;
-         margin: 0;
-      }
-      @include max-w(533) {
-         max-width: 50%;
+      @include max-w(823) {
+         width: 65%;
       }
       @include max-w(480) {
          margin: auto;
-         max-width: 95%;
+         width: 95%;
       } 
    }
    &__title {
@@ -178,9 +152,9 @@
       background-color: #0674ec;
       padding: 15px 35px;
       border-radius: 25px;
-      @include max-w(480) {
+      @include max-w(992) {
          padding: 12px 20px;
-      } 
+      }
    }
 }
 

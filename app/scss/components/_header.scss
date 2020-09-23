@@ -906,6 +906,9 @@
       &:hover {
          color: #0674ec;
       }
+      &--have {
+         border: 1px solid #0674ec;
+      }
       @include max-w(360) {
          &:hover {
             background-color: #0674ec;
