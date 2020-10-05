@@ -1079,13 +1079,15 @@
       @include max-w(533) {
          width: auto;
       }
+      @include max-w(375) {
+         width: 92%;
+         padding: 16px 20px 20px 13px;
+      }
       @include max-w(360) {
-         width: auto;
          height: 33px;
-         padding: 16px 46px 20px 13px;
       }
       @include max-w(320) {
-         padding: 14px 35px 18px 13px;
+         padding: 14px 20px 18px 13px;
       }
    }
    &__form-btn {
@@ -1111,6 +1113,9 @@
       @include max-w(812) {
          width: 42px;
          height: 37px;
+      }
+      @include max-w(375) {
+         width: 33px;
       }
       @include max-w(320) {
          width: 37px;
