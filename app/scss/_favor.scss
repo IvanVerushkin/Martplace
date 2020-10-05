@@ -88,6 +88,10 @@
       @include max-w(650) {
          font-size: 14px;
       }
+      @include max-w(600) {
+         font-size: 14px;
+         line-height: 1.6;
+      }
       @include max-w(414) {
          margin-bottom: 0;
       }
@@ -145,6 +149,9 @@
       width: 85px;
       @include max-w(650) {
          width: 75px;
+      }
+      @include max-w(600) {
+         width: 70px;
       }
       &:hover .shop__filter-list {
          display: block;
@@ -215,6 +222,9 @@
       font-size: 13px;
       min-width: 150px;
    }
+   @include max-w(600) {
+      min-width: 140px;
+   }
    @include max-w(533) {
       min-width: 165px;
       height: auto;
@@ -245,8 +255,8 @@
       @include max-w(650) {
          font-size: 9px;
       }
-      @include max-w(414) {
-         margin-left: 5px;
+      @include max-w(600) {
+         margin-left: 4px;
       }
    }
    &-dropdown {
@@ -295,6 +305,9 @@
    @include max-w(650) {
       font-size: 13px;
       min-width: 140px;
+   }
+   @include max-w(600) {
+      min-width: 135px;
    }
    @include max-w(533) {
       min-width: 160px;
@@ -361,6 +374,9 @@
    @include max-w(667) {
       min-width: 78px;
    }
+   @include max-w(600) {
+      min-width: 63px;
+   }
    @include max-w(533) {
       position: relative;
       height: 32px;
@@ -382,12 +398,14 @@
       @include max-w(667) {
          margin-left: 10px;
       }
+      @include max-w(600) {
+         margin-left: 5px;
+      }
       @include max-w(533) {
          position: absolute;
          left: 1px;
          top: 5px;
       } 
-     
    }
    &-list {
       width: 21px;
@@ -398,6 +416,9 @@
       outline: transparent;
       border: transparent;
       background-color: transparent;
+      @include max-w(600) {
+         margin-left: 5px;
+      }
       @include max-w(533) {
          position: absolute;
          top: 5px;
