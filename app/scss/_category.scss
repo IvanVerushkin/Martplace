@@ -409,10 +409,10 @@
    margin-bottom: 30px;
    box-shadow: 0px 2px 4px 0px rgba(107,110,115,0.1);
    @include max-w(823) {
-      width: 255px;
+      width: 32%;
    }
    @include max-w(768) {
-      width: 220px;
+      width: 32%;
       padding: 15px;
    }
    @include max-w(414) {
@@ -897,7 +897,7 @@
          }
       }
       .card-product__price {
-         @include max-w(640) {
+         @include max-w(768) {
             font-size: 13px;
             padding: 0 9px;
             margin-right: 0;
@@ -910,7 +910,7 @@
          &--buys-list {
             display: block;
             margin: 0 auto;
-            @include max-w(640) {
+            @include max-w(768) {
                font-size: 13px;
             }
          }
