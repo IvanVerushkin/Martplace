@@ -75,10 +75,10 @@
    &__plugin-icon {
       width: 16px;
       height: 16px;
-      margin-right: 9px;
    }
    &__plugin-name {
       font-size: 15px;
+      margin-left: 6px;
       @include max-w(768) {
          font-size: 17px;  
       }

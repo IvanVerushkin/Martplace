@@ -194,10 +194,8 @@
 
 .shop__price {
    min-width: 219px;
-   height: 44px;
    padding: 6px 11px 4px 17px;
    margin-left: 32px;
-   margin-bottom: 7px;
    font-size: 14px;
    border: 1px solid #eceff2;
    @include max-w(1024) {
@@ -277,11 +275,9 @@
 }
 
 .shop__items-per-page {
-   height: 44px;
    min-width: 220px;
    padding: 6px 0px 6px 23px;
    margin-left: 75px;
-   margin-bottom: 7px;
    font-size: 14px;
    border: 1px solid #eceff2;
    @include max-w(1024) {
@@ -357,82 +353,9 @@
    }
 }
 
-.shop__overview {
-   padding: 9px 0;
-   min-width: 96px;
-   height: 44px;
-   margin-bottom: 7px;
-   margin-left: 27px;
-   border: 1px solid #eceff2;
-   @include max-w(1024) {
-      margin-left: 20px;
-   }
-   @include max-w(736) {
-      margin-left: 10px;
-      margin-bottom: 0;
-   }
-   @include max-w(670) {
-      min-width: 70px;
-   }
-   @include max-w(600) {
-      min-width: 63px;
-   }
-   @include max-w(533) {
-      position: relative;
-      height: 32px;
-      padding: 0;
-      min-width: 71px;
-   }
-   @include max-w(360) {
-      margin: auto;
-   }
-   &-grid {
-      width: 21px;
-      height: 20px;
-      margin-left: 22px;
-      background-image: url(../images/grid_27534.png);
-      background-repeat: no-repeat;
-      outline: transparent;
-      border: transparent;
-      background-color: transparent;
-      @include max-w(670) {
-         margin-left: 7px;
-      }
-      @include max-w(600) {
-         margin-left: 5px;
-      }
-      @include max-w(533) {
-         position: absolute;
-         left: 1px;
-         top: 5px;
-      } 
-   }
-   &-list {
-      width: 21px;
-      height: 20px;
-      margin-left: 10px;
-      background-image: url(../images/list_27533.png);
-      background-repeat: no-repeat;
-      outline: transparent;
-      border: transparent;
-      background-color: transparent;
-      @include max-w(670) {
-         margin-left: 7px;
-      }
-      @include max-w(600) {
-         margin-left: 5px;
-      }
-      @include max-w(533) {
-         position: absolute;
-         top: 5px;
-         margin-left: 5px;
-      }
-   }
-}
-
 .card-product {
    transition: max-width .5s;
-   &.list {
+   &.list2 {
       max-width: 100%;
       .card-product__inner {
          flex-direction: row;

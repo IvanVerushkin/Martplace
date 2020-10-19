@@ -96,17 +96,64 @@ $(function(){
       $('.nav-menu__list').toggleClass('active');
    });
 
-   $('.shop__overview-list').on('click', function(){
-      $('.card-product').addClass('list');
-      $('.shop__overview-list').addClass('active');
-      $('.shop__overview-grid').removeClass('active');
+   var mixer = mixitup('.newproducts__items');
+
+
+   $('.favorites-shop__list').on('click', function(){
+      $('.card-product').addClass('list2');
+      $('.favorites-shop__list').addClass('active');
+      $('.favorites-shop__grid').removeClass('active');
    });
-   $('.shop__overview-grid').on('click', function(){
-      $('.card-product').removeClass('list')
-      $('.shop__overview-grid').addClass('active');
-      $('.shop__overview-list').removeClass('active');
+   $('.favorites-shop__grid').on('click', function(){
+      $('.card-product').removeClass('list2')
+      $('.favorites-shop__grid').addClass('active');
+      $('.favorites-shop__list').removeClass('active');
    });
 
-   var mixer = mixitup('.newproducts__items');
+
+   $('.select-price__title').on('click', function(){
+      $('.select-price__list').slideToggle();
+   });
+
+   $('.select-items__title').on('click', function(){
+      $('.select-items__list').slideToggle();
+   });
+   
+   $('.category-shop__list').on('click', function(){
+      $('.card-product').addClass('list1');
+      $('.category-shop__list').addClass('active');
+      $('.category-shop__grid').removeClass('active');
+   });
+   $('.category-shop__grid').on('click', function(){
+      $('.card-product').removeClass('list1')
+      $('.category-shop__grid').addClass('active');
+      $('.category-shop__list').removeClass('active');
+   });
+
+
+   $('.categories__title').on('click', function(){
+      $('.categories__list').slideToggle();
+   });
+
+   $('.filter-products__title').on('click', function(){
+      $('.filter-products__list').slideToggle();
+   });
+
+   $('.pricing-range__title').on('click', function(){
+      $('.pricing-range__inner').slideToggle();
+   });
+
+
+   var slider = $("js-range-slider").data("ionRangeSlider");
+
+   $(".js-range-slider").ionRangeSlider({
+      type: "double",
+      from: 30,
+      to: 300,
+      prefix: "$",
+      max: 600,
+  });
+
+
 
 });
