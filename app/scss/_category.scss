@@ -352,7 +352,9 @@
          }
          &.list1 {
             max-width: 100%;
-            margin-left: 0;
+            @include max-w(823) {
+               margin-left: 0;
+            }
             @include max-w(480) {
                margin: auto;
             }
