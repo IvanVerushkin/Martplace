@@ -307,7 +307,11 @@
     font-weight: 500;
 }
 
-.tab-details {
+.tab-details,
+.tab-comments,
+.tab-reviews,
+.tab-support,
+.tab-faq {
     padding: 70px 30px 80px;
     @include max-w(1024) {
         padding: 70px 20px 20px;
@@ -450,6 +454,10 @@
             height: 440px;
         } 
     }
+}
+
+.tab-comments__title {
+    margin-top: 30px;
 }
 
 .product-aside {
@@ -677,15 +685,6 @@
     padding: 38px 30px 40px;
     @include max-w(1024) {
         padding: 25px 50px 25px;
-    }
-    @include max-w(650) {
-        background-color: rgb(237, 240, 75);
-    }
-    @include max-w(640) {
-        background-color: rgb(75, 240, 111);
-    }
-    @include max-w(360) {
-        background-color: aquamarine;
     }
     &__title {
         text-align: center;
