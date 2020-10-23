@@ -225,6 +225,7 @@
         }
         @include max-w(360) {
             margin-right: 10px;
+            height: 37px;
         }
         &:last-child {
             margin-right: 0;
@@ -690,6 +691,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 50%;
+        @include max-w(360) {
+            height: 100px;
+        } 
     }
     &__name {
         display: block;
@@ -749,6 +753,9 @@
         background-color: #eff1f5;
         padding: 100px 0 30px;
     }
+    @include max-w(360) {
+        padding: 80px 0 30px;
+    }
     &__title {
         text-align: center;
         font-size: 30px;
@@ -789,7 +796,7 @@
     }
     &__image {
         @include max-w(823) {
-            height: 350px;
+            height: 300px;
         }
     }
     &__img {
@@ -797,9 +804,24 @@
             height: auto;
         }
     }
+    &__background {
+        @include max-w(360) {
+            padding: 130px 25px 0;
+        }
+    }
+    &__btn {
+        @include max-w(360) {
+            width: 105px;
+            height: 40px;
+            padding-top: 4px;
+        }
+    }
     &__content {
         @include max-w(1024) {
             padding: 34px 20px 27px 20px;
+        }
+        @include max-w(360) {
+            padding: 34px 15px 20px 15px;
         }
     }
     &__subtitle {
@@ -807,7 +829,7 @@
             height: auto;
             align-items: flex-start;
             flex-direction: column;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
     }
     &__account-link {
@@ -823,6 +845,7 @@
     &__desc {
         @include max-w(360) {
             font-size: 15px;
+            line-height: 1.7;
         }
     }
     &__footer {
