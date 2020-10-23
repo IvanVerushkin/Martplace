@@ -96,9 +96,6 @@ $(function(){
       $('.nav-menu__list').toggleClass('active');
    });
 
-   var mixer = mixitup('.newproducts__items');
-
-
    $('.favorites-shop__list').on('click', function(){
       $('.card-product').addClass('list2');
       $('.favorites-shop__list').addClass('active');
@@ -109,7 +106,6 @@ $(function(){
       $('.favorites-shop__grid').addClass('active');
       $('.favorites-shop__list').removeClass('active');
    });
-
 
    $('.select-price__title').on('click', function(){
       $('.select-price__list').slideToggle();
@@ -130,7 +126,6 @@ $(function(){
       $('.category-shop__list').removeClass('active');
    });
 
-
    $('.categories__title').on('click', function(){
       $('.categories__list').slideToggle();
    });
@@ -143,7 +138,6 @@ $(function(){
       $('.pricing-range__inner').slideToggle();
    });
 
-
    var slider = $("js-range-slider").data("ionRangeSlider");
 
    $(".js-range-slider").ionRangeSlider({
@@ -154,6 +148,15 @@ $(function(){
       max: 600,
   });
 
+   $('.product-tabs .tab').on('click', function(event) {
+   var id = $(this).attr('data-id');
+      $('.product-tabs').find('.tab-item').removeClass('active-tab').hide();
+      $('.product-tabs .tabs').find('.tab').removeClass('active');
+      $(this).addClass('active');
+      $('#'+id).addClass('active-tab').fadeIn();
+      return false;
+   });
 
+   var mixer = mixitup('.newproducts__items');
 
 });
