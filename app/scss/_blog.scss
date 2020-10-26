@@ -58,7 +58,7 @@
         background-color: #7385cd;
         background-position: center;
         border-radius: 4px 4px 0px 0px;
-        @include max-w(375) {
+        @include max-w(700) {
             height: 380px;
         } 
     }
@@ -229,7 +229,7 @@
                 width: 33%;
                 margin: initial;
                 margin-bottom: 30px;
-                @include max-w(667) {
+                @include max-w(700) {
                     max-width: 100%;
                     width: 100%;
                 }
@@ -241,7 +241,7 @@
                 order: 1;
                 width: 30%;
                 margin-right: 0;
-                @include max-w(667) {
+                @include max-w(700) {
                     max-width: 100%;
                     width: 100%;
                 }
@@ -249,7 +249,7 @@
             &:nth-child(4) {
                 order: 1;
                 width: 46%;
-                @include max-w(667) {
+                @include max-w(700) {
                     max-width: 100%;
                     width: 100%;
                 }
@@ -267,7 +267,7 @@
             margin-right: 20px;
             margin-bottom: 20px;
         }
-        @include max-w(667) {
+        @include max-w(700) {
             max-width: 100%;
             width: 100%;
             padding: 20px 15px;
@@ -275,7 +275,7 @@
         }
     }
     &__row {
-        @include max-w(667) {
+        @include max-w(700) {
             border-bottom: 1px solid #e8ebf0;
         }
     }
