@@ -1,0 +1,224 @@
+.plan {
+    background-color: #eff1f5;
+    &__upper {
+        text-align: center;
+        margin: o auto 60px;
+        padding-top: 120px;
+        @include max-w(823) {
+            padding-top: 70px;
+        }
+        @include max-w(720) {
+            padding-top: 40px;
+        }
+        @include max-w(533) {
+            padding-top: 30px;
+        }
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 400;
+        color: #000000;
+        margin-bottom: 30px;
+        &--blue {
+            color: #0674ec;
+        }
+        @include max-w(823) {
+            font-size: 32px;
+        }
+        @include max-w(720) {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        @include max-w(650) {
+            font-size: 28px;
+        }
+        @include max-w(533) {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+    }
+    &__subtitle {
+        margin: auto;
+        max-width: 680px;
+        @include max-w(720) {
+            max-width: 80%;
+            font-size: 15px;
+        }
+        @include max-w(533) {
+            line-height: 1.8;
+        }
+    }
+    &__body {
+        display: inline-flex;
+        margin: 60px auto 120px;
+        width: 100%;
+        @include max-w(823) {
+            margin: 50px auto 80px;
+        }
+        @include max-w(768) {
+            display: flex;
+            width: 70%;
+            flex-wrap: wrap;
+            margin: 50px auto 0;
+            padding-bottom: 60px;
+        }
+        @include max-w(700) {
+            margin: 40px auto 0;
+        }
+        @include max-w(414) {
+            width: 80%;
+        }
+        @include max-w(360) {
+            width: 85%;
+        }
+        @include max-w(320) {
+            width: 95%;
+        }
+    }
+}
+
+.plan-column {
+    flex-direction: column;
+    width: 360px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(107,110,115,0.1);
+    border-radius: 4px;
+    padding: 30px;
+    border-top: 3px solid #ff6a6c;
+    @include max-w(992) {
+        padding: 20px;
+    }
+    @include max-w(823) {
+        padding: 14px;
+    }
+    @include max-w(768) {
+        width: 100%;
+        padding: 25px;
+    }
+    &--red {
+        border-top: 3px solid #ff6a6c;
+    }
+    &--blue {
+        margin: 0 30px;
+        border-top: 3px solid #0674ed;
+        @include max-w(823) {
+            margin: 0 20px;
+        }
+        @include max-w(768) {
+            margin: 25px 0;
+        }
+    }
+    &--yellow {
+        border-top: 3px solid #feb71d;
+    }
+    &__title {
+        margin-bottom: 30px;
+        padding-bottom: 28px;
+        border-bottom: 1px solid #e8ebf0;
+        font-size: 24px;
+        font-weight: 500;
+        color: #000000;
+        text-align: center;
+        @include max-w(823) {
+            margin-bottom: 25px;
+        }
+        @include max-w(667) {
+            margin-bottom: 20px;
+        }
+        @include max-w(533) {
+            padding-bottom: 20px;
+        }
+    }
+    &__price {
+        margin-bottom: 36px;
+        text-align: center;
+        font-size: 36px;
+        color: #000;
+        @include max-w(823) {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        @include max-w(667) {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        @include max-w(533) {
+            font-size: 25px;
+        }
+        span {
+            font-size: 16px;
+        }
+        &::before {
+            content: '$';
+            vertical-align: 10px;
+            font-size: 18px;
+            color: #000000;
+        }
+    }
+    &__list {
+        margin-bottom: 40px;
+    }
+    &__row {
+        line-height: 2;
+        span {
+            color: #000;
+            font-weight: 500;
+        }
+        @include max-w(823) {
+            font-size: 15px;
+        }
+        @include max-w(768) {
+            font-size: 16px;
+        }
+        @include max-w(480) {
+            font-size: 15px;
+        } 
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #c5cad4;
+            margin-right: 20px;
+            vertical-align: middle;
+            @include max-w(823) {
+                margin-right: 10px;
+            }
+        }
+        &--question {
+            &:after {
+                content: "\e87d";
+                font-family: Linearicons-Free;
+                margin-left: 9px;
+                font-size: 18px;
+                vertical-align: middle;
+            }
+        }
+    }
+    &__link-btn {
+        width: 100%;
+        padding: 10px 0;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.1);
+        border-radius: 4px;
+        @include max-w(480) {
+            padding: 7px 0;
+        }
+        &--red {
+            background-color: #ff6a6c;
+        }
+        &--blue {
+            background-color: #0674ed;
+        }
+        &--yellow {
+            background-color:  #feb71d;
+        }
+    }
+}
+
