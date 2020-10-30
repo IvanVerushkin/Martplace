@@ -9,6 +9,7 @@
   "author": "Ivan",
   "license": "ISC",
   "dependencies": {
+    "jquery-form-styler": "^2.0.2",
     "swiper": "^6.1.1"
   },
   "devDependencies": {

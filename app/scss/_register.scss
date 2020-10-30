@@ -1,0 +1,136 @@
+.login-content {
+    background-color: #eff1f5;
+}
+.login {
+    &__inner {
+        max-width: 555px;
+        margin: 73px auto 120px;
+        padding: 60px 0;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(107,110,115,0.1);
+        border-radius: 4px;
+        @include max-w(600) {
+            margin: 30px auto 40px;
+        }
+        @include max-w(533) {
+            padding: 35px 0;
+        }
+        @include max-w(480) {
+            padding: 20px 0;
+        }
+    }
+    &__upper {
+        padding-bottom: 23px;
+        border-bottom: 1px solid #e8ebf0;
+        @include max-w(533) {
+            padding-bottom: 20px;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: 26px;
+        color: #000;
+        margin-bottom: 13px;
+        @include max-w(533) {
+            margin-bottom: 15px;
+        }
+        @include max-w(480) {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+    }
+    &__content {
+        padding: 20px 50px 0;
+        @include max-w(533) {
+            padding: 25px 25px 0;
+        }
+        @include max-w(480) {
+            padding: 15px 15px 0;
+        }
+    }
+    &__form {
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    &__row {
+        flex-direction: column;
+        margin-bottom: 23px;
+        @include max-w(480) {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+            
+        }
+        label {
+            padding-bottom: 5px;
+            font-weight: 500;
+            color: #000;
+        }
+        input {
+            height: 50px;
+            padding-left: 20px;
+            background-color: #f4f5f8;
+            border: none;
+            @include max-w(480) {
+                height: 40px;
+            }
+        }
+    }
+    // &__remember {
+ 
+    // }
+    &__button {
+        width: 190px;
+        height: 50px;
+        margin-top: 25px;
+        border: transparent;
+        outline: transparent;
+        background-color: #0674ec;
+        box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.1);
+        border-radius: 25px;
+        font-size: 15px;
+        line-height: 32px;
+        font-weight: 500;
+        color: #ffffff;
+        cursor: pointer;
+        @include max-w(533) {
+            width: 120px;
+            height: 45px;
+        }
+        @include max-w(480) {
+            width: 100px;
+            height: 35px;
+        }
+    }
+    &__recovery {
+        margin-top: 30px;
+        justify-content: space-between;
+        color: #898f96;
+        a {
+            text-decoration: none;
+            color: #0674ec;
+        }
+        @include max-w(533) {
+            margin-top: 30px;
+        }
+        @include max-w(480) {
+            font-size: 15px;
+            margin-top: 25px;
+        }
+    }
+}
+
+.register__subtitle {
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
+    @include max-w(480) {
+        font-size: 15px;
+    }
+}
+
+.register__button {
+    margin-top: 4px;
+}

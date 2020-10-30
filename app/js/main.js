@@ -157,6 +157,9 @@ $(function(){
       return false;
    });
 
+   $('input[type="file"], input[type="radio"], select').styler();
+
+
    var mixer = mixitup('.newproducts__items');
 
 });
