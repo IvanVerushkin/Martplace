@@ -503,10 +503,20 @@
         }
     }
     &__content {
-        padding: 0 30px 40px 30px;
+        padding: 30px 30px 40px 30px;
         @include max-w(1024) {
-            padding: 0 30px 0 30px;
+            padding: 30px 30px 0 30px;
         }
+    }
+    label {
+        margin: 30px 0 40px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #333333;
+        text-align: left;
+    }
+    input {
+        margin-right: 10px;
     }
     &__choise {
         margin: 30px 0;
@@ -542,6 +552,9 @@
         @include max-w(1024) {
             width: 25%;
             margin: 0 auto 20px;
+        }
+        @include max-w(480) {
+            width: 35%;
         }
         @include max-w(360) {
             width: 55%;
@@ -865,36 +878,4 @@
             padding: 14px 20px;
         }
     }
-}
-
-.jq-checkbox,
-.jq-radio {
-    border: 2px solid #0674ec;
-    background: transparent;
-    width: 20px;
-    height: 20px;
-    box-shadow: none;
-}
-
-.jq-radio__div {
-    display: none;
-}
-
-.jq-checkbox.focused,
-.jq-radio.focused {
-    border: 2px solid #0674ec;
-    background-color: #0674ec;
-}
-
-.jq-radio::after {
-    content: "";
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    width: 10px;
-    height: 7px;
-    border-radius: 0px;
-    border-left: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    transform: rotate(-45deg);
 }

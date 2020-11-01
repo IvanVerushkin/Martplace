@@ -266,6 +266,7 @@
             right: 21px;
             top: -18px;
             width: 92.8%;
+            height: 25px;
          }
          @include max-w(533) {
             right: 17px;
@@ -347,7 +348,7 @@
       border-bottom-right-radius: 4px;
       outline: transparent;
       appearance: none;
-      background-image: url(/images/Home/lnr-chevron-down.svg);
+      background-image: url(../images/pictures/lnr-chevron-down.svg);
       background-repeat: no-repeat;
       background-size: 13px;
       background-position: 87% 50%;

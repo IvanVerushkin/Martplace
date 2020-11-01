@@ -115,12 +115,15 @@
       max-height: 455px;
       margin-bottom: 120px;
       box-shadow: 0px 2px 30px 0px rgba(146,155,168,0.1);
+      @include max-w(992) {
+         margin-bottom: 70px;
+      } 
       @include max-w(768) {
          display: block !important;
          max-height: 100%;
          max-width: 85%;
          margin: auto;
-         margin-bottom: 10px;
+         margin-bottom: 40px;
       }
       @include max-w(533) {
          display: block !important;
@@ -227,6 +230,9 @@
       }
       @include max-w(380) {
          font-size: 18px;
+      }
+      @include max-w(340) {
+         font-size: 17px;
       }
       @include max-w(320) {
          font-size: 16px;
